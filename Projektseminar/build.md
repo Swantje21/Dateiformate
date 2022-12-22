@@ -47,7 +47,7 @@ Ende Abschnitt
 
 ## Allgemeine Informationen
 
-Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden können, begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
+Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei wäre es natürlich viel effektiver, pro Einheit so viele zustände, wie möglich zu haben. Dies ist etwas, das sich Quantencomputer zu Nutze machen. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
 
 {{1}}{Diese kleinsten Einheiten sind die berühmten **Bits**.}
 
