@@ -38,28 +38,7 @@ base: https://cloudlab-olathub.rz.uni-kiel.de/user/suzuv062/106513175450593/lias
 [**Recherche**](#19)
 
 
-**What do you want to learn today?**
 
-- [X] Biology
-- [ ] Chemistry
-<script output="tasks">"@input"</script>
-
-<script style="width: 100%">
-try {
-  let task = @input(`tasks`) // interpret the output="tasks"
-
-  if(task[0]) {
-    send.liascript(`## Biology
-
-Hey, great, you want to learn something about Biology.
-
-* resource 1
-* resource 2
-
-The input from the tasks above was: \`[${task}]\``)
-  } else send.clear()
-} catch(e) { }
-</script>
 
 
 <!--> 
@@ -68,8 +47,15 @@ Ende Abschnitt
 
 ## Allgemeine Informationen
 
-%28 (Infotext) %29 
+Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden können, begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
 
+{{1}}{Diese kleinsten Einheiten sind die berühmten **Bits**.}
+
+{{2}}
+**************
+Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? {{2}}{Die Lösung liegt auf der Hand: es können mehrere Bits mit einander kombiniert werden}
+
+************
 
 ### Sinn von unterschiedlichen Formaten
 
