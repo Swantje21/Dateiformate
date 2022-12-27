@@ -41,23 +41,21 @@ base: https://cloudlab-olathub.rz.uni-kiel.de/user/suzuv062/106513175450593/lias
 
 
 
-<!--> 
-Ende Abschnitt 
-<-->
+
 
 ## Allgemeine Informationen
 
-Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
+{{0-2}}Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
 
-{{1}} Diese kleinsten Einheiten sind die berühmten **Bits**.
+{{1-2}} Diese kleinsten Einheiten sind die berühmten **Bits**.
 
-{{2}}
+{{2-4}}
 **************
-Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? Die Lösung liegt auf der Hand: es werden mehrere Bits mit einander kombiniert.
+Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? 
+Die Lösung liegt auf der Hand: es werden mehrere Bits mit einander kombiniert.
+Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte** getauft.
 
-{{3}} Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte** getauft.
-
-{{4}} Um die Zählweise des Binären Systems zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
+{{3}} Um die Zählweise des Binären Systems zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
 <script input="number" value="22" min="0" max="1000000">
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
@@ -65,8 +63,22 @@ let j = (@input >>> 0).toString(2)
 i + " = " + j
 </script>
 
-
 ************
+
+<h3>Text vs Binär</h3> 
+
+In ihrer Organisationsform unterscheiden sich Dateien jetzt in zwei Arten.
+Die einen halten sich strikt an eine Aufteilung in 8er-Blöcke, also Bytes, in der Regel um Text zu codieren[^2](In Wirklichkeit gibt es viele Textformate, die auch Zeichen wie 'A' mit dem Binärcode '00000000' abenfalls als '0' darstellen, um Speicherplatz zu schonen.)
+Hier ist ein beispiel, wie aus Binärem Code Buchstaben werden: 
+<script input="number" value="65" min="33" max="126">
+let i = @input
+let j = (@input >>> 0).toString(2)
+let k = String.fromCharCode(i)
+
+i + " = " + j + " = " + k
+</script>
+
+
 
 ### Sinn von unterschiedlichen Formaten
 
