@@ -57,31 +57,14 @@ Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? D
 
 {{3}} Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte** getauft.
 
-{{4}} Um die Zählweise des Binären Systems zu verdeutlichen ist hier ein kleines Spiel:
+{{4}} Um die Zählweise des Binären Systems zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
+<script input="number" value="22" min="0" max="1000000">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
 
-
-<p>
-    <button id="plus1">+1</button>
-    <button id="plus10">+10</button>
-    <button id="plus50">+50</button>
-    <script input="hidden" default="2200" output="num"></script>
-    <script input="hidden" output="bin">
-    (@input(`num`) >>> 0).toString(2);
-    </script>
-    <script>@input(`num`) </script> = <script> @input(`bin`) </script>
-    <button id="minus1">-1</button>
-    <button id="minus10">-10</button>
-    <button id="minus50">-50</button>
-</p>
-
-<script>
-    function transform(dec){
-        return (dec >>> 0).toString(2);
-    }
-    var num = 1;
-    var bin = transform(num);
-    var msg = num + " = " + bin
+i + " = " + j
 </script>
+
 
 ************
 
