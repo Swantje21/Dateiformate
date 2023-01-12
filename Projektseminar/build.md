@@ -29,7 +29,7 @@ base: https://cloudlab-olathub.rz.uni-kiel.de/user/suzuv062/106513175450593/lias
 
 [**Allgemeine Informationen**](#2)
 
-[**Textbasierte Dateiformate**] (#8)
+[**Textbasierte Dateiformate**](#8)
 
 [**Ton, Bild, Video**](#13)
 
@@ -45,7 +45,7 @@ base: https://cloudlab-olathub.rz.uni-kiel.de/user/suzuv062/106513175450593/lias
 
 ## Allgemeine Informationen
 
-{{0-2}}Eine der wichtigsten Funktionen von Computern ist die Fähigkeit, sich etwas zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche wieder um **1** und **0** repräsentieren. Diese können entweder ausgelesen oder verändert werden. 
+{{0-2}}Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche als **1** und **0** bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
 
 {{1-2}} Diese kleinsten Einheiten sind die berühmten **Bits**.
 
@@ -65,6 +65,9 @@ i + " = " + j
 
 ************
 
+
+{{4-6}}
+************
 <h3>Text vs Binär</h3> 
 
 In ihrer Organisationsform unterscheiden sich Dateien jetzt in zwei Arten.
@@ -77,8 +80,11 @@ let k = String.fromCharCode(i)
 
 i + " = " + j + " = " + k
 </script>
+Diese Dateiformate werden gleich im Unterkapitel über textbasierte Formate behandelt.
 
+{{5}}Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere Einheiten, die nur noch von speziellen Programmen gelesen werden können. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateikürzel** ins Spiel. Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind jeweils durch einen '.' vom **Dateinamen** getrennt. 
 
+************
 
 ### Sinn von unterschiedlichen Formaten
 
