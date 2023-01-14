@@ -82,7 +82,9 @@ i + " = " + j + " = " + k
 </script>
 Diese Dateiformate werden gleich im Unterkapitel über textbasierte Formate behandelt.
 
-{{5}}Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere Einheiten, die nur noch von speziellen Programmen gelesen werden können. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateikürzel** ins Spiel. Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind jeweils durch einen '.' vom **Dateinamen** getrennt. 
+{{5}}Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere uneinheitliche Einheiten, die nur noch von speziellen Programmen gelesen werden können. Hier sprechen wir von **binären** Dateiformaten.
+
+Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateikürzel** ins Spiel. Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind jeweils durch einen '.' vom **Dateinamen** getrennt. 
 
 ************
 
