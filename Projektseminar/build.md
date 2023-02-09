@@ -759,7 +759,23 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ### RAW, JPEG, PNG — Bild und Bildqualität
 
-(Infotext)
+                {{0-1}}
+*******************************************
+Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf Rastern, die anderen auf Vectoren. Rasterbasierte Bildformate nutzen ein zweidimensionales Raster auf dem sie Pixel, farbige Quadrate, verorten. Einschlägige Formate sind **JPEG**, **PNG**, **RAW**, **TIFF**. Sie zeichnen sich durch unterschiedliche Datendichte ab. 
+
+Vectorbasierte Formate nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden. Was auf den ersten Blick als umständlich erscheint ermöglicht kleinere Dateigrößen und bessere Skalierbarkeit. Während man beim Vergrößern von Rasterbilddateien irgendwann auf der Pixelebene endet kann in Vektorgraphiken endlos hineingezoomt werden. Beispiele für solche Formate wären SVG, <!-- HIER WEITER! -->
+*******************************************
+
+
+                {{1-2}}
+*******************************************
+<h4>Anwendungsbereiche: </h4>
+Fotografien werden generell als Rasterbilddateien gespeichert, weil dies der Funktion der Kamerasensoren entspricht.[^1](Diese winzigen Sensoren sind ebenfalls in einem Rastermuster angeordnet und messen beim Belichten die Farbe des Lichts, das auf sie trifft. Diese wird dann in einen Pixel umgesetzt.) Wie erwähnt kann es besonders beim Verwenden in starker Vergrößerung dazu kommen, dass das Bild nicht mehr ansprechend aussieht.
+
+Vektorgrafiken werden nun besonders in den Gebieten verwendet, in denen sie in unterschiedlichen Größen bei gleichhbleibender Qualität zur Verfügung stehen müssen. Logos sind ein häufiger Anwendungsbereich. Ihre kleinere Größe bietet sich auch an, um sie in Webapplikationen zu verwenden, weil hier alles einzeln vom Server zum Klienten transferiert werden soll. 
+
+*******************************************
+
 
 
 
@@ -785,37 +801,44 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ## Forschungsdatenmanagement 
 
+All die Informationen, die hier ausgebreitet wurden, haben den Sinn, Ihnen bei der Wahl eines idealen Formats für Ihr Forschungsprojekt zu helfen. Wir haben unterschiedliche Vor- und Nachteile angesprochen und worauf bei der Wahl zu achten ist. 
+
+Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war muss es nicht zwingen auch für die Lagerung. 
+
+![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png "Bildquelle: siehe Fußnote 1")
+
+Hier[^1](https://forschungsdaten.info/fileadmin/_processed_/e/d/csm_Datenlebenszyklus_a6b6aeb3f7.png) sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
+
+Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gegebenen Möglichkeiten optimal auszunutzen. Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren. 
+
+
+
+### Menschenlesbarkeit
+
+Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
+
+>Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus.
+
+Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standartisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
+
+
+
+
+
+
+### Maschinenlesbarkeit
+
 (Infotext)
 
-### Wo finde ich Dateiformate? — Einschlägige Webseiten
+
+
+### Langzeitstabilität
 
 (Infotext)
 
 
 
-### Worauf man achten sollte:
-
-(Infotext)
-
-#### (Plattform-)Kompatibilität
-
-(Infotext)
-
-
-
-#### Lebensdauer (Wie alt? Wie langlebig?)
-
-(Infotext)
-
-
-
-#### Speichergröße / Ressourcenmanagement
-
-(Infotext)
-
-
-
-#### Updates / Support
+### Metadaten
 
 (Infotext)
 
