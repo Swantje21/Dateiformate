@@ -29,6 +29,11 @@ logo: zerosOnesDalle.png
 
 ![Dalle 2 Zeroes and ones](bilder/zerosOnesDalle.png)
 
+<div style="float:right; width:40%;">
+  <img src="bilder/zerosOnesDalle.png" alt="Zeros and ones">
+
+</div>
+
 <h3>Inhalt</h3>
 
 [**Allgemeine Informationen**](#Allgemeine-Informationen)
@@ -134,9 +139,107 @@ Fromate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktu
 
 <!-- Ende Abschnitt -->
 
-## Textbasierte Dateiformate
 
-Willkommen zu unserem Lernbaustein über textbasierte Dateiformate! In diesem Kurs werden wir uns mit verschiedenen Arten von textbasierten Dateiformaten beschäftigen und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.
+
+
+
+
+
+## Forschungsdatenmanagement 
+
+All die Informationen, die hier ausgebreitet wurden, haben den Sinn, Ihnen bei der Wahl eines idealen Formats für Ihr Forschungsprojekt zu helfen. Wir haben unterschiedliche Vor- und Nachteile angesprochen und worauf bei der Wahl zu achten ist. 
+
+Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war muss es nicht zwingend auch für die Lagerung sein. 
+
+![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png "Bildquelle: siehe Fußnote 1")
+
+
+Hier[^1](https://forschungsdaten.info/fileadmin/_processed_/e/d/csm_Datenlebenszyklus_a6b6aeb3f7.png) sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
+
+Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gegebenen Möglichkeiten optimal auszunutzen. Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren. 
+
+
+
+### Menschenlesbarkeit
+
+Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
+
+>Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus.
+
+Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standartisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
+
+
+
+
+
+
+### Maschinenlesbarkeit
+
+(Infotext)
+
+
+
+### Langzeitstabilität
+
+(Infotext)
+
+
+
+### Metadaten
+
+(Infotext)
+
+<!-- Ende Abschnitt -->
+
+
+
+
+## Zusammenfassung
+
+
+
+
+
+## Zusatzmaterial:
+
+                {{0-3}}
+*************************************
+Mit diesen Grundlagen sei der offizielle Teil dieses Teilbausteins abgeschlossen. Im Zusatzmaterial wollen wir nun ein wenig mehr ins Detail gehen. Dabei könnte es passieren, dass das wir stellenweise etwas...
+
+                {{1}}
+*************************************
+<div style="float:right; width:40%;">
+  <img src="bilder/crazy.jpg" alt="crazy">
+  </div>
+...<span style="color:red">*komplex*</span> werden. Deshalb versteht er sich als eine Art *Lexikon*, in dem Sie stöbern können.
+
+*************************************
+
+
+                {{2}}
+Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu auszuwählen. 
+Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihren Interessen. 
+
+*************************************
+
+
+                {{3}}
+*************************************
+<center>
+  <h1 style="color:red">Fangen wir an!</h1>
+  <img src="bilder/crazyExplain.jpeg" alt="Explain it!" class="center">
+</center>
+
+
+*************************************
+
+
+
+
+
+## Dateiformate für Text
+
+In diesem Abschnitt werden wir uns mit verschiedenen Arten von textbasierten Dateiformaten beschäftigen und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.
 
 Wir werden den Kurs in drei Teile gliedern: Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
 
@@ -799,50 +902,7 @@ Vektorgrafiken werden nun besonders in den Gebieten verwendet, in denen sie in u
 
 <!-- Ende Abschnitt -->
 
-## Forschungsdatenmanagement 
 
-All die Informationen, die hier ausgebreitet wurden, haben den Sinn, Ihnen bei der Wahl eines idealen Formats für Ihr Forschungsprojekt zu helfen. Wir haben unterschiedliche Vor- und Nachteile angesprochen und worauf bei der Wahl zu achten ist. 
-
-Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war muss es nicht zwingen auch für die Lagerung. 
-
-![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png "Bildquelle: siehe Fußnote 1")
-
-Hier[^1](https://forschungsdaten.info/fileadmin/_processed_/e/d/csm_Datenlebenszyklus_a6b6aeb3f7.png) sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
-
-Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gegebenen Möglichkeiten optimal auszunutzen. Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren. 
-
-
-
-### Menschenlesbarkeit
-
-Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
-
->Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus.
-
-Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standartisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
-
-
-
-
-
-
-### Maschinenlesbarkeit
-
-(Infotext)
-
-
-
-### Langzeitstabilität
-
-(Infotext)
-
-
-
-### Metadaten
-
-(Infotext)
-
-<!-- Ende Abschnitt -->
 
 
 
