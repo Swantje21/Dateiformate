@@ -25,26 +25,38 @@ base: https://cloudlab-olathub.rz.uni-kiel.de/user/suzuv062/106513175450593/lias
 logo: zerosOnesDalle.png
 -->
 
-# Dateiformate (Arbeitstitel)
+# Dateiformate verstehen
 
-![Dalle 2 Zeroes and ones](bilder/zerosOnesDalle.png)
+                {{1-2}}
+****************************************
+![Wordcloud](bilder/word-cloud.svg)
 
-<div style="float:right; width:40%;">
-  <img src="bilder/zerosOnesDalle.png" alt="Zeros and ones">
+(Begrüßungstext)
 
-</div>
+****************************************
 
-<h3>Inhalt</h3>
 
-[**Allgemeine Informationen**](#Allgemeine-Informationen)
 
-[**Textbasierte Dateiformate**](#Textbasierte-Dateiformate)
 
-[**Ton, Bild, Video**](#Ton,-Bild,-Video)
+                {{2}}
+****************************************
 
-[**Karten**](#Karten)
+<center>
+<h1>**Inhalt**</h1>
 
-[**Forschungsdatenmanagement**](#Forschungsdatenmanagement)
+<h4>
+
+[Allgemeine Informationen](#Allgemeine-Informationen)
+
+[Forschungsdatenmanagement](#Forschungsdatenmanagement)
+
+[Textbasierte Dateiformate](#Textbasierte-Dateiformate)
+
+[Ton, Bild, Video](#Ton,-Bild,-Video)
+
+</h4>
+</center>
+****************************************
 
 
 
@@ -164,24 +176,55 @@ Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gege
 
 Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
 
->Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus.
+                {{1}}
+>Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus. Sie existieren bereits seit langer Zeit und lassen sich immer durch einen einfachen Editor offnen. Mehr dazu [hier](TXT---Muter-aller-Textverarbeitung). 
 
-Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standartisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
+                {{2}}
+Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standardisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
 
-
-
+<!-- Ende Abschnitt -->
 
 
 
 ### Maschinenlesbarkeit
 
-(Infotext)
+Maschinenlesbarkeit bedeutet vor allem die Möglichkeit, Daten mit leicht verfügbaren Programmen - am besten [Open-Source](Link-Me!), also frei verfügbar - öffnen zu können. Es gilt:
+
+>Je weiter verbreitet die Software, desto besser!
+
+Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. "*Weit verbreitet*" kann auch bedeuten, dass mehrere Programme das Format nutzen, es sich also um eine Art *Industriestandard* handelt. 
+
+<!-- Ende Abschnitt -->
+
 
 
 
 ### Langzeitstabilität
 
-(Infotext)
+<span style='color:red'>"**Nichts ist von Dauer in der Tech-Welt!**"</span>, möchte man manchmal ausrufen. Denn, in der Tat, entwickeln sich in dieser doch noch relativ jungen Disziplin die Neuerung stets rasant. Wie kann in solch einer Umgebung überhaupt etwas entstehen, das von Dauer ist?
+
+                {{1-2}}
+****************************************
+Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Inovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten. 
+
+Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt zu ziehen. 
+Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein. 
+
+****************************************
+
+
+                {{2}}
+****************************************
+Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen. Berümte Bespiele sind: 
+
+                {{3}}
+- die [**Internationale Organisation für Normierung**](https://www.iso.org/home.html) auch **ISO** (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die **JPEG** und **JPEG2000** Standards entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
+
+                {{4}}
+- das [**Unicode Consortium**](https://home.unicode.org), welches für die Standardisierung von Textzeichen eintritt. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+
+****************************************
+
 
 
 
@@ -196,8 +239,10 @@ Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zu
 
 ## Zusammenfassung
 
+(Infotext)
 
 
+<!-- Ende Abschnitt -->
 
 
 ## Zusatzmaterial:
@@ -239,7 +284,7 @@ Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihr
 
 ## Dateiformate für Text
 
-In diesem Abschnitt werden wir uns mit verschiedenen Arten von textbasierten Dateiformaten beschäftigen und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.
+In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.
 
 Wir werden den Kurs in drei Teile gliedern: Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
 
@@ -247,24 +292,31 @@ Im zweiten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Me
 
 Im dritten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV, XML, JSON und HTML. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
 
-Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen textbasierten Dateiformate haben und wissen, wann es am besten ist, welches Format zu verwenden. Lass uns loslegen und tiefer in die Welt der textbasierten Dateiformate eintauchen!
+Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen textbasierten Dateiformate haben und wissen, wann es am besten ist, welches Format zu verwenden. Lass uns loslegen und tiefer in die Welt der textbasierten Dateiformate eintauchen![^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
 
 
 ### TXT – Mutter aller Textverarbeitung
 
-{{0-1}}Plain-Text (.txt) ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.
+                {{0}}
+Plain-Text (.txt) ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.
 
-{{1-2}}Es hat seine Wurzeln in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt. Es ist einfach zu lesen und zu bearbeiten, egal ob mit einem einfachen Texteditor oder einem leistungsstarken Textverarbeitungsprogramm, und es ist kompatibel mit fast allen Computern und Betriebssystemen.
+                {{1}}
+Es hat seine Wurzeln in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt. Es ist einfach zu lesen und zu bearbeiten, egal ob mit einem einfachen Texteditor oder einem leistungsstarken Textverarbeitungsprogramm, und es ist kompatibel mit fast allen Computern und Betriebssystemen.
 
-{{2-3}}Das .txt-Format ist für seine Portabilität bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor geöffnet und bearbeitet werden. Es ist auch sehr gut lesbar, da es nicht mit unnötigen Formatierungen überladen ist.
+                {{2}}
+Das .txt-Format ist für seine Portabilität bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor geöffnet und bearbeitet werden. Es ist auch sehr gut lesbar, da es nicht mit unnötigen Formatierungen überladen ist.
 
-{{3-4}}Ein weiterer Vorteil des .txt-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
+                {{3}}
+Ein weiterer Vorteil des .txt-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
 
-{{4-5}}Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.
+                {{4}}
+Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
 
-{{5-6}}TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden, einschließlich Notepad auf Windows-Systemen und TextEdit auf MacOS-Systemen. Darüber hinaus gibt es auch eine Vielzahl von kostenlosen und Open-Source-Texteditoren, die TXT-Dateien unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com) und [Atom](https://github.blog/2022-06-08-sunsetting-atom/). Diese Programme bieten oft mehr Funktionen als die einfachen Texteditoren, wie Syntax-Hervorhebung, Zeilennummerierung und Unterstützung für mehrere Dateiformate. 
+                {{5}}
+TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden, einschließlich Notepad auf Windows-Systemen und TextEdit auf MacOS-Systemen. Darüber hinaus gibt es auch eine Vielzahl von kostenlosen und Open-Source-Texteditoren, die TXT-Dateien unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com) und [Atom](https://github.blog/2022-06-08-sunsetting-atom/). Diese Programme bieten oft mehr Funktionen als die einfachen Texteditoren, wie Syntax-Hervorhebung, Zeilennummerierung und Unterstützung für mehrere Dateiformate.[^ChatGPT2](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe noch einen weiteren Absatz über Programme, mit denen man txt Dateien öffnet." erstellt und leicht modifiziert)
 
-{{6-7}}Insgesamt ist das .txt-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.
+                {{6}}
+Insgesamt ist das .txt-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
 
 
 
@@ -274,32 +326,51 @@ Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen 
 Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe von Dateiformaten, die speziell für diesen Zweck entwickelt wurden. Hier sind einige der wichtigsten:
 
 
-{{1-3}}<h3>RTF (Rich Text Format): </h3>
+                {{1-3}}
+***************************************         
+<h3>RTF (Rich Text Format): </h3>
 
-{{1-2}}RTF ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
+{{1}}RTF ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
 
-{{2-3}}Das RTF (Rich Text Format) wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten, Schriftgrößen, Schriftstilen und Farben zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an Popularität verloren, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
+{{2}}Das RTF (Rich Text Format) wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten, Schriftgrößen, Schriftstilen und Farben zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an Popularität verloren, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
 
-
-{{3-6}}<h3>DOCX ("Das Word-Dokument"): </h3>
-
-{{3-4}}DOCX ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit Microsoft Word und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
-
-{{4-5}}Das DOCX Format wurde erstmals im Jahr 2007 mit Microsoft Word 2007 eingeführt und hat sich seitdem zum Industriestandard entwickelt. Es hat das ältere DOC Format, das seit 1993 verwendet wurde, abgelöst und bietet eine Vielzahl von Vorteilen, darunter eine bessere Kompatibilität und Zusammenarbeit mit anderen Anwendungen und Betriebssystemen. Darüber hinaus ermöglicht DOCX eine flexiblere Textformatierung, eine kleinere Dateigröße und die Möglichkeit, interaktive Elemente wie Tabellen, Grafiken und Formulare einzufügen. Aufgrund dieser Vorteile und seiner breiten Akzeptanz in der Geschäftswelt hat sich DOCX zum Industriestandard für Textverarbeitung entwickelt.
+***************************************
 
 
-{{5-6}}<h4>Alternativen: </h4>
+                {{3-6}}
+***************************************
+<h3>DOCX ("Das Word-Dokument"): </h3>
+
+{{3}}DOCX ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit Microsoft Word und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
+
+{{4}}Das DOCX Format wurde erstmals im Jahr 2007 mit Microsoft Word 2007 eingeführt und hat sich seitdem zum Industriestandard entwickelt. Es hat das ältere DOC Format, das seit 1993 verwendet wurde, abgelöst und bietet eine Vielzahl von Vorteilen, darunter eine bessere Kompatibilität und Zusammenarbeit mit anderen Anwendungen und Betriebssystemen. Darüber hinaus ermöglicht DOCX eine flexiblere Textformatierung, eine kleinere Dateigröße und die Möglichkeit, interaktive Elemente wie Tabellen, Grafiken und Formulare einzufügen. Aufgrund dieser Vorteile und seiner breiten Akzeptanz in der Geschäftswelt hat sich DOCX zum Industriestandard für Textverarbeitung entwickelt.
+
+***************************************
+
+
+                {{5-6}}
+***************************************
+<h4>Alternativen: </h4>
 
 {{5-6}}Einige Alternativen zu DOCX-Formaten sind **ODT (Open Document Text)**, das vom OpenOffice-Projekt entwickelt wurde und als offenes Format für Textverarbeitungen verwendet wird, sowie **Pages**, das von Apple für die Verwendung auf Mac-Computern entwickelt wurde. Beide Formate haben eine vergleichbare Funktionalität mit DOCX und bieten viele der gleichen Funktionen, aber die Kompatibilität und die Verbreitung kann je nach Plattform und Gerät variieren. Außerdem gibt es auch cloud-basierte Optionen wie **Google Docs**, die eine Alternative für die Verwendung von Textdokumenten in einer online-basierten Umgebung bieten.
 
+***************************************
 
-{{6-9}}<h3>MD (Markdown): </h3>
 
-{{6-7}}Markdown ist ein einfaches Textformat, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
+                {{6}}
+***************************************
+<h3>MD (Markdown): </h3>
 
-{{7-8}}Markdown wurde  2006 von John Gruber und Aaron Swartz eingeführt. Die Idee dahinter war, dass es einfacher sein sollte, Texte zu formatieren, als mit HTML oder anderen Markup-Sprachen. Markdown wurde schnell zu einem beliebten Format für Blogging, Dokumentation und andere Anwendungen, bei denen Texte formatiert werden müssen.
+                {{6}}
+Markdown ist ein einfaches Textformat, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
 
-{{8-9}}Die Syntax von Markdown ist sehr einfach und besteht aus einer Kombination aus Text und einfachen Zeichen, die für Formatierungen verwendet werden. Beispielsweise kann ein Überschrift durch eine Reihe von #-Zeichen gekennzeichnet werden, während fett gedruckter Text durch zwei Asterisken eingerahmt wird. Die Schönheit von Markdown liegt darin, dass es einfach zu erlernen und zu verwenden ist, aber dennoch eine Vielzahl an Formatierungen ermöglicht. Dieser ganze Kurs ist zum Beispiel in Mardown geschrieben.
+                {{7}}
+Markdown wurde  2006 von John Gruber und Aaron Swartz eingeführt. Die Idee dahinter war, dass es einfacher sein sollte, Texte zu formatieren, als mit HTML oder anderen Markup-Sprachen. Markdown wurde schnell zu einem beliebten Format für Blogging, Dokumentation und andere Anwendungen, bei denen Texte formatiert werden müssen.
+
+                {{8}}
+Die Syntax von Markdown ist sehr einfach und besteht aus einer Kombination aus Text und einfachen Zeichen, die für Formatierungen verwendet werden. Beispielsweise kann ein Überschrift durch eine Reihe von #-Zeichen gekennzeichnet werden, während fett gedruckter Text durch zwei Asterisken eingerahmt wird. Die Schönheit von Markdown liegt darin, dass es einfach zu erlernen und zu verwenden ist, aber dennoch eine Vielzahl an Formatierungen ermöglicht. Dieser ganze Kurs ist zum Beispiel in Mardown geschrieben.
+
+***************************************
 
 
 
@@ -309,23 +380,23 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 
 ### CSV, XML, JSON, HTML — Informationen für Computer aufbereiten
 
-        {{0-1}}
+                {{0-1}}
 In der Welt der digitalen Datenverarbeitung ist es von größter Bedeutung, Informationen in einer Form zu speichern, die für Computer und andere digitale Geräte leicht lesbar ist. Dies ist der Hauptgrund, warum es eine Vielzahl von Dateiformaten gibt, die speziell für die Verarbeitung von Informationen durch Maschinen ausgelegt sind. In diesem Kapitel werden wir uns mit einigen dieser Formate beschäftigen, die sich durch ihre maschinenlesbare Struktur auszeichnen, darunter **CSV**, **XML**, **JSON** und **HTML**.
 
-        {{1-4}}
+                {{1-4}}
 ***********************
 <h3>CSV (Comma Separated Values): </h3>
 
-        {{1}}
+                {{1}}
 CSV ist ein sehr einfaches Format, das nur durch Kommas getrennte Werte enthält.[^1](ACHTUNG! Es sind auch auch Trennungen mit anderen Zeichen wie z.B. einem Semikolon möglich) Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
 
-        {{2}}
+                {{2}}
 CSV ist eines der ältesten und am weitesten verbreiteten Dateiformate für den Austausch von Daten. Es wurde in den 1960er Jahren entwickelt und hat sich bis heute als einfaches und effektives Format für den Datenaustausch etabliert. CSV ermöglicht es, Daten in einer tabellarischen Form zu speichern, bei der jede Zeile einen Datensatz und jede Spalte eine bestimmte Eigenschaft oder ein Attribut darstellt. Die Daten werden durch Kommas getrennt, wodurch sie von einfachen Texteditoren und Tabellenkalkulationsprogrammen wie Microsoft Excel oder Google Sheets gelesen und bearbeitet werden können.
 
-        {{3}}
+                {{3}}
 Die Syntax von CSV ist sehr einfach und intuitiv. Jede Zeile stellt einen Datensatz dar, während die Spaltenüberschriften und die Daten in jeder Spalte durch Kommas voneinander getrennt sind:
 
-        {{3}}
+                {{3}}
 ````
 Name,Alter,Stadt
 Max,35,Berlin
@@ -338,23 +409,23 @@ Jane,31,Köln
 
 
 
-        {{4-5}}
+                {{4-5}}
 <h3>XML (Extensible Markup Language) und JSON (JavaScript Object Notation): </h3>
 XML und JSON sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.
 
 
-        {{5-8}}
+                {{5-8}}
 ***********************
 
 <h4>XML</h4>
 
-        {{5}}
+                {{5}}
 XML (Extensible Markup Language) ist ein textbasiertes Format, das für Computer lesbar ist und das Austausch und Speicherung von Daten ermöglicht. Es nutzt eine hierarchische Struktur, um Informationen in einer Baumstruktur zu organisieren. Jedes Element im XML-Dokument hat einen Namen und kann Attribute und Inhalte haben.
 
-        {{6-7}}
+                {{6-7}}
 Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
 
-        {{6-8}}
+                {{6-8}}
 ````XML
 <?xml version="1.0" encoding="UTF-8"?>
 <person>
@@ -372,21 +443,21 @@ Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
 </person>
 ````
 
-        {{7}}
+                {{7}}
 XML verwendet eine syntaktische Struktur, die von HTML ähnlich ist. Es werden Hierarchien von Elementen und Attributen verwendet, um Daten zu beschreiben. Jedes Element repräsentiert eine bestimmte Dateneinheit und kann andere untergeordnete Elemente enthalten. Jedes Attribut enthält zusätzliche Informationen zu einem Element. Ein XML-Dokument muss mit einer Prolog-Zeile beginnen, die die verwendete XML-Version und Zeichenkodierung angibt. Zudem muss jedes geöffnete Element auch geschlossen werden, um eine valide Syntax zu erreichen.
 
 ***********************
 
 
 
-        {{8-10}}
+                {{8-10}}
 ***********************
 <h4>JSON</h4>
 
         
 JSON, oder JavaScript Object Notation, ist ein Datenformat, das Anfang der 2000er Jahre entwickelt wurde. Ursprünglich wurde es als einfachere Alternative zu XML entwickelt, um Daten zwischen Server und Anwendung auszutauschen. JSON nutzt eine einfache Syntax aus geschweiften Klammern und Anführungszeichen, um Datenstrukturen darzustellen. Es hat sich schnell zu einem der weitverbreitetsten Datenformate im Internet entwickelt und wird heute von vielen Anwendungen und APIs genutzt, um Daten effizient und einfach zu verarbeiten und auszutauschen. Hier ein Beispiel: 
 
-        {{9}}
+                {{9}}
 ````JSON
 {
   "person": {
@@ -415,20 +486,20 @@ JSON, oder JavaScript Object Notation, ist ein Datenformat, das Anfang der 2000e
 
 
 
-        {{10-12}}
+                {{10-12}}
 ***********************
 
 <h4>XML und JSON im Vergleich</h4>
 
 Im Gegensatz zu JSON (JavaScript Object Notation) ist XML ein umfassenderes Format und bietet eine größere Flexibilität bei der Strukturierung von Daten. Mit XML kann man komplexere Datenstrukturen aufbauen und es bietet auch die Möglichkeit, eigene Markups zu definieren. Außerdem kann XML auch semantische Informationen bereitstellen, die für Maschinen nützlich sind.
 
-        {{11}}
+                {{11}}
 Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfordert eine stärkere Überwachung, um Fehler zu vermeiden und es kann auch größere Datenmengen erzeugen, da es mehr Informationen speichert. JSON ist dagegen einfacher zu lesen und zu schreiben und eignet sich besser für den Austausch von Daten zwischen Anwendungen und ist deshalb hier of die bevorzugte Wahl.
 
 ***********************
 
 
-        {{12-14}}
+                {{12-14}}
 ***********************
 
 <h3>HTML (Hypertext Markup Language)</h3>
@@ -436,13 +507,13 @@ Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfor
 
 HTML ist ein Format, das hauptsächlich für Webseiten verwendet wird. Es ermöglicht es, Texte, Bilder und andere Inhalte in einer für Computer lesbaren Form darzustellen. HTML-Dokumente enthalten Informationen über die Layout- und Formatierungselemente einer Seite, was es ermöglicht, Inhalte auf eine benutzerfreundliche Art und Weise darzustellen.
 
-        {{13}}
+                {{13}}
 HTML wurde bereits 1990 von Tim Berners-Lee, dem Vater des World Wide Web, entwickelt. Die Syntax von HTML basiert auf den sogenannten "Tags", welche innerhalb von angleichen Klammern stehen. Diese Tags geben an, wie ein bestimmter Teil des Dokuments formatiert werden soll, beispielsweise als Überschrift, Absatz, Liste, Tabellen usw. HTML ermöglicht es auch, Links und Bilder einzubetten, wodurch eine Verknüpfung von Dokumenten im World Wide Web entsteht. Mit fortschreitender Weiterentwicklung, wurde HTML immer komplexer und bietet heute umfassende Möglichkeiten für die Gestaltung von Webseiten.
 
 ***********************
 
 
-        {{14-16}}
+                {{14-16}}
 ***********************
 
 Hier ist ein Beispiel für eine extrem einfache Website:
@@ -476,17 +547,18 @@ Dieser Text wird von sogenannten Browsern interpretiert, um die angenehmen Webob
 
 <h4>Es kann sinnvoll sein, auf Plain-Text basierende Dokumente identifizieren zu können. Also testen Sie sich selbst und erkennen die die folgenden Beispielformate: </h4>
 
-        {{0-1}}
+                {{0-1}}
+***************************************
 Um welches Format handelt es sich? 
 
-        {{0-1}}
+       
 - [( )] CSV
 - [(X)] XML
 - [( )] JSON
 - [( )] HTML
         
 
-        {{0-1}}
+        
 ````XML
 <?xml version="1.0" encoding="UTF-8"?>
 <Sesamstrasse>
@@ -522,6 +594,9 @@ Um welches Format handelt es sich?
   </Charakter>
 </Sesamstrasse>
 ````
+
+***************************************
+
 
         {{1-2}}
 ************************
