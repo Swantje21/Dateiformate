@@ -27,10 +27,13 @@ logo: zerosOnesDalle.png
 
 # Dateiformate verstehen
 
-                {{1-2}}
+                {{0-2}}
 ****************************************
-![Wordcloud](bilder/word-cloud.svg)
+![Wordcloud](bilder/wordCloudTwister.png)
 
+*Designed auf* [*WordArt.com*](https://wordart.com/create)
+
+                {{1}}
 (Begrüßungstext)
 
 ****************************************
@@ -163,10 +166,18 @@ All die Informationen, die hier ausgebreitet wurden, haben den Sinn, Ihnen bei d
 
 Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war muss es nicht zwingend auch für die Lagerung sein. 
 
-![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png "Bildquelle: siehe Fußnote 1")
+![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png)
+
+<sup>[*Bildquelle: forschungsdaten.info*](https://forschungsdaten.info/fileadmin/_processed_/e/d/csm_Datenlebenszyklus_a6b6aeb3f7.png)</sup>
+
+<p></p>
+
+<p></p>
+
+<p></p>
 
 
-Hier[^1](https://forschungsdaten.info/fileadmin/_processed_/e/d/csm_Datenlebenszyklus_a6b6aeb3f7.png) sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
+Hier sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
 
 Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gegebenen Möglichkeiten optimal auszunutzen. Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren. 
 
@@ -201,68 +212,116 @@ Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das
 
 ### Langzeitstabilität
 
-<span style='color:red'>"**Nichts ist von Dauer in der Tech-Welt!**"</span>, möchte man manchmal ausrufen. Denn, in der Tat, entwickeln sich in dieser doch noch relativ jungen Disziplin die Neuerung stets rasant. Wie kann in solch einer Umgebung überhaupt etwas entstehen, das von Dauer ist?
+<span style='color:orange'>***"Nichts ist von Dauer in der Tech-Welt!"***</span>*, möchte man manchmal ausrufen. Denn, in der Tat, entwickeln sich in dieser doch noch relativ jungen Disziplin die Neuerung stets rasant. Wie kann in solch einer Umgebung überhaupt etwas entstehen, das von Dauer ist?*
 
                 {{1-2}}
 ****************************************
 Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Inovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten. 
 
-Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt zu ziehen. 
+Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
 Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein. 
 
 ****************************************
 
 
-                {{2}}
+                {{2-6}}
 ****************************************
-Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen. Berümte Bespiele sind: 
+Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen. Berühmte Bespiele sind: 
 
                 {{3}}
-- die [**Internationale Organisation für Normierung**](https://www.iso.org/home.html) auch **ISO** (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die **JPEG** und **JPEG2000** Standards entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
+- die [**Internationale Organisation für Normierung**](https://www.iso.org/home.html) auch **ISO** (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
 
                 {{4}}
-- das [**Unicode Consortium**](https://home.unicode.org), welches für die Standardisierung von Textzeichen eintritt. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+- das [**Unicode Consortium**](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+
+                {{5}}
+Wenn kein standardisiertes Format zur Verfügung steht, lohnt es sich ein weit verbreitetes zu nutzen. Ein großer Nutzerkreis zieht in der Regel Interessierte an, die sich aus eigenem Antrieb um den Erhalt des Formats bemühen, was der Langzezeitstabillität erheblich dient. 
 
 ****************************************
 
+
+                {{6}}
+****************************************
+<h4>Zuletzt sei noch von ~~Zeiträumen~~ die Rede.</h4>
+
+Im Studium ist der Zeitraum, für den Unterlagen erstellt werden, meist recht kurz. Ein Exzerpt muss nur bis zur nächsten Stunde oder Hausarbeit existieren, eine PowerPoint nur bis zur Präsentation und gemeinsames Arbeitsmaterial bis zur Deadline. 
+
+Doch das ändert sich schnell beim Berufseintritt. Als Lehrkraft wünscht sich seine markierten Scans von wichtigen Texten wieder, um sie in der nächsten Stunde als Material zu verwenden. Im Büro erinnert man sich an diese eine Studie, die man zwar gelesen aber einfach nicht mehr öffnen kann. Oder ein Experiment aus der Unizeit könnte den Druchbruch bringen - blöder Weise ist das Protokoll nicht mehr lesbar...
+
+Generell kann davon ausgegangen werden, dass alle Ergebnisse irgendwann eine Nachnutzung finden könnten. [Hier ist ein schönes Beispiel aus der Medizin.](https://www.nature.com/articles/s41591-020-1083-1) Als im September 2020 noch unklar war, wie langfristig die Immunisierung nach einer durchstandenen COVID-19 Erkrankung sein würde, konnte eine Gruppe von Forschern auf ihre Daten über HIV-Erkrankte, die über 35 Jahre hinweg regelmäßige Bluttests abgegeben hatten, zurückgreifen, um sie nach dem Wiederauftreten von COVID-19 ähnlichen Coronavirusantikörpern zu untersuchen. Auf diese Weise konnten sie zumindest Rückschlüsse auf COVOD-19 treffen.
+
+>Es sind also immer unvorhergesehene Verwendungsmöglichkeiten mit in Betracht zu ziehen und möglichst lange Lagerung zu gewährleisten. Für einen Zeitraum von unter 10 Jahren empfehlen sich auch häufig verwendeten Formate. Will man jedoch über 10 Jahre hinaus so empfehlen sich immer standardisierte Formate. 
+
+
+****************************************
+
+
+<!-- Ende Abschnitt -->
 
 
 
 ### Metadaten
 
-(Infotext)
+Wir hatten Metadaten eingangs beim Aufbau von Dateien erklärt. Sie sind im Header oder Kopf einer Datei enthaltene Daten, die weitere Informationen über die Datei geben. Das können Erstellungs- und Änderungsdatum sein. Kompressionen und Dateilängen sowie die Art der Datei, Magic Number und vieles mehr können unter diesen Daten enthalten sein. 
+
+>**Metadaten** sind auf lange Zeit wichtig, weil sie als Ersatz dienen, wenn andere Informationsgeber versagen. 
+
+                {{1}}
+Wenn zum Beispiel Dateiendungen fehlen, kann eine Magic Number helfen. Beim Durchstöbern, bzw. Auswählen von Daten kann es extrem wichtig sein, die Erstellungsdaten nachzuvollziehen. Bei Projekten mit vielen Mitarbeitern kann es nötig werden bestimmte Ersteller zu filtern. Die Liste lässt sich beliebig verlängern.
+
+                {{2}}
+Selbstverständlich können diese Daten auch verloren gehen. In einem solchen Fall kann es wichtig sein, Informationen über den Datensatz separat niederzuschreiben. Hierfür wird in der Regel eine sogenannte **README-Datei** erstellt. Meist als **MARKDOWN**- oder **TXT**-Datei gespeichert, können Autoren die Logik ihres Datensatzes sowie wichtige Randdaten hier verewigen. 
+
+                {{3}}
+>**README-Dateien** sind kleine Textdateien, in denen besondere Informationen und Bedienhinweise an Datensätzen angehängt werden. Sie sind separate Dateien und werden in der Regel in einem Oberordner des Relevanten Verzeichnis gespeichert.
 
 <!-- Ende Abschnitt -->
 
 
 
 
-## Zusammenfassung
+### Zusammenfassung
 
-(Infotext)
+Zusammenfassend lassen sich die vorangegangen Kapitel in dieser Tabelle ausdrücken:
 
+| Eignung  | Machinenlesbarkeit| Menschenlesbarkeit | Langzeitstabilität | Metadaten |
+| sehr gut | mit weit ver­breiteter offener Software | ja und ohne Spezial­software | genormter Standard | vollständig enthalten |
+| gut | mit gut ver­breiteter und doku­mentierter Software | nach Standard­verfahren komprimiert, aber eigentlich ja | schon lang oder groß­flächig etabliert | technische Angaben sind enthalten |
+| mittelmäßig | proprietäres Standard­format | mit offener Soft­ware (zuver­läs­sig?) in höhere Klasse konvertierbar | relativ neues Format | einige wichtige (z. B. Einheiten) sind enthalten |
+| schlecht | selbst­entwickelte Lese-Software | nein | gerade erst erfunden | keine Angaben |
+
+<sup>Übernommen von [Forschungsdaten.info](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/formate-erhalten/)</sup>
+
+                {{1}}
+Natürlich ist bei der Langzeitspeicherung auch der Speicherplatz von Wichtigkeit. Wenn also ein nachhaltigeres Format dazu führt, dass wichtige Daten weggeworfen werden müssten, sollte ein Kompromiss gefunden werden, der so vielen Gütekriterien wie möglich genügt und trotzdem noch genug Platz lässt. 
+
+                {{2}}
+Wer auf der Suche nach mehr Details über Dateiformate ist, wird im nächsten Teil glücklich werden...
 
 <!-- Ende Abschnitt -->
 
 
-## Zusatzmaterial:
+
+
+
+## Zusatzmaterial
 
                 {{0-3}}
 *************************************
-Mit diesen Grundlagen sei der offizielle Teil dieses Teilbausteins abgeschlossen. Im Zusatzmaterial wollen wir nun ein wenig mehr ins Detail gehen. Dabei könnte es passieren, dass das wir stellenweise etwas...
+Mit diesen Grundlagen sei der offizielle Teil dieses Teilbausteins abgeschlossen. Im Zusatzmaterial wollen wir nun ein wenig mehr ins Detail gehen. Dabei könnte es passieren, dass  wir stellenweise etwas...
 
                 {{1}}
 *************************************
 <div style="float:right; width:40%;">
   <img src="bilder/crazy.jpg" alt="crazy">
   </div>
-...<span style="color:red">*komplex*</span> werden. Deshalb versteht er sich als eine Art *Lexikon*, in dem Sie stöbern können.
+<span style="color:orange">*...komplex*</span> werden. Deshalb verstehen wir diese Teil als eine Art *Lexikon*, in dem Sie stöbern können.
 
 *************************************
 
 
                 {{2}}
-Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu auszuwählen. 
+Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu auszuwählen. Geisteswissenschaftler dürften sich verstärkt für Textverarbeitung und -präsentation interessieren. Wer mit komplexeren Daten Arbeiten will, sollte sich mit dem Abschnitt über Datenverarbeitung auseinandersetzen. Psychologen oder Pädagogen werden sich auf den Abschnitt über Videos für ihre nächste Interviewstudie freuen. Und Zoologen auf der Jagd seltenen Vogelrufe, können sicher sein, das richtige Audioformat zu wählen. 
 Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihren Interessen. 
 
 *************************************
@@ -271,9 +330,48 @@ Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihr
                 {{3}}
 *************************************
 <center>
-  <h1 style="color:red">Fangen wir an!</h1>
+  <h3 style="color:red">Fangen wir an!</h3>
   <img src="bilder/crazyExplain.jpeg" alt="Explain it!" class="center">
+
+<h3>
+
+[Dateiformate für Text](Dateiformate-für-Text)
+
+</h3>
+
+<h4>
+
+[TXT - Mutter aller Textverarbeitung](TXT---Mutter-aller-Textverarbeitung)
+
+[RTF, MD, DOCX, ODT, PAGES — Informationen für Menschen aufbereiten](RTF,-MD,-DOCX,-ODT,-PAGES-—-Informationen-für-Menschen-aufbereiten)
+
+[CSV, XML, JSON, HTML — Informationen für Computer aufbereiten](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten)
+
+[PDFs — Text und Bild überall!](PDFs-—-Text-und-Bild-überall!)
+
+</h4>
+
+<h3></h3>
+
+<h3>
+
+[Ton, Bild, Video](Ton,-Bild,-Video)
+
+</h3>
+
+<h4>
+
+[WAV, MP3 — Ton und Tonqualität](WAV,-MP3-—-Ton-und-Tonqualität)
+
+[JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität)
+
+[MP4, MOV, AVI, WMV — Bild und Ton vereint](MP4,-MOV,-AVI,-WMV-—-Bild-und-Ton-vereint)
+
+</h4>
+
 </center>
+
+
 
 
 *************************************
@@ -935,11 +1033,11 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 
 
-### RAW, JPEG, PNG — Bild und Bildqualität
+### JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität
 
                 {{0-1}}
 *******************************************
-Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf Rastern, die anderen auf Vectoren. Rasterbasierte Bildformate nutzen ein zweidimensionales Raster auf dem sie Pixel, farbige Quadrate, verorten. Einschlägige Formate sind **JPEG**, **PNG**, **RAW**, **TIFF**. Sie zeichnen sich durch unterschiedliche Datendichte ab. 
+Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf Rastern, die anderen auf Vectoren. Rasterbasierte Bildformate nutzen ein zweidimensionales Raster auf dem sie Pixel, farbige Quadrate, verorten. Einschlägige Formate sind **JPEG**, **PNG**, **TIFF**. Sie zeichnen sich durch unterschiedliche Datendichte ab. 
 
 Vectorbasierte Formate nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden. Was auf den ersten Blick als umständlich erscheint ermöglicht kleinere Dateigrößen und bessere Skalierbarkeit. Während man beim Vergrößern von Rasterbilddateien irgendwann auf der Pixelebene endet kann in Vektorgraphiken endlos hineingezoomt werden. Beispiele für solche Formate wären SVG, <!-- HIER WEITER! -->
 *******************************************
@@ -957,7 +1055,7 @@ Vektorgrafiken werden nun besonders in den Gebieten verwendet, in denen sie in u
 
 
 
-### MP4, MOV — Bild und Ton vereint
+### MP4, MOV, AVI, WMV — Bild und Ton vereint
 
 (Infotext)
 
