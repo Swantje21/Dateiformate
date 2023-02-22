@@ -1035,24 +1035,100 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ### JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität
 
-                {{0-1}}
+*Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf <span style='color:orange'><b>Rastern</b></span>, die anderen auf <span style='color:orange'><b>Vectoren</b></span>. *
+
+
+                {{0-4}}
 *******************************************
-Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf Rastern, die anderen auf Vectoren. Rasterbasierte Bildformate nutzen ein zweidimensionales Raster auf dem sie Pixel, farbige Quadrate, verorten. Einschlägige Formate sind **JPEG**, **PNG**, **TIFF**. Sie zeichnen sich durch unterschiedliche Datendichte ab. 
+<span style='color:orange'><b>Rasterbasierte Bildformate</b></span> nutzen ein zweidimensionales Raster auf dem sie Pixel, farbige Quadrate, verorten. Einschlägige Formate sind **JPEG**, **PNG**, **TIFF**. Sie zeichnen sich durch unterschiedliche Datendichte ab. 
 
-Vectorbasierte Formate nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden. Was auf den ersten Blick als umständlich erscheint ermöglicht kleinere Dateigrößen und bessere Skalierbarkeit. Während man beim Vergrößern von Rasterbilddateien irgendwann auf der Pixelebene endet kann in Vektorgraphiken endlos hineingezoomt werden. Beispiele für solche Formate wären SVG, <!-- HIER WEITER! -->
+Hier sind ein paar Versionen der selben JPEG-Datei mit abnehmender Pixelanzahl von links nach rechts. 
+
+
+![hiQual Mona](bilder/MonaLisa_hiQual.jpg "Original: Seitenverhältnis von 600×894 Pixeln; Bildquelle: https://de.wikipedia.org/wiki/Mona_Lisa (22.02.2023)") ![midQual Mona](bilder/MonaLisa_midQual.jpg "Reduzierte Qualität: 100×149 Pixel") ![loQual Mona](bilder/MonaLisa_loQual.jpg "Extrem niedrige Qualität: 50×75 Pixel")
+
+
+
+Sie können sehen, wie die Qualität abnimmt. Je weniger Pixel in einem Bild verarbeitet werden, desto weniger detailreich erscheinen sie, bzw. desto geringer ist die Qualität. 
+
+>Es bedarf einer bestimmten Dichte an Bildpunkten (Pixel), damit ein Bild für das menschliche Auge als klar erscheint. Jenseits dieser Dichte sind die Qualitätszugewinne marginal. Geht man jedoch darunter wird es schnell schwer "scharf" zu sehen. 
+
+
+                {{1}}
+*******************************************
+Einen Ähnlichen Effekt erzeugt auch das Hineinzoomen in Raster-Dateien:
+
+
+![hiQual Mona](bilder/MonaLisa_hiQual2.jpg "Original") ![Zoom1 Mona](bilder/MonaLisa_zoom1.jpg "Vergrößerung: 6-fach") ![Zoom2 Mona](bilder/MonaLisa_zoom2.jpg "Vergrößerung: 20-fach")
+
+
+
+>Wir sehen hier einen der Schwachpunkte von Rastergraphiken, nähmlich dass man ohne Qualitätsverlust kaum heranzoomen kann.
+
 *******************************************
 
 
-                {{1-2}}
+                {{2}}
 *******************************************
-<h4>Anwendungsbereiche: </h4>
-Fotografien werden generell als Rasterbilddateien gespeichert, weil dies der Funktion der Kamerasensoren entspricht.[^1](Diese winzigen Sensoren sind ebenfalls in einem Rastermuster angeordnet und messen beim Belichten die Farbe des Lichts, das auf sie trifft. Diese wird dann in einen Pixel umgesetzt.) Wie erwähnt kann es besonders beim Verwenden in starker Vergrößerung dazu kommen, dass das Bild nicht mehr ansprechend aussieht.
-
-Vektorgrafiken werden nun besonders in den Gebieten verwendet, in denen sie in unterschiedlichen Größen bei gleichhbleibender Qualität zur Verfügung stehen müssen. Logos sind ein häufiger Anwendungsbereich. Ihre kleinere Größe bietet sich auch an, um sie in Webapplikationen zu verwenden, weil hier alles einzeln vom Server zum Klienten transferiert werden soll. 
+<figure style="float:right; width:40%;">
+  <img src="bilder/PixelLisa.png" alt="Pixel-Lisa">
+  <tooltip><small>Anmerkung: <i>Es handelt sich um einen nachträglichen Screenshot.</i></small></tooltip>
+</figure>
+Hier ist noch einmal das letzte Bild ohne LiaScripts Farbkorrektur:
 
 *******************************************
 
 
+                {{3}}
+*******************************************
+Jedes der Quadrate ist ein Pixel. Im Header der Datei wird das Seitenverhältnis (50×75 Pixel) angegeben, also wie viele Quadrate in einer Reihe sind und wie viel Reihen es gibt. 
+
+Zusätzlich ist noch angegeben, wie viele Bits in Reihe zu welcher Farbe zu interpretieren sind. Erinnern Sie sich, wie aus Einsen und Nullen oben Zahlen und Buchstaben wurden. Dieses Prinzip lässt sich natürlich auch auf Farben ummünzen. 
+
+Das lesende Programm nutzt diese beiden Informationen, um dann die binären Daten in entsprechende Chunks zu schneiden und darus die Farben für die einzelnen Quatrate, also Pixel, zu lesen. 
+
+*******************************************
+
+
+*******************************************
+
+
+
+                {{4-5}}
+*******************************************
+<span style='color:orange'><b>Vectorbasierte Formate</b></span> nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden, denken Sie wieder an die Farbkodirung für die einzelnen Pixel bei Raster-Graphiken. 
+
+<figure style="float:right; width:40%;">
+  <img src="bilder/snowpiercer.pdf" alt="Snowpiercer">
+  <tooltip><small>Bildquelle: <i>Lob & Rouchette: Snowpiercer 1: The Escape. TV Edition, London 2020, S. 54.</i></small></tooltip>
+</figure>
+Ein schönes Beispiel sind Comics. Comics werden erst vorgezeichnet und dann innerhalb der Linien "ausgemalt". So ähnlich können Sie sich auch den Darstellungsrozess bei Vektorgraphiken vorstellen. Mit dem einzigen Unterschied, dass die Kanten nicht angezeigt werden. 
+
+Was auf den ersten Blick als umständlich erscheint, ermöglicht kleinere Dateigrößen und bessere Skalierbarkeit. Während man beim Vergrößern von Rasterbilddateien irgendwann auf der Pixelebene endet, kann in Vektorgraphiken "endlos" hineingezoomt werden. Nehmen wir zum Beispiel dieses missglückte Experiment für die Wortwolke am Anfang dieses Kurses:
+
+
+![wordcloud SVG](bilder/word-cloud.svg "Original") ![Zoom 1](bilder/word-cloud_zoom1.png "Vergrößert") ![Zoom 2](bilder/word-cloud_zoom2.png "Stark vergößert")
+
+
+Bei den folgenden zwei Bildern handelt es sich um Screen-Shots mit eskalierender Zoomstärke. Klicken Sie auch gerne auf das Original und vergrößern Sie nach belieben.
+
+
+Beispiele für solche Formate wären [**Scalable Vector Graphics**](https://www.w3.org/Graphics/SVG/) (**SVG**) und [**PostScript**](https://www.compart.com/de/postscript) (**PS**). PostScript war der Vorläufer der PDF und findet seit deren Erscheinen nur noch Verwendung als Nischen-Format für spezielle Druckformate. SVG hingegen darf als die vektorbasierte Variante des JPEG verstanden werden. Es findet seine Nutze vor allem in der Design-Welt. 
+
+*******************************************
+
+
+                {{5-6}}
+*******************************************
+<h4 style='color:orange'>Anwendungsbereiche: </h4>
+
+Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der Funktion der Kamerasensoren entspricht.[^1](Diese winzigen Sensoren sind ebenfalls in einem Rastermuster angeordnet und messen beim Belichten die Farbe des Lichts, das auf sie trifft. Diese wird dann in einen Pixel umgesetzt.) Wie erwähnt kann es besonders beim Verwenden in starker Vergrößerung dazu kommen, dass das Bild nicht mehr ansprechend aussieht.
+
+**Vektorgrafiken** werden nun besonders in den Gebieten verwendet, in denen sie in unterschiedlichen Größen bei gleichhbleibender Qualität zur Verfügung stehen müssen. Logos sind ein häufiger Anwendungsbereich. Ihre kleinere Größe bietet sich auch an, um sie in Webapplikationen zu verwenden, weil hier alles einzeln vom Server zum Klienten transferiert werden soll. 
+
+*******************************************
+
+<!-- Ende Abschnitt -->
 
 
 ### MP4, MOV, AVI, WMV — Bild und Ton vereint
@@ -1063,11 +1139,7 @@ Vektorgrafiken werden nun besonders in den Gebieten verwendet, in denen sie in u
 
 <!-- Ende Abschnitt -->
 
-## Karten
-
-(Infotext)
-
-### unklar...
+## Bibliographie
 
 (Infotext)
 
