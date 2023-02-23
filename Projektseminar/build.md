@@ -1033,9 +1033,70 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 (Infotext)
 
+
+
+
+
+
+<!-- Ende Abschnitt -->
+
+
+
+
+
+
+
 ### WAV, MP3 — Ton und Tonqualität
 
-(Infotext)
+Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen Luftdruckunterschiede erst durch ein Mikrofon in Spannungen umgewandelt und anschließend diese Spannungen wiederum durch Bits und Bytes repräsentiert werden. 
+
+<figure style="float:right; width:40%;">
+  <img src="bilder/Signal_Sampling.svg" alt="Sampling Rate">
+  <div> Hier ist der Prozess des Samplings einmal graphisch dargestellt: Das kontinuierliche Signal S(t) wird durch eine grüne Linie dargestellt, während die einzelne Samples, der einzelne Messwert, S<sub>i</sub> durch eine blaue vertikale Linien angezeigt werden. Der Abstand, also die Zeit, zwischen den blauen Linien ist die Sample-Rate.</div>
+  <tooltip><small>Bildquelle: <i>Lob & Rochette: Snowpiercer 1: The Escape. TV Edition, London 2020, S. 54.</i></small></tooltip>
+</figure>
+Die Spannungswellen werden dabei in Segmente unterteilt und in diesen die einzelnen Spannungswerte als ein Wert gemessen - oder  "abgetastet" - und als Zahl abgespeichert. Wie oft dabei pro Sekunde gemessen wird bestimmt entscheided die Qualität. Die Häufigkeit dieser Messungen nennt man "Abtastrate<!-- style='color: orange; font-weight: bold' -->" oder häufiger aus dem Englischen: "**sampling rate**<!-- style='color: orange; font-weight: bold' -->". Je höher diese Rate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!). 
+
+Eine weitere Messeinheit ist entscheidend für die Qualität der Audio-Datei: die sogenannte Bittiefe<!-- style='color: orange; font-weight: bold' -->. Wie eingangs besprochen müssen alle zu speichernden Umstände als Bits auf Festplatten repräsentiert werden. Deshalb hier noch einmal das Gimmic aus dem ersten Kapitel dieses mal auf vier Bits begrenzt:
+<script input="number" value="14" min="0" max="15">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script>
+
+<!-- hier weiter machen! -->
+
+
+
+
+
+AIFF<!-- style='color: orange; font-weight: bold' --> und WAV<!-- style='color: orange; font-weight: bold' --> (sprich: engl. wave) sind zwei der gängigsten Dateiformate für Audioaufnahmen. Beide Formate speichern digitale Audioinformationen, jedoch gibt es einige Unterschiede in Bezug auf ihre Eigenschaften und Verwendungszwecke. Sie stehen zur MP3 wie die TIFF oder RAW-Datei zum JPEG - will heißen sie sind eine Art Ton wiederzugeben, die nicht verlustbehaftet ist, dafür aber auch größer und manchmal unhandlich. In diesem Kapitel werden wir uns genauer mit diesen beiden Formaten auseinandersetzen und ihre Unterschiede sowie Vor- und Nachteile aufzeigen.
+
+AIFF<!-- style='color: orange; font-weight: bold' --> steht für **Audio Interchange File Format**<!-- style='color: orange; font-weight: bold' --> und wurde von Apple entwickelt. Es ist ein unkomprimiertes Format, was bedeutet, dass die Audiodaten in voller Qualität gespeichert werden. AIFF-Dateien haben eine hohe Klangqualität und eignen sich gut für professionelle Audioaufnahmen. Allerdings sind sie auch sehr groß, was bedeutet, dass sie viel Speicherplatz benötigen. Im Gegensatz dazu steht WAV<!-- style='color: orange; font-weight: bold' --> (**Waveform Audio File Format**<!-- style='color: orange; font-weight: bold' -->), das von Microsoft entwickelt wurde. Wie AIFF ist es auch ein unkomprimiertes Format und bietet eine hohe Klangqualität. Der Hauptunterschied zwischen AIFF und WAV ist jedoch, dass WAV-Dateien kleiner sind und somit weniger Speicherplatz benötigen. WAV-Dateien eignen sich gut für die Aufnahme von Musik oder Audio auf einem Computer oder einem anderen digitalen Gerät. Durch diesen Unterschied hat sich die WAV-Datei gegen die AIFF durchsetzten können.
+
+
+
+
+
+
+
+
+<!-- Ende Abschnitt -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1147,7 +1208,7 @@ Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der
 <span style='color:orange'><b>JPEG</b></span> ist das am häufigsten verwendete Dateiformat für digitale Bilder. Es ist ein verlustbehaftetes Kompressionsformat, das eine relativ geringe Dateigröße ermöglicht, indem es einige Informationen aus dem Bild entfernt. JPEG-Dateien sind ideal für den Austausch von Bildern im Web, da sie schnell geladen werden können. Allerdings kann das Komprimieren des Bildes zu Qualitätsverlusten führen.
 
                 {{1}}
-<span style='color:orange'><b>JPEG2000</b></span> ist ein verlustbehaftetes Kompressionsformat, das eine höhere Qualität als JPEG bietet. Es verwendet eine Wellelet-Komprimierung, die ein besseres Verhältnis von Dateigröße zu Bildqualität ermöglicht. JPEG2000-Dateien sind jedoch möglicherweise nicht so weit verbreitet wie JPEG und werden nicht von allen Bildbearbeitungsprogrammen unterstützt.
+<span style='color:orange'><b>JPEG2000</b></span> ist ein verlustbehaftetes Kompressionsformat, das eine höhere Qualität als JPEG bietet. Es verwendet eine Wavelet-Komprimierung, die ein besseres Verhältnis von Dateigröße zu Bildqualität ermöglicht. JPEG2000-Dateien sind jedoch möglicherweise nicht so weit verbreitet wie JPEG und werden nicht von allen Bildbearbeitungsprogrammen unterstützt.
 
                 {{2}}
 <figure style='float:right; width 30%;'>
@@ -1175,10 +1236,13 @@ Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von 
 
 #### Beispiele Vektorgraphiken 
 
+Beipiele für Vektrographik-Formate wären: SVG<!-- style='color: orange; font-weight: bold' --> (Scalable Vector Graphics), PS<!-- style='color: orange; font-weight: bold' --> (PostScript), EPS<!-- style='color: orange; font-weight: bold' --> (Encapsulated PostScript) und AI<!-- style='color: orange; font-weight: bold' --> (Adobe Illustrator) Diese Formate sind ideal für Logos, Symbole, Schaubilder, Infografiken und andere Grafiken, bei denen eine klare und präzise Darstellung erforderlich ist.[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 23.02.2023 mit dem Prompt "Schreibe ein kurzes lehrreiches Kapitel über die Dateiformate SVG, PS, EPS, AI und wann sie zu verwenden sind. Gehe anschließend in einem Absatz ein die Brauchbarkeit dieser Formate für eine Langzeitspeicherung in möglichst hoher Qualität ein." erstellt und leicht modifiziert.)
 
+                  {{1}}
+SVG<!-- style='color: orange; font-weight: bold' --> ist ein offenes Standardformat, das von W3C entwickelt wurde und in modernen Webbrowsern unterstützt wird. Es eignet sich ideal für die Darstellung von Grafiken auf Websites und in mobilen Anwendungen. PS<!-- style='color: orange; font-weight: bold' --> und EPS<!-- style='color: orange; font-weight: bold' --> wurden ursprünglich für den Druck entwickelt und werden heute immer noch in der Druckindustrie verwendet. Durch das Aufkommen der PDF wurden diese Formate in diese Nische gedrängt, nachdem sie lange der Standard gewesen waren. AI<!-- style='color: orange; font-weight: bold' --> ist das native Format von Adobe Illustrator, einer professionellen Grafikdesign-Software, und eignet sich am besten für komplexe Illustrationen und Grafiken.
 
-
-
+                  {{2}}
+Wenn es um die Langzeitspeicherung geht, sollten Vektorgrafiken im Allgemeinen besser geeignet sein als Rastergrafiken. Vektorgrafiken können unendlich skaliert werden, ohne dass sie an Qualität verlieren. Dies bedeutet, dass sie für die Archivierung von Grafiken, die möglicherweise in der Zukunft wiederverwendet werden, ideal sind. Wenn jedoch eine Rastergrafik in hoher Auflösung benötigt wird, sollten sie als TIFF oder PNG-Dateien gespeichert werden. Es ist jedoch wichtig, sicherzustellen, dass eine ausreichende Auflösung gewählt wird, um sicherzustellen, dass die Qualität erhalten bleibt. Es ist auch ratsam, Backups von den Originaldateien zu erstellen, um sicherzustellen, dass sie bei Bedarf bearbeitet werden können.
 
 
 
@@ -1203,7 +1267,14 @@ Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von 
 
 
 
+
+
+
+
+
+
 ## Bibliographie
+
 
 **Adobe.com:**<!-- style='color: orange; font-weight: bold' -->
 
@@ -1216,6 +1287,17 @@ Raster vs Vector. https://www.adobe.com/creativecloud/file-types/image/compariso
 </i>
 
 
+
+**Compart.com:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+PostScript.PostScript (PS) – Vorläufer des PDF und immer noch beliebt in der Steuerung kleiner bis industrieller Drucksysteme. https://www.compart.com/de/postscript (23.02.2023)
+
+</i>
+
+
+
 **Forschungsdaten.info:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1225,6 +1307,7 @@ Formate erhalten. Inhalte langfristig sichern. https://forschungsdaten.info/them
 Dateiformat(Dateiart, Dateityp). https://forschungsdaten.info/praxis-kompakt/glossar/#c269829 (23.02.2023)
 
 </i>
+
 
 
 **Unicode.org:**<!-- style='color: orange; font-weight: bold' -->
@@ -1240,6 +1323,7 @@ Unicode 15.0 Character Code Charts. https://www.unicode.org/charts/ (23.02.2023)
 </i>
 
 
+
 **ETH-Bibliothek Dokumentation:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1249,19 +1333,31 @@ File formats for archiving. https://documentation.library.ethz.ch/display/DD/Fil
 </i>
 
 
+
 **Internationale Organisation für Normierung (ISO):**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
 ISO 9660. ISO images for computer files. https://www.iso.org/iso-9660-images-for-computer-files.html (23.02.2023)
 
-Popular standards and other ISO deliverables. Our greatest hits: teh most popular ISO Standards, in cluding our management system standards. https://www.iso.org/popular-standards.html (23.02.2023)
+Popular standards and other ISO deliverables. Our greatest hits: the most popular ISO Standards, in cluding our management system standards. https://www.iso.org/popular-standards.html (23.02.2023)
 
 
 
 </i>
 
 
+**World Wide Web Consortium (W3C):**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+About W3C. https://www.w3.org/Consortium/ (23.02.2023)
+
+Standards. https://www.w3.org/standards/ (23.02.2023)
+
+SCALABLE VECTOR GRAPHICS (SVG). https://www.w3.org/Graphics/SVG/ (23.02.2023)
+
+</i>
 
 <!-- Ende Abschnitt -->
 
