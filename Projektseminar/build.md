@@ -205,6 +205,8 @@ Maschinenlesbarkeit bedeutet vor allem die Möglichkeit, Daten mit leicht verfü
 
 Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. "*Weit verbreitet*" kann auch bedeuten, dass mehrere Programme das Format nutzen, es sich also um eine Art *Industriestandard* handelt. 
 
+Es muss auch zwischen offenen und proprietären Formaten untersschiden werden. Proprietäre Formate lassen sich nur durch eine Software der Hersteller-/Herausgeberfirma nutzen, welche oft bezahlt werden muss oder entscheidenden Änderungen unterliegen kann. Damit Machinenlesbarkeit über längere Zeit gewährleistet werden kann, sollten hier immer offene Formate verwendet werden.
+
 <!-- Ende Abschnitt -->
 
 
@@ -216,7 +218,7 @@ Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das
 
                 {{1-2}}
 ****************************************
-Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Inovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten. 
+Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Innovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten. 
 
 Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
 Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein. 
@@ -226,7 +228,7 @@ Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der R
 
                 {{2-6}}
 ****************************************
-Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen. Berühmte Bespiele sind: 
+Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen und in der Regel offen zur Verfügung stellen. Berühmte Bespiele sind: 
 
                 {{3}}
 - die [**Internationale Organisation für Normierung**](https://www.iso.org/home.html) auch **ISO** (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
@@ -1100,7 +1102,7 @@ Das lesende Programm nutzt diese beiden Informationen, um dann die binären Date
 
 <figure style="float:right; width:40%;">
   <img src="bilder/snowpiercer.pdf" alt="Snowpiercer">
-  <tooltip><small>Bildquelle: <i>Lob & Rouchette: Snowpiercer 1: The Escape. TV Edition, London 2020, S. 54.</i></small></tooltip>
+  <tooltip><small>Bildquelle: <i>Lob & Rochette: Snowpiercer 1: The Escape. TV Edition, London 2020, S. 54.</i></small></tooltip>
 </figure>
 Ein schönes Beispiel sind Comics. Comics werden erst vorgezeichnet und dann innerhalb der Linien "ausgemalt". So ähnlich können Sie sich auch den Darstellungsrozess bei Vektorgraphiken vorstellen. Mit dem einzigen Unterschied, dass die Kanten nicht angezeigt werden. 
 
@@ -1128,6 +1130,31 @@ Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der
 
 *******************************************
 
+<span style='color:orange'><b></b></span>
+
+#### Beispiele: Rastergraphiken
+
+*Raster-Graphik-Dateiformate gibt es viele, aber einige der am häufigsten verwendeten sind JPEG, JPEG2000, PNG, RAW und TIFF. Jedes dieser Formate hat seine eigenen Vor- und Nachteile und ist für bestimmte Zwecke besser geeignet als andere.*
+
+<span style='color:orange'><b>JPEG</b></span> ist das am häufigsten verwendete Dateiformat für digitale Bilder. Es ist ein verlustbehaftetes Kompressionsformat, das eine relativ geringe Dateigröße ermöglicht, indem es einige Informationen aus dem Bild entfernt. JPEG-Dateien sind ideal für den Austausch von Bildern im Web, da sie schnell geladen werden können. Allerdings kann das Komprimieren des Bildes zu Qualitätsverlusten führen.
+
+<span style='color:orange'><b>JPEG2000</b></span> ist ein verlustbehaftetes Kompressionsformat, das eine höhere Qualität als JPEG bietet. Es verwendet eine Wellelet-Komprimierung, die ein besseres Verhältnis von Dateigröße zu Bildqualität ermöglicht. JPEG2000-Dateien sind jedoch möglicherweise nicht so weit verbreitet wie JPEG und werden nicht von allen Bildbearbeitungsprogrammen unterstützt.
+
+<span style='color:orange'><b>PNG (Portable Network Graphics)</b></span> ist ein verlustfreies Kompressionsformat, das eine höhere Qualität als JPEG bietet. PNG-Dateien unterstützen Transparenz und sind daher ideal für die Erstellung von Logos oder Grafiken mit einem transparenten Hintergrund. PNG-Dateien haben jedoch normalerweise eine größere Dateigröße als JPEG-Dateien.
+
+<span style='color:orange'><b>RAW</b></span> ist ein Dateiformat, das von vielen Digitalkameras verwendet wird. Es ist ein unkomprimiertes Format, das alle Rohdaten des Bildes enthält. RAW-Dateien bieten eine höhere Qualität als JPEG-Dateien, da sie mehr Informationen enthalten. Sie erfordern jedoch auch spezielle Software, um sie zu bearbeiten, und haben normalerweise eine größere Dateigröße.
+
+<span style='color:orange'><b>TIFF (Tagged Image File Format)</b></span> ist ein verlustfreies Kompressionsformat, das eine höhere Qualität als JPEG bietet. TIFF-Dateien eignen sich besonders gut für die Langzeitspeicherung von Bildern, da sie keine Komprimierung oder Qualitätsverluste aufweisen. Sie haben jedoch normalerweise eine größere Dateigröße als JPEG-Dateien.
+
+Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von Bildern geht, sind TIFF-Dateien normalerweise die beste Wahl, da sie keine Komprimierung oder Qualitätsverluste aufweisen und eine hohe Qualität bieten. JPEG-Dateien sollten vermieden werden, da sie aufgrund der Komprimierung und des Qualitätsverlusts nicht für die Langzeitspeicherung geeignet sind. JPEG2000- und PNG-Dateien können ebenfalls verwendet werden, sind jedoch möglicherweise nicht so weit verbreitet wie TIFF. RAW-Dateien können ebenfalls verwendet werden, erfordern jedoch spezielle Software, um sie zu bearbeiten und haben normalerweise eine größere Dateigröße.
+
+
+
+
+
+
+
+
 <!-- Ende Abschnitt -->
 
 
@@ -1139,9 +1166,70 @@ Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der
 
 <!-- Ende Abschnitt -->
 
+
+
+
+
+
+
+
 ## Bibliographie
 
-(Infotext)
+**Adobe.com:**
+
+<i>
+
+Raster files. https://www.adobe.com/creativecloud/file-types/image/raster.html (23.02.2023)
+
+Raster vs Vector. https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html (23.02.2023)
+
+</i>
+
+
+**Forschungsdaten.info:**
+
+<i>
+
+Formate erhalten. Inhalte langfristig sichern. https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/formate-erhalten/ (23.02.2023)
+
+Dateiformat(Dateiart, Dateityp). https://forschungsdaten.info/praxis-kompakt/glossar/#c269829 (23.02.2023)
+
+</i>
+
+
+**Unicode.org:**
+
+<i>
+
+About the Unicode Consortium. https://home.unicode.org/about-unicode/ (23.02.2023)
+
+Unicode® 15.0.0. https://www.unicode.org/versions/Unicode15.0.0/ (23.02.2023)
+
+Unicode 15.0 Character Code Charts. https://www.unicode.org/charts/ (23.02.2023)
+
+</i>
+
+
+**ETH-Bibliothek Dokumentation:**
+
+<i>
+
+File formats for archiving. https://documentation.library.ethz.ch/display/DD/File+formats+for+archiving (23.02.2023)
+
+</i>
+
+
+**Internationale Organisation für Normierung (ISO):**
+
+<i>
+
+ISO 9660. ISO images for computer files. https://www.iso.org/iso-9660-images-for-computer-files.html (23.02.2023)
+
+Popular standards and other ISO deliverables. Our greatest hits: teh most popular ISO Standards, in cluding our management system standards. https://www.iso.org/popular-standards.html (23.02.2023)
+
+
+
+</i>
 
 
 
