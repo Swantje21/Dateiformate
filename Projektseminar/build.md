@@ -70,17 +70,17 @@ logo: zerosOnesDalle.png
 ## Allgemeine Informationen
 
 {{0}} 
-Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein** und **Aus**, welche als **1** und **0** bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
+Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**<!-- style='color: orange; font-weight: bold' -->. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein**<!-- style='color: orange; font-weight: bold' --> und **Aus**<!-- style='color: orange; font-weight: bold' -->, welche als **1** und **0** bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
 
-{{1}} Diese kleinsten Einheiten sind die berühmten **Bits**.
+{{1}} Diese kleinsten Einheiten sind die berühmten **Bits**<!-- style='color: orange; font-weight: bold' -->.
 
 {{2}}
 **************
 Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? 
 Die Lösung liegt auf der Hand: es werden mehrere Bits mit einander kombiniert.
-Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte** getauft.
+Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte**<!-- style='color: orange; font-weight: bold' --> getauft.
 
-{{3}} Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System** - zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
+{{3}} Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System**<!-- style='color: orange; font-weight: bold' --> - zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
 <script input="number" value="22" min="0" max="1000000">
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
@@ -96,7 +96,7 @@ i + " = " + j
 {{0}}
 ******
 In ihrer Organisationsform unterscheiden sich Dateien jetzt in zwei Arten.
-Die einen halten sich strikt an eine Aufteilung in 8er-Blöcke, also Bytes, in der Regel um Text zu codieren[^2](In Wirklichkeit gibt es viele Textformate, die auch Zeichen wie 'A' mit dem Binärcode '00000000' abenfalls als '0' darstellen, um Speicherplatz zu schonen.)
+Die einen halten sich strikt an eine Aufteilung in 8er-Blöcke, also **Bytes**<!-- style='color: orange; font-weight: bold' -->, in der Regel um Text zu codieren[^2](In Wirklichkeit gibt es viele Textformate, die auch Zeichen wie 'A' mit dem Binärcode '00000000' abenfalls als '0' darstellen, um Speicherplatz zu schonen.)
 Hier ist ein beispiel, wie aus Binärem Code Buchstaben werden: 
 <script input="number" value="65" min="33" max="126">
 let i = @input
@@ -105,14 +105,14 @@ let k = String.fromCharCode(i)
 
 i + " = " + j + " = " + k
 </script>
-Diese Dateiformate werden gleich im Unterkapitel über textbasierte Formate genauer behandelt.
+Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiformate-für-Text) im Zusatzmaterial genauer behandelt.
 
 ******
 
 {{1}}******
-Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere *uneinheitliche* Einheiten. Hier sprechen wir von **binären** Dateiformaten.
+Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere *uneinheitliche* Einheiten. Hier sprechen wir von **binären**<!-- style='color: orange; font-weight: bold' --> Dateiformaten.
 
-{{2}}Doch diese uneinheitlichen Dateien können nur noch von speziellen Programmen gelesen, bzw. verstanden werden. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen** ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen** getrennt. 
+{{2}}Doch diese uneinheitlichen Dateien können nur noch von speziellen Programmen gelesen, bzw. verstanden werden. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen** getrennt. 
 
 Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mittel sind, die Computern zur verfügung stehen, um Dateiformate zu erkennen. Dazu mehr im nächsten Unterkapitel.
 
@@ -185,7 +185,7 @@ Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gege
 
 ### Menschenlesbarkeit
 
-Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
+Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar<!-- style='color: orange; font-weight: bold' --> vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
 
                 {{1}}
 >Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus. Sie existieren bereits seit langer Zeit und lassen sich immer durch einen einfachen Editor offnen. Mehr dazu [hier](TXT---Muter-aller-Textverarbeitung). 
@@ -199,7 +199,7 @@ Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zu
 
 ### Maschinenlesbarkeit
 
-Maschinenlesbarkeit bedeutet vor allem die Möglichkeit, Daten mit leicht verfügbaren Programmen - am besten [Open-Source](Link-Me!), also frei verfügbar - öffnen zu können. Es gilt:
+Maschinenlesbarkeit<!-- style='color: orange; font-weight: bold' --> bedeutet vor allem die Möglichkeit, Daten mit leicht verfügbaren Programmen - am besten [Open-Source](Link-Me!), also frei verfügbar - öffnen zu können. Es gilt:
 
 >Je weiter verbreitet die Software, desto besser!
 
@@ -231,10 +231,12 @@ Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der R
 Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen und in der Regel offen zur Verfügung stellen. Berühmte Bespiele sind: 
 
                 {{3}}
-- die [**Internationale Organisation für Normierung**](https://www.iso.org/home.html) auch **ISO** (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
+- die [**Internationale Organisation für Normierung**<!-- style='color: orange; font-weight: bold' -->](https://www.iso.org/home.html) auch **ISO**<!-- style='color: orange; font-weight: bold' --> (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
 
                 {{4}}
-- das [**Unicode Consortium**](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+- das [**Unicode Consortium**<!-- style='color: orange; font-weight: bold' -->](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+
+- das [W3C<!-- style='color: orange; font-weight: bold' -->](https://www.w3.org/Consortium/) (**World Wide Web Consortium**<!-- style='color: orange; font-weight: bold' -->) ist eine internationale Gemeinschaft bestehend aus Mitgliedsorganisationen, privaten Mitarbeitern und der Öffentlichkeit, die zusammenarbeiten, um Webstandards zu entwickeln.[^1](https://www.w3.org/Consortium/) Zu diesen Standards gehören wichtige Technologien wie HTML, CSS, SVG, XML und mehr.[^2](https://www.w3.org/standards/) 
 
                 {{5}}
 Wenn kein standardisiertes Format zur Verfügung steht, lohnt es sich ein weit verbreitetes zu nutzen. Ein großer Nutzerkreis zieht in der Regel Interessierte an, die sich aus eigenem Antrieb um den Erhalt des Formats bemühen, was der Langzezeitstabillität erheblich dient. 
@@ -266,13 +268,13 @@ Generell kann davon ausgegangen werden, dass alle Ergebnisse irgendwann eine Nac
 
 Wir hatten Metadaten eingangs beim Aufbau von Dateien erklärt. Sie sind im Header oder Kopf einer Datei enthaltene Daten, die weitere Informationen über die Datei geben. Das können Erstellungs- und Änderungsdatum sein. Kompressionen und Dateilängen sowie die Art der Datei, Magic Number und vieles mehr können unter diesen Daten enthalten sein. 
 
->**Metadaten** sind auf lange Zeit wichtig, weil sie als Ersatz dienen, wenn andere Informationsgeber versagen. 
+>**Metadaten**<!-- style='color: orange; font-weight: bold' --> sind auf lange Zeit wichtig, weil sie als Ersatz dienen, wenn andere Informationsgeber versagen. 
 
                 {{1}}
 Wenn zum Beispiel Dateiendungen fehlen, kann eine Magic Number helfen. Beim Durchstöbern, bzw. Auswählen von Daten kann es extrem wichtig sein, die Erstellungsdaten nachzuvollziehen. Bei Projekten mit vielen Mitarbeitern kann es nötig werden bestimmte Ersteller zu filtern. Die Liste lässt sich beliebig verlängern.
 
                 {{2}}
-Selbstverständlich können diese Daten auch verloren gehen. In einem solchen Fall kann es wichtig sein, Informationen über den Datensatz separat niederzuschreiben. Hierfür wird in der Regel eine sogenannte **README-Datei** erstellt. Meist als **MARKDOWN**- oder **TXT**-Datei gespeichert, können Autoren die Logik ihres Datensatzes sowie wichtige Randdaten hier verewigen. 
+Selbstverständlich können diese Daten auch verloren gehen. In einem solchen Fall kann es wichtig sein, Informationen über den Datensatz separat niederzuschreiben. Hierfür wird in der Regel eine sogenannte **README-Datei**<!-- style='color: orange; font-weight: bold' --> erstellt. Meist als **MARKDOWN**- oder **TXT**-Datei gespeichert, können Autoren die Logik ihres Datensatzes sowie wichtige Randdaten hier verewigen. 
 
                 {{3}}
 >**README-Dateien** sind kleine Textdateien, in denen besondere Informationen und Bedienhinweise an Datensätzen angehängt werden. Sie sind separate Dateien und werden in der Regel in einem Oberordner des Relevanten Verzeichnis gespeichert.
@@ -331,8 +333,10 @@ Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihr
 
                 {{3}}
 *************************************
+
+**Fangen wir an!**<!-- style="color: red; font-size: 9vw; font-family: serif;" -->
+
 <center>
-  <h3 style="color:red">Fangen wir an!</h3>
   <img src="bilder/crazyExplain.jpeg" alt="Explain it!" class="center">
 
 <h3>
@@ -384,7 +388,7 @@ Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihr
 
 ## Dateiformate für Text
 
-In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.
+In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
 
 Wir werden den Kurs in drei Teile gliedern: Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
 
@@ -392,13 +396,13 @@ Im zweiten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Me
 
 Im dritten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV, XML, JSON und HTML. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
 
-Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen textbasierten Dateiformate haben und wissen, wann es am besten ist, welches Format zu verwenden. Lass uns loslegen und tiefer in die Welt der textbasierten Dateiformate eintauchen![^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
+Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen textbasierten Dateiformate haben und wissen, wann es am besten ist, welches Format zu verwenden. Lass uns loslegen und tiefer in die Welt der textbasierten Dateiformate eintauchen!
 
 
 ### TXT – Mutter aller Textverarbeitung
 
                 {{0}}
-Plain-Text (.txt) ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.
+**Plain-Text (.txt)**<!-- style='color: orange; font-weight: bold' --> ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
 
                 {{1}}
 Es hat seine Wurzeln in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt. Es ist einfach zu lesen und zu bearbeiten, egal ob mit einem einfachen Texteditor oder einem leistungsstarken Textverarbeitungsprogramm, und es ist kompatibel mit fast allen Computern und Betriebssystemen.
@@ -410,13 +414,13 @@ Das .txt-Format ist für seine Portabilität bekannt. Da es keine Formatierungen
 Ein weiterer Vorteil des .txt-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
 
                 {{4}}
-Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
+Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.
 
                 {{5}}
 TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden, einschließlich Notepad auf Windows-Systemen und TextEdit auf MacOS-Systemen. Darüber hinaus gibt es auch eine Vielzahl von kostenlosen und Open-Source-Texteditoren, die TXT-Dateien unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com) und [Atom](https://github.blog/2022-06-08-sunsetting-atom/). Diese Programme bieten oft mehr Funktionen als die einfachen Texteditoren, wie Syntax-Hervorhebung, Zeilennummerierung und Unterstützung für mehrere Dateiformate.[^ChatGPT2](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe noch einen weiteren Absatz über Programme, mit denen man txt Dateien öffnet." erstellt und leicht modifiziert)
 
                 {{6}}
-Insgesamt ist das .txt-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
+Insgesamt ist das .txt-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.
 
 
 
@@ -430,9 +434,9 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 ***************************************         
 <h3>RTF (Rich Text Format): </h3>
 
-{{1}}RTF ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
+{{1}}RTF<!-- style='color: orange; font-weight: bold' --> ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
 
-{{2}}Das RTF (Rich Text Format) wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten, Schriftgrößen, Schriftstilen und Farben zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an Popularität verloren, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
+{{2}}Das RTF wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten, Schriftgrößen, Schriftstilen und Farben zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an Popularität verloren, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
 
 ***************************************
 
@@ -441,7 +445,7 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 ***************************************
 <h3>DOCX ("Das Word-Dokument"): </h3>
 
-{{3}}DOCX ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit Microsoft Word und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
+{{3}}DOCX<!-- style='color: orange; font-weight: bold' --> ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit Microsoft Word und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
 
 {{4}}Das DOCX Format wurde erstmals im Jahr 2007 mit Microsoft Word 2007 eingeführt und hat sich seitdem zum Industriestandard entwickelt. Es hat das ältere DOC Format, das seit 1993 verwendet wurde, abgelöst und bietet eine Vielzahl von Vorteilen, darunter eine bessere Kompatibilität und Zusammenarbeit mit anderen Anwendungen und Betriebssystemen. Darüber hinaus ermöglicht DOCX eine flexiblere Textformatierung, eine kleinere Dateigröße und die Möglichkeit, interaktive Elemente wie Tabellen, Grafiken und Formulare einzufügen. Aufgrund dieser Vorteile und seiner breiten Akzeptanz in der Geschäftswelt hat sich DOCX zum Industriestandard für Textverarbeitung entwickelt.
 
@@ -452,7 +456,7 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 ***************************************
 <h4>Alternativen: </h4>
 
-{{5-6}}Einige Alternativen zu DOCX-Formaten sind **ODT (Open Document Text)**, das vom OpenOffice-Projekt entwickelt wurde und als offenes Format für Textverarbeitungen verwendet wird, sowie **Pages**, das von Apple für die Verwendung auf Mac-Computern entwickelt wurde. Beide Formate haben eine vergleichbare Funktionalität mit DOCX und bieten viele der gleichen Funktionen, aber die Kompatibilität und die Verbreitung kann je nach Plattform und Gerät variieren. Außerdem gibt es auch cloud-basierte Optionen wie **Google Docs**, die eine Alternative für die Verwendung von Textdokumenten in einer online-basierten Umgebung bieten.
+{{5-6}}Einige Alternativen zu DOCX-Formaten sind **ODT (Open Document Text)**<!-- style='color: orange; font-weight: bold' -->, das vom OpenOffice-Projekt entwickelt wurde und als offenes Format für Textverarbeitungen verwendet wird, sowie **Pages**<!-- style='color: orange; font-weight: bold' -->, das von Apple für die Verwendung auf Mac-Computern entwickelt wurde. Beide Formate haben eine vergleichbare Funktionalität mit DOCX und bieten viele der gleichen Funktionen, aber die Kompatibilität und die Verbreitung kann je nach Plattform und Gerät variieren. Außerdem gibt es auch cloud-basierte Optionen wie **Google Docs**<!-- style='color: orange; font-weight: bold' -->, die eine Alternative für die Verwendung von Textdokumenten in einer online-basierten Umgebung bieten.
 
 ***************************************
 
@@ -462,7 +466,7 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 <h3>MD (Markdown): </h3>
 
                 {{6}}
-Markdown ist ein einfaches Textformat, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
+Markdown<!-- style='color: orange; font-weight: bold' --> ist ein einfaches Textformat, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
 
                 {{7}}
 Markdown wurde  2006 von John Gruber und Aaron Swartz eingeführt. Die Idee dahinter war, dass es einfacher sein sollte, Texte zu formatieren, als mit HTML oder anderen Markup-Sprachen. Markdown wurde schnell zu einem beliebten Format für Blogging, Dokumentation und andere Anwendungen, bei denen Texte formatiert werden müssen.
@@ -481,14 +485,14 @@ Die Syntax von Markdown ist sehr einfach und besteht aus einer Kombination aus T
 ### CSV, XML, JSON, HTML — Informationen für Computer aufbereiten
 
                 {{0-1}}
-In der Welt der digitalen Datenverarbeitung ist es von größter Bedeutung, Informationen in einer Form zu speichern, die für Computer und andere digitale Geräte leicht lesbar ist. Dies ist der Hauptgrund, warum es eine Vielzahl von Dateiformaten gibt, die speziell für die Verarbeitung von Informationen durch Maschinen ausgelegt sind. In diesem Kapitel werden wir uns mit einigen dieser Formate beschäftigen, die sich durch ihre maschinenlesbare Struktur auszeichnen, darunter **CSV**, **XML**, **JSON** und **HTML**.
+In der Welt der digitalen Datenverarbeitung ist es von größter Bedeutung, Informationen in einer Form zu speichern, die für Computer und andere digitale Geräte leicht lesbar ist. Dies ist der Hauptgrund, warum es eine Vielzahl von Dateiformaten gibt, die speziell für die Verarbeitung von Informationen durch Maschinen ausgelegt sind. In diesem Kapitel werden wir uns mit einigen dieser Formate beschäftigen, die sich durch ihre maschinenlesbare Struktur auszeichnen, darunter **CSV**<!-- style='color: orange; font-weight: bold' -->, **XML**<!-- style='color: orange; font-weight: bold' -->, **JSON**<!-- style='color: orange; font-weight: bold' --> und **HTML**<!-- style='color: orange; font-weight: bold' -->.
 
                 {{1-4}}
 ***********************
 <h3>CSV (Comma Separated Values): </h3>
 
                 {{1}}
-CSV ist ein sehr einfaches Format, das nur durch Kommas getrennte Werte enthält.[^1](ACHTUNG! Es sind auch auch Trennungen mit anderen Zeichen wie z.B. einem Semikolon möglich) Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
+CSV<!-- style='color: orange; font-weight: bold' --> ist ein sehr einfaches Format, das nur durch Kommas getrennte Werte enthält.[^1](ACHTUNG! Es sind auch auch Trennungen mit anderen Zeichen wie Semikolon<!-- style='color: orange; font-weight: bold' --> und Tabulator<!-- style='color: orange; font-weight: bold' --> möglich) Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
 
                 {{2}}
 CSV ist eines der ältesten und am weitesten verbreiteten Dateiformate für den Austausch von Daten. Es wurde in den 1960er Jahren entwickelt und hat sich bis heute als einfaches und effektives Format für den Datenaustausch etabliert. CSV ermöglicht es, Daten in einer tabellarischen Form zu speichern, bei der jede Zeile einen Datensatz und jede Spalte eine bestimmte Eigenschaft oder ein Attribut darstellt. Die Daten werden durch Kommas getrennt, wodurch sie von einfachen Texteditoren und Tabellenkalkulationsprogrammen wie Microsoft Excel oder Google Sheets gelesen und bearbeitet werden können.
@@ -511,7 +515,7 @@ Jane,31,Köln
 
                 {{4-5}}
 <h3>XML (Extensible Markup Language) und JSON (JavaScript Object Notation): </h3>
-XML und JSON sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.
+XML<!-- style='color: orange; font-weight: bold' --> und JSON<!-- style='color: orange; font-weight: bold' --> sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.
 
 
                 {{5-8}}
@@ -520,7 +524,7 @@ XML und JSON sind etwas komplexere Formate, die eine Hierarchie von Daten ermög
 <h4>XML</h4>
 
                 {{5}}
-XML (Extensible Markup Language) ist ein textbasiertes Format, das für Computer lesbar ist und das Austausch und Speicherung von Daten ermöglicht. Es nutzt eine hierarchische Struktur, um Informationen in einer Baumstruktur zu organisieren. Jedes Element im XML-Dokument hat einen Namen und kann Attribute und Inhalte haben.
+XML<!-- style='color: orange; font-weight: bold' --> (**Extensible Markup Language**) ist ein textbasiertes <!-- style='color: orange; font-weight: bold' -->Format, das für Computer lesbar ist und das Austausch und Speicherung von Daten ermöglicht. Es nutzt eine hierarchische Struktur, um Informationen in einer Baumstruktur zu organisieren. Jedes Element im XML-Dokument hat einen Namen und kann Attribute und Inhalte haben.
 
                 {{6-7}}
 Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
@@ -555,7 +559,7 @@ XML verwendet eine syntaktische Struktur, die von HTML ähnlich ist. Es werden H
 <h4>JSON</h4>
 
         
-JSON, oder JavaScript Object Notation, ist ein Datenformat, das Anfang der 2000er Jahre entwickelt wurde. Ursprünglich wurde es als einfachere Alternative zu XML entwickelt, um Daten zwischen Server und Anwendung auszutauschen. JSON nutzt eine einfache Syntax aus geschweiften Klammern und Anführungszeichen, um Datenstrukturen darzustellen. Es hat sich schnell zu einem der weitverbreitetsten Datenformate im Internet entwickelt und wird heute von vielen Anwendungen und APIs genutzt, um Daten effizient und einfach zu verarbeiten und auszutauschen. Hier ein Beispiel: 
+JSON<!-- style='color: orange; font-weight: bold' -->, oder **JavaScript Object Notation**<!-- style='color: orange; font-weight: bold' -->, ist ein Datenformat, das Anfang der 2000er Jahre entwickelt wurde. Ursprünglich wurde es als einfachere Alternative zu XML entwickelt, um Daten zwischen Server und Anwendung auszutauschen. JSON nutzt eine einfache Syntax aus geschweiften Klammern und Anführungszeichen, um Datenstrukturen darzustellen. Es hat sich schnell zu einem der weitverbreitetsten Datenformate im Internet entwickelt und wird heute von vielen Anwendungen und APIs genutzt, um Daten effizient und einfach zu verarbeiten und auszutauschen. Hier ein Beispiel: 
 
                 {{9}}
 ````JSON
@@ -591,10 +595,10 @@ JSON, oder JavaScript Object Notation, ist ein Datenformat, das Anfang der 2000e
 
 <h4>XML und JSON im Vergleich</h4>
 
-Im Gegensatz zu JSON (JavaScript Object Notation) ist XML ein umfassenderes Format und bietet eine größere Flexibilität bei der Strukturierung von Daten. Mit XML kann man komplexere Datenstrukturen aufbauen und es bietet auch die Möglichkeit, eigene Markups zu definieren. Außerdem kann XML auch semantische Informationen bereitstellen, die für Maschinen nützlich sind.
+Im Gegensatz zu JSON ist XML<!-- style='color: orange; font-weight: bold' --> ein umfassenderes Format und bietet eine größere Flexibilität bei der Strukturierung von Daten. Mit XML kann man komplexere Datenstrukturen aufbauen und es bietet auch die Möglichkeit, eigene Markups zu definieren. Außerdem kann XML auch semantische Informationen bereitstellen, die für Maschinen nützlich sind.
 
                 {{11}}
-Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfordert eine stärkere Überwachung, um Fehler zu vermeiden und es kann auch größere Datenmengen erzeugen, da es mehr Informationen speichert. JSON ist dagegen einfacher zu lesen und zu schreiben und eignet sich besser für den Austausch von Daten zwischen Anwendungen und ist deshalb hier of die bevorzugte Wahl.
+Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfordert eine stärkere Überwachung, um Fehler zu vermeiden und es kann auch größere Datenmengen erzeugen, da es mehr Informationen speichert. JSON<!-- style='color: orange; font-weight: bold' --> ist dagegen einfacher zu lesen und zu schreiben und eignet sich besser für den Austausch von Daten zwischen Anwendungen und ist deshalb hier of die bevorzugte Wahl.
 
 ***********************
 
@@ -605,7 +609,7 @@ Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfor
 <h3>HTML (Hypertext Markup Language)</h3>
 
 
-HTML ist ein Format, das hauptsächlich für Webseiten verwendet wird. Es ermöglicht es, Texte, Bilder und andere Inhalte in einer für Computer lesbaren Form darzustellen. HTML-Dokumente enthalten Informationen über die Layout- und Formatierungselemente einer Seite, was es ermöglicht, Inhalte auf eine benutzerfreundliche Art und Weise darzustellen.
+HTML<!-- style='color: orange; font-weight: bold' --> ist ein Format, das hauptsächlich für Webseiten verwendet wird. Es ermöglicht es, Texte, Bilder und andere Inhalte in einer für Computer lesbaren Form darzustellen. HTML-Dokumente enthalten Informationen über die Layout- und Formatierungselemente einer Seite, was es ermöglicht, Inhalte auf eine benutzerfreundliche Art und Weise darzustellen.
 
                 {{13}}
 HTML wurde bereits 1990 von Tim Berners-Lee, dem Vater des World Wide Web, entwickelt. Die Syntax von HTML basiert auf den sogenannten "Tags", welche innerhalb von angleichen Klammern stehen. Diese Tags geben an, wie ein bestimmter Teil des Dokuments formatiert werden soll, beispielsweise als Überschrift, Absatz, Liste, Tabellen usw. HTML ermöglicht es auch, Links und Bilder einzubetten, wodurch eine Verknüpfung von Dokumenten im World Wide Web entsteht. Mit fortschreitender Weiterentwicklung, wurde HTML immer komplexer und bietet heute umfassende Möglichkeiten für die Gestaltung von Webseiten.
@@ -1002,14 +1006,14 @@ Diese Beispiele waren recht und künstlich und vor allem durch die Darstellung l
 
 ### PDFs — Text und Bild überall!
 
-Eine der im Studium am häufigsten verwendeten Formate ist die PDF. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für *Portable Document Format* und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein offenes Format, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, auf jedem Computer oder Mobilgerät zu öffnen.
+Eine der im Studium am häufigsten verwendeten Formate ist die PDF<!-- style='color: orange; font-weight: bold' -->. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für *Portable Document Format* und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein offenes Format, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, auf jedem Computer oder Mobilgerät zu öffnen.
 
         {{1}}
-Es gibt zwei Arten von PDFs: **text-basierte** und **bild-basierte PDFs**. Text-basierte PDFs enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert und durchsucht werden. Der Text wird als plain text gespreichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
+Es gibt zwei Arten von PDFs: **text-basierte**<!-- style='color: orange; font-weight: bold' --> und **bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' -->. **Text-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert und durchsucht werden. Der Text wird als plain text gespreichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
 Diese Dateien werden meistens durch Textverarbeitungsprogramme wie Word, OpenOffice oder Pages direkt erstellt, da diese sowohl über die Daten der Schriftarten als auch den reinen Text verfügen und diese in einer PDF vereinen können. 
 
         {{2}}
-Bild-basierte PDFs hingegen sind einfache Abbildungen von Dokumenten, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
+**Bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> hingegen sind einfache Abbildungen von Dokumenten, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
 Diese Sorte PDF wird in der Regel von Bildverarbeitungssoftwares erzeugt. Modernere Scanner und KI-Bildverarbeitungsprogramme erkennen jetzt auch immer öfter Text auf Bildern und können diesen in die PDFs mit einfließen lassen. Dabei sei gedoch vorsicht geboten, weil diese Maschinen bei besonders schlechten Aufnahmen auch gerne raten. [^1](Siehe für eine besonders schockierendes Beispiel den XEROX-Bug und seine verheerenden Folgen: https://www.dkriesel.com/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)
 
         {{3}}
@@ -1130,23 +1134,47 @@ Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der
 
 *******************************************
 
-<span style='color:orange'><b></b></span>
+<span style='color:orange'><b></b></span> 
 
 #### Beispiele: Rastergraphiken
 
-*Raster-Graphik-Dateiformate gibt es viele, aber einige der am häufigsten verwendeten sind JPEG, JPEG2000, PNG, RAW und TIFF. Jedes dieser Formate hat seine eigenen Vor- und Nachteile und ist für bestimmte Zwecke besser geeignet als andere.*
+*Raster-Graphik-Dateiformate gibt es viele, aber einige der am häufigsten verwendeten sind JPEG, JPEG2000, PNG, RAW und TIFF. Jedes dieser Formate hat seine eigenen Vor- und Nachteile und ist für bestimmte Zwecke besser geeignet als andere.*[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 23.02.2023 mit dem Prompt "Schreibe ein kurzes lehrreiches Kapitel über die Dateiformate JPEG, JPEG2000 PNG, RAW, TIFF und wann sie zu verwenden sind. Gehe anschließend in einem Absatz ein die Brauchbarkeit dieser Formate für eine Langzeitspeicherung in möglichst hoher Qualität ein." erstellt und leicht modifiziert.)
 
+<figure style='float:right; width 30%;'>
+  <img src='bilder/jpegQual.png' alt='Adjust JPEG quality'>
+  <tooltip><small><r>Die Bildqualität von JPEGs und JPEG2000 kann beim Exportieren/Speichern mit den meisten Programmen eingestellt werden. Hier ist es ein Slider beim Exportieren aus der Vorschau.app für den Mac.</r></small></tooltip>
+</figure>
 <span style='color:orange'><b>JPEG</b></span> ist das am häufigsten verwendete Dateiformat für digitale Bilder. Es ist ein verlustbehaftetes Kompressionsformat, das eine relativ geringe Dateigröße ermöglicht, indem es einige Informationen aus dem Bild entfernt. JPEG-Dateien sind ideal für den Austausch von Bildern im Web, da sie schnell geladen werden können. Allerdings kann das Komprimieren des Bildes zu Qualitätsverlusten führen.
 
+                {{1}}
 <span style='color:orange'><b>JPEG2000</b></span> ist ein verlustbehaftetes Kompressionsformat, das eine höhere Qualität als JPEG bietet. Es verwendet eine Wellelet-Komprimierung, die ein besseres Verhältnis von Dateigröße zu Bildqualität ermöglicht. JPEG2000-Dateien sind jedoch möglicherweise nicht so weit verbreitet wie JPEG und werden nicht von allen Bildbearbeitungsprogrammen unterstützt.
 
+                {{2}}
+<figure style='float:right; width 30%;'>
+  <img src='bilder/dateitypExportAuswahl.png' alt='Dateityp Auswahl'>
+  <tooltip><small><r>An dieser Stelle sei auch noch demonstriert, dass das Dateiformat beim Expoert ausgewählt werden kann.</r></small></tooltip>
+</figure>
 <span style='color:orange'><b>PNG (Portable Network Graphics)</b></span> ist ein verlustfreies Kompressionsformat, das eine höhere Qualität als JPEG bietet. PNG-Dateien unterstützen Transparenz und sind daher ideal für die Erstellung von Logos oder Grafiken mit einem transparenten Hintergrund. PNG-Dateien haben jedoch normalerweise eine größere Dateigröße als JPEG-Dateien.
 
+                {{3}}
 <span style='color:orange'><b>RAW</b></span> ist ein Dateiformat, das von vielen Digitalkameras verwendet wird. Es ist ein unkomprimiertes Format, das alle Rohdaten des Bildes enthält. RAW-Dateien bieten eine höhere Qualität als JPEG-Dateien, da sie mehr Informationen enthalten. Sie erfordern jedoch auch spezielle Software, um sie zu bearbeiten, und haben normalerweise eine größere Dateigröße.
 
+                {{4}}
 <span style='color:orange'><b>TIFF (Tagged Image File Format)</b></span> ist ein verlustfreies Kompressionsformat, das eine höhere Qualität als JPEG bietet. TIFF-Dateien eignen sich besonders gut für die Langzeitspeicherung von Bildern, da sie keine Komprimierung oder Qualitätsverluste aufweisen. Sie haben jedoch normalerweise eine größere Dateigröße als JPEG-Dateien.
 
+                {{5}}
 Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von Bildern geht, sind TIFF-Dateien normalerweise die beste Wahl, da sie keine Komprimierung oder Qualitätsverluste aufweisen und eine hohe Qualität bieten. JPEG-Dateien sollten vermieden werden, da sie aufgrund der Komprimierung und des Qualitätsverlusts nicht für die Langzeitspeicherung geeignet sind. JPEG2000- und PNG-Dateien können ebenfalls verwendet werden, sind jedoch möglicherweise nicht so weit verbreitet wie TIFF. RAW-Dateien können ebenfalls verwendet werden, erfordern jedoch spezielle Software, um sie zu bearbeiten und haben normalerweise eine größere Dateigröße.
+
+
+<!-- Ende Abschnitt -->
+
+
+
+<!-- style='color: orange; font-weight: bold' -->
+
+
+#### Beispiele Vektorgraphiken 
+
 
 
 
@@ -1156,6 +1184,8 @@ Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von 
 
 
 <!-- Ende Abschnitt -->
+
+
 
 
 ### MP4, MOV, AVI, WMV — Bild und Ton vereint
@@ -1175,7 +1205,7 @@ Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von 
 
 ## Bibliographie
 
-**Adobe.com:**
+**Adobe.com:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
@@ -1186,7 +1216,7 @@ Raster vs Vector. https://www.adobe.com/creativecloud/file-types/image/compariso
 </i>
 
 
-**Forschungsdaten.info:**
+**Forschungsdaten.info:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
@@ -1197,7 +1227,7 @@ Dateiformat(Dateiart, Dateityp). https://forschungsdaten.info/praxis-kompakt/glo
 </i>
 
 
-**Unicode.org:**
+**Unicode.org:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
@@ -1210,7 +1240,7 @@ Unicode 15.0 Character Code Charts. https://www.unicode.org/charts/ (23.02.2023)
 </i>
 
 
-**ETH-Bibliothek Dokumentation:**
+**ETH-Bibliothek Dokumentation:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
@@ -1219,7 +1249,7 @@ File formats for archiving. https://documentation.library.ethz.ch/display/DD/Fil
 </i>
 
 
-**Internationale Organisation für Normierung (ISO):**
+**Internationale Organisation für Normierung (ISO):**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
 
