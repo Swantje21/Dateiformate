@@ -1048,25 +1048,80 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ### WAV, MP3 — Ton und Tonqualität
 
-Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen Luftdruckunterschiede erst durch ein Mikrofon in Spannungen umgewandelt und anschließend diese Spannungen wiederum durch Bits und Bytes repräsentiert werden. 
+Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig fort, weshalb wir von Schall**wellen** sprechen. 
+Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen Luftdruckunterschiede erst durch ein Mikrofon in Spannungen umgewandelt werden. Die Luftdruckunterschiede werden jetzt durch Spannungsunterschiede repliziert. 
 
-<figure style="float:right; width:40%;">
-  <img src="bilder/Signal_Sampling.svg" alt="Sampling Rate">
+
+<figure style="float:center; width:100%;">
+  <a href='https://commons.wikimedia.org/w/index.php?curid=98587159'>
+    <img src="bilder/Signal_Sampling.svg" alt="Sampling Rate">
+  </a>
   <div> Hier ist der Prozess des Samplings einmal graphisch dargestellt: Das kontinuierliche Signal S(t) wird durch eine grüne Linie dargestellt, während die einzelne Samples, der einzelne Messwert, S<sub>i</sub> durch eine blaue vertikale Linien angezeigt werden. Der Abstand, also die Zeit, zwischen den blauen Linien ist die Sample-Rate.</div>
-  <tooltip><small>Bildquelle: <i>Lob & Rochette: Snowpiercer 1: The Escape. TV Edition, London 2020, S. 54.</i></small></tooltip>
+  <tooltip><small>Bildquelle: <i>By Д.Ильин: vectorization, CC0 (Link auf dem Bild)</i></small></tooltip>
 </figure>
-Die Spannungswellen werden dabei in Segmente unterteilt und in diesen die einzelnen Spannungswerte als ein Wert gemessen - oder  "abgetastet" - und als Zahl abgespeichert. Wie oft dabei pro Sekunde gemessen wird bestimmt entscheided die Qualität. Die Häufigkeit dieser Messungen nennt man "Abtastrate<!-- style='color: orange; font-weight: bold' -->" oder häufiger aus dem Englischen: "**sampling rate**<!-- style='color: orange; font-weight: bold' -->". Je höher diese Rate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!). 
 
-Eine weitere Messeinheit ist entscheidend für die Qualität der Audio-Datei: die sogenannte Bittiefe<!-- style='color: orange; font-weight: bold' -->. Wie eingangs besprochen müssen alle zu speichernden Umstände als Bits auf Festplatten repräsentiert werden. Deshalb hier noch einmal das Gimmic aus dem ersten Kapitel dieses mal auf vier Bits begrenzt:
+
+Diese Spannungsunterschiede können jedoch nicht direkt gespeichert werden, wie wir eingangs besprochen hatten. Stattdessen müssen sie in **Bits** und **Bytes** unterteilt werden. Um das zu bewerkstelligen, werden die Spannungswellen in zeitliche Segmente unterteilt und in diesen die einzelnen Spannungswerte als *ein Wert* gemessen - oder  "abgetastet" -, der als einzelne Zahl abgespeichert werden kann. Damit sind wir wieder auf einer Ebene, die durch Bytes gespeichert werden kann. 
+
+Wie oft dabei pro Sekunde gemessen wird, bestimmt die Qualität der Audio-Datei, wenn man sie später wieder abhört. Die Häufigkeit dieser Messungen nennt man "Abtastrate<!-- style='color: orange; font-weight: bold' -->" oder häufiger aus dem Englischen: "**sampling rate**<!-- style='color: orange; font-weight: bold' -->". 
+
+>Je höher Abtastrate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!). 
+
+Weil die Sampling-Rate in Samples pro Sekunde gemessen wird ähnelt sie der physischen Einheit für Amplitudenlänge Hertz<!-- style='color: orange; font-weight: bold' -->, kurz Hz<!-- style='color: orange; font-weight: bold' -->. Es ist deshalb üblich geworden, Abtastraten so anzugeben. Übliche Samplingraten im Audiobereich sind: **44,1 kHz**<!-- style='color: orange; font-weight: bold' --> (44.100 Hz), **48 kHz**<!-- style='color: orange; font-weight: bold' --> (48.000 Hz), **88,2 kHz**<!-- style='color: orange; font-weight: bold' --> (88.200 Hz) und **96 kHz**<!-- style='color: orange; font-weight: bold' --> (96.000 Hz). Dabei gilt 44,1 kHz als eine Art Minimumstandard, bzw. billigere Variante von 48 kHz. Jenseits von 48 kHz wird es jedoch schwer für das menschliche Gehör noch großartige unterschiede zu hören. Professionelle Musik-Produzenten nehmen gerne in den höheren Samplingraten auf, damit die Effekte in der Nachbearbeitung besser "greifen". Anschließend wird das fertige Produkt dann jedoch auf 44,1 oder 48 kHz heruntertransformiert, um Speicherplatzverbrauch und Downloadzeiten zu verkleinern. 
+
+
+<figure style="float:right; width:50%;">
+  <a href='https://commons.wikimedia.org/w/index.php?curid=29599378 '>
+    <img src="bilder/4-bit-linear-PCM.svg" alt="Bittiefe 4Bits" style='background:white'>
+  </a>
+  <div> Hier sehen wir eine anologes Signal, also  Spannungswellen, in rot, die durch die einzelnen Datenpunkte (blau) auf einer Skale von -8 bis 7 repräsentiert werden.</div>
+  <tooltip><small>Bildquelle: <i>By Aquegg - Own work, CC BY-SA 3.0 (Link auf dem Bild)</i></small></tooltip>
+</figure>
+Eine weitere Messeinheit ist entscheidend für die Qualität der Audio-Datei: die sogenannte Bittiefe<!-- style='color: orange; font-weight: bold' -->. Wie eingangs besprochen müssen alle zu speichernden Umstände als Bits auf Festplatten repräsentiert werden. Deshalb kommt hier noch einmal das Gimmick aus dem ersten Kapitel - dieses mal auf vier Bits begrenzt:
 <script input="number" value="14" min="0" max="15">
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
 
 j + " = " + i
 </script>
+Diese vier Bits erlauben es die Zahlen 0-15 abzubilden, also 16 Messzustände zu speichern. Das entspricht der y-Achse auf der Graphik links. Bei genauem Hinsehen wird deutlich, dass die einzelnen Punkte das genaue Originalsignal nicht immer exakt wiedergeben können, weil die Messskala nicht genau genug ist.  
 
-<!-- hier weiter machen! -->
+| Bittiefe | 6 Bits | 8Bit | 16Bits | 24Bits | 32Bits | 64Bits |
+|Darstellbare Einheiten | 0-63 | 0-255 | 0-65.535 | 0-16.777.215 | 0-4.294.967.295 | 0-18.446.744.073.709.551.999 |
+| Probier selbst! | <script input="number" value="42" min="0" max="63">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
 
+j + " = " + i
+</script> | <script input="number" value="112" min="0" max="255">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script> | <script input="number" value="4444" min="0" max="65535">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script> | <script input="number" value="7425775" min="0" max="16777215">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script> | <script input="number" value="314159275" min="0" max="4294967295">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script> | <script input="number" value="35897932384626" min="0" max="18446744073709551999">
+let i = @input // direct usage as a number
+let j = (@input >>> 0).toString(2)
+
+j + " = " + i
+</script> |
+
+
+Wie Sie sehen eskaliert diese Rechnung recht schnell. Doch audiotechnisch sind 8 Bit immer noch recht wenig. Sie genügen jedoch, um die menschliche Sprache halbwegs verständlich wiederzugeben, weshalb 8 Bit die übliche Bittiefe in Telefonanlagen sind. Das ist auch der Grund, warum wir am Telefon so anders klingen.[^1](An dieser Stelle sei noch angemerkt, dass die acht Bits nicht verwendet werden, um das ganze menschliche Hörspektrum von \~80-20.000 Hz verwendet wird, sondern nur für 200-4.000 Hz die wichtigsten Frequenzen der menschlichen Stimme. Andernfalls wäre die Klangqualität am Telefon noch einmal bedeutend schlechter) Für Musikproduktion hingegen sind die Bittiefen 16, 24 und 32 Bit. 
 
 
 
@@ -1234,7 +1289,7 @@ Wenn es um die <span style='color:orange'><b>Langzeitspeicherung</b></span> von 
 <!-- style='color: orange; font-weight: bold' -->
 
 
-#### Beispiele Vektorgraphiken 
+#### Beispiele: Vektorgraphiken 
 
 Beipiele für Vektrographik-Formate wären: SVG<!-- style='color: orange; font-weight: bold' --> (Scalable Vector Graphics), PS<!-- style='color: orange; font-weight: bold' --> (PostScript), EPS<!-- style='color: orange; font-weight: bold' --> (Encapsulated PostScript) und AI<!-- style='color: orange; font-weight: bold' --> (Adobe Illustrator) Diese Formate sind ideal für Logos, Symbole, Schaubilder, Infografiken und andere Grafiken, bei denen eine klare und präzise Darstellung erforderlich ist.[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 23.02.2023 mit dem Prompt "Schreibe ein kurzes lehrreiches Kapitel über die Dateiformate SVG, PS, EPS, AI und wann sie zu verwenden sind. Gehe anschließend in einem Absatz ein die Brauchbarkeit dieser Formate für eine Langzeitspeicherung in möglichst hoher Qualität ein." erstellt und leicht modifiziert.)
 
