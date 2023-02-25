@@ -1048,8 +1048,16 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ### WAV, MP3 — Ton und Tonqualität
 
-Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig fort, weshalb wir von Schall**wellen** sprechen. 
+              {{0-5}}
+**********************************
+
+Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt, es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig fort, weshalb wir von Schall**wellen** sprechen. Je schneller die Luft schwingt, desto höher ist der Ton, den wir höhren.
+
 Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen Luftdruckunterschiede erst durch ein Mikrofon in Spannungen umgewandelt werden. Die Luftdruckunterschiede werden jetzt durch Spannungsunterschiede repliziert. 
+
+              {{1}}
+**********************************
+Diese Spannungsunterschiede können jedoch nicht direkt gespeichert werden, wie wir eingangs besprochen hatten. Stattdessen müssen sie in **Bits** und **Bytes** unterteilt werden. Um das zu bewerkstelligen, werden die Spannungswellen in zeitliche Segmente unterteilt und in diesen die einzelnen Spannungswerte als *ein Wert* gemessen - oder  "abgetastet" -, der als einzelne Zahl abgespeichert werden kann. Damit sind wir wieder auf einer Ebene, die durch Bytes gespeichert werden kann. 
 
 
 <figure style="float:center; width:100%;">
@@ -1061,15 +1069,18 @@ Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalt
 </figure>
 
 
-Diese Spannungsunterschiede können jedoch nicht direkt gespeichert werden, wie wir eingangs besprochen hatten. Stattdessen müssen sie in **Bits** und **Bytes** unterteilt werden. Um das zu bewerkstelligen, werden die Spannungswellen in zeitliche Segmente unterteilt und in diesen die einzelnen Spannungswerte als *ein Wert* gemessen - oder  "abgetastet" -, der als einzelne Zahl abgespeichert werden kann. Damit sind wir wieder auf einer Ebene, die durch Bytes gespeichert werden kann. 
-
 Wie oft dabei pro Sekunde gemessen wird, bestimmt die Qualität der Audio-Datei, wenn man sie später wieder abhört. Die Häufigkeit dieser Messungen nennt man "Abtastrate<!-- style='color: orange; font-weight: bold' -->" oder häufiger aus dem Englischen: "**sampling rate**<!-- style='color: orange; font-weight: bold' -->". 
 
 >Je höher Abtastrate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!). 
 
+**********************************
+
+              {{2}}
 Weil die Sampling-Rate in Samples pro Sekunde gemessen wird ähnelt sie der physischen Einheit für Amplitudenlänge Hertz<!-- style='color: orange; font-weight: bold' -->, kurz Hz<!-- style='color: orange; font-weight: bold' -->. Es ist deshalb üblich geworden, Abtastraten so anzugeben. Übliche Samplingraten im Audiobereich sind: **44,1 kHz**<!-- style='color: orange; font-weight: bold' --> (44.100 Hz), **48 kHz**<!-- style='color: orange; font-weight: bold' --> (48.000 Hz), **88,2 kHz**<!-- style='color: orange; font-weight: bold' --> (88.200 Hz) und **96 kHz**<!-- style='color: orange; font-weight: bold' --> (96.000 Hz). Dabei gilt 44,1 kHz als eine Art Minimumstandard, bzw. billigere Variante von 48 kHz. Jenseits von 48 kHz wird es jedoch schwer für das menschliche Gehör noch großartige unterschiede zu hören. Professionelle Musik-Produzenten nehmen gerne in den höheren Samplingraten auf, damit die Effekte in der Nachbearbeitung besser "greifen". Anschließend wird das fertige Produkt dann jedoch auf 44,1 oder 48 kHz heruntertransformiert, um Speicherplatzverbrauch und Downloadzeiten zu verkleinern. 
 
 
+                {{3}}
+**********************************
 <figure style="float:right; width:50%;">
   <a href='https://commons.wikimedia.org/w/index.php?curid=29599378 '>
     <img src="bilder/4-bit-linear-PCM.svg" alt="Bittiefe 4Bits" style='background:white'>
@@ -1085,6 +1096,14 @@ let j = (@input >>> 0).toString(2)
 j + " = " + i
 </script>
 Diese vier Bits erlauben es die Zahlen 0-15 abzubilden, also 16 Messzustände zu speichern. Das entspricht der y-Achse auf der Graphik links. Bei genauem Hinsehen wird deutlich, dass die einzelnen Punkte das genaue Originalsignal nicht immer exakt wiedergeben können, weil die Messskala nicht genau genug ist.  
+
+**********************************
+
+
+                {{4}}
+**********************************
+
+Die Lösung liegt auf der Hand: MEHR BITS! Um das Verhältnis von Byte-Länge und den damit möglichen Zahlen, bzw. Zuständen oder Messskaleeinheiten zu verdeutlichen gibt es die folgende Tabelle:
 
 | Bittiefe | 6 Bits | 8Bit | 16Bits | 24Bits | 32Bits | 64Bits |
 |Darstellbare Einheiten | 0-63 | 0-255 | 0-65.535 | 0-16.777.215 | 0-4.294.967.295 | 0-18.446.744.073.709.551.999 |
@@ -1107,6 +1126,7 @@ j + " = " + i
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
 
+
 j + " = " + i
 </script> | <script input="number" value="314159275" min="0" max="4294967295">
 let i = @input // direct usage as a number
@@ -1121,24 +1141,54 @@ j + " = " + i
 </script> |
 
 
-Wie Sie sehen eskaliert diese Rechnung recht schnell. Doch audiotechnisch sind 8 Bit immer noch recht wenig. Sie genügen jedoch, um die menschliche Sprache halbwegs verständlich wiederzugeben, weshalb 8 Bit die übliche Bittiefe in Telefonanlagen sind. Das ist auch der Grund, warum wir am Telefon so anders klingen.[^1](An dieser Stelle sei noch angemerkt, dass die acht Bits nicht verwendet werden, um das ganze menschliche Hörspektrum von \~80-20.000 Hz verwendet wird, sondern nur für 200-4.000 Hz die wichtigsten Frequenzen der menschlichen Stimme. Andernfalls wäre die Klangqualität am Telefon noch einmal bedeutend schlechter) Für Musikproduktion hingegen sind die Bittiefen 16, 24 und 32 Bit. 
+Wie Sie sehen, eskaliert diese Rechnung recht schnell. Doch audiotechnisch sind 8 Bit immer noch recht wenig. Sie genügen jedoch, um die menschliche Sprache halbwegs verständlich wiederzugeben, weshalb 8 Bit die übliche Bittiefe in Telefonanlagen sind. Das ist auch der Grund, warum wir am Telefon so anders klingen.[^1](An dieser Stelle sei noch angemerkt, dass die acht Bits nicht verwendet werden, um das ganze menschliche Hörspektrum von \~80-20.000 Hz widerzugeben, sondern nur für 200-4.000 Hz die wichtigsten Frequenzen der menschlichen Stimme. Andernfalls wäre die Klangqualität am Telefon noch einmal bedeutend schlechter) Für Musikproduktion hingegen sind die Bittiefen 16<!-- style='color: orange; font-weight: bold' -->, 24<!-- style='color: orange; font-weight: bold' --> und **32 Bit**<!-- style='color: orange; font-weight: bold' --> Standard. 
+
+**********************************
+
+
+**********************************
+
+
+                {{5}}
+Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch ein Unterschied zwischen verlustfreien und -behafteten sowie kompressierten und unkompressierten Formaten gemacht werden. Im folgenden werden wir zwischen verlustfreien und verlustbehafteten Formaten unterscheiden.
+
+
+<!-- Ende Abschnitt -->
 
 
 
 
-AIFF<!-- style='color: orange; font-weight: bold' --> und WAV<!-- style='color: orange; font-weight: bold' --> (sprich: engl. wave) sind zwei der gängigsten Dateiformate für Audioaufnahmen. Beide Formate speichern digitale Audioinformationen, jedoch gibt es einige Unterschiede in Bezug auf ihre Eigenschaften und Verwendungszwecke. Sie stehen zur MP3 wie die TIFF oder RAW-Datei zum JPEG - will heißen sie sind eine Art Ton wiederzugeben, die nicht verlustbehaftet ist, dafür aber auch größer und manchmal unhandlich. In diesem Kapitel werden wir uns genauer mit diesen beiden Formaten auseinandersetzen und ihre Unterschiede sowie Vor- und Nachteile aufzeigen.
 
-AIFF<!-- style='color: orange; font-weight: bold' --> steht für **Audio Interchange File Format**<!-- style='color: orange; font-weight: bold' --> und wurde von Apple entwickelt. Es ist ein unkomprimiertes Format, was bedeutet, dass die Audiodaten in voller Qualität gespeichert werden. AIFF-Dateien haben eine hohe Klangqualität und eignen sich gut für professionelle Audioaufnahmen. Allerdings sind sie auch sehr groß, was bedeutet, dass sie viel Speicherplatz benötigen. Im Gegensatz dazu steht WAV<!-- style='color: orange; font-weight: bold' --> (**Waveform Audio File Format**<!-- style='color: orange; font-weight: bold' -->), das von Microsoft entwickelt wurde. Wie AIFF ist es auch ein unkomprimiertes Format und bietet eine hohe Klangqualität. Der Hauptunterschied zwischen AIFF und WAV ist jedoch, dass WAV-Dateien kleiner sind und somit weniger Speicherplatz benötigen. WAV-Dateien eignen sich gut für die Aufnahme von Musik oder Audio auf einem Computer oder einem anderen digitalen Gerät. Durch diesen Unterschied hat sich die WAV-Datei gegen die AIFF durchsetzten können.
+#### Beispiel: Verlustfreie Formate (WAV, AIFF, FLAC)
 
+<i>Verlustfreie Audio-Dateiformate werden verwendet, um Audiodaten in **hoher Qualität** zu speichern, ohne dabei Informationen zu verlieren. Es gibt verschiedene Formate, die diese Funktion erfüllen können, wie zum Beispiel WAV<!-- style='color: orange; font-weight: bold' --> (Wafeform Audio File), AIFF<!-- style='color: orange; font-weight: bold' --> (Audio Interchange File Format) und FLAC<!-- style='color: orange; font-weight: bold' --> (Free Lossless Audio Codec).</i> [^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 25.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustfreie Audio-Dateiformate. Nutze dabei WAV, AIFF und FLAC als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
 
+                {{1}}
+**************************************
+WAV<!-- style='color: orange; font-weight: bold' --> und AIFF<!-- style='color: orange; font-weight: bold' --> sind beide unkomprimierte Audio-Dateiformate, die die Audiodaten in voller Qualität speichern. WAV-Dateien werden oft von Windows-Computern verwendet, während AIFF-Dateien häufiger auf Mac-Computern zum Einsatz kommen. Beide Formate bieten eine hohe Klangqualität, aber auch eine größere Dateigröße im Vergleich zu komprimierten Formaten wie [MP3](Beispiel:-Verlustbehaftete-Formate).
 
+FLAC<!-- style='color: orange; font-weight: bold' --> ist ein komprimiertes<!-- style='color: orange; font-weight: bold' --> Audio-Dateiformat, das jedoch verlustfrei ist, was bedeutet, dass die Klangqualität trotz Komprimierung erhalten bleibt. FLAC-Dateien sind kleiner als WAV- und AIFF-Dateien, bieten aber dennoch eine sehr hohe Klangqualität und werden von vielen Musikliebhabern und Audiophilen bevorzugt.
 
+**************************************
+
+                {{2}}
+Obwohl alle diese Formate verlustfrei sind, haben sie unterschiedliche **Stärken und Schwächen**<!-- style='color: orange; font-weight: bold' -->. WAV und AIFF sind zwar unkomprimiert und bieten eine hohe Klangqualität, sind aber auch sehr groß und nehmen somit viel Speicherplatz ein. FLAC ist komprimiert und bietet trotzdem eine sehr hohe Klangqualität, ist aber möglicherweise nicht so weit verbreitet wie WAV und AIFF. Dafür handelt es sich bei FLAC um ein [Open-Source Projekt](Link-ME!) und ist deshalb im Gegensatz zu WAV und AIFF ein nicht-proprietäres Format (!). 
+
+                {{3}}
+In Bezug auf die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> können alle diese Formate verwendet werden, um Audiodaten sicher und in hoher Qualität zu speichern. WAV- und AIFF-Dateien sind seit vielen Jahren im Einsatz und haben sich als zuverlässige Formate bewährt. Wobei WAV eine größere Annahme genießt, AIFF hingegen Metadaten erlaubt. FLAC ist ein relativ neues Format, hat aber bereits eine starke Anhängerschaft und wird von vielen als bevorzugtes Format für die Langzeitspeicherung von Musik und Audio angesehen - auch im Hinblick auf die geringere Speichergröße.
 
 
 
 
 <!-- Ende Abschnitt -->
 
+
+#### Beispiel: Verlustbehaftete Formate
+
+
+
+
+<!-- Ende Abschnitt -->
 
 
 
@@ -1353,6 +1403,15 @@ PostScript.PostScript (PS) – Vorläufer des PDF und immer noch beliebt in der 
 
 
 
+**Fileformat.com:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+WAV. https://docs.fileformat.com/audio/wav/ (25.02.2023)
+
+</i>
+
+
 **Forschungsdaten.info:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1360,6 +1419,8 @@ PostScript.PostScript (PS) – Vorläufer des PDF und immer noch beliebt in der 
 Formate erhalten. Inhalte langfristig sichern. https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/formate-erhalten/ (23.02.2023)
 
 Dateiformat(Dateiart, Dateityp). https://forschungsdaten.info/praxis-kompakt/glossar/#c269829 (23.02.2023)
+
+Metadaten und Metadatenstandards. Beschreiben hilft verstehen. https://forschungsdaten.info/themen/beschreiben-und-dokumentieren/metadaten-und-metadatenstandards/ (25.02.2023)
 
 </i>
 
@@ -1413,6 +1474,14 @@ Standards. https://www.w3.org/standards/ (23.02.2023)
 SCALABLE VECTOR GRAPHICS (SVG). https://www.w3.org/Graphics/SVG/ (23.02.2023)
 
 </i>
+
+
+**Xiph.org:**
+
+What is FLAC? https://xiph.org/flac/ (25.02.2023)
+
+
+
 
 <!-- Ende Abschnitt -->
 
