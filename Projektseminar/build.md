@@ -1048,12 +1048,12 @@ PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängi
 
 ### WAV, MP3 — Ton und Tonqualität
 
-              {{0-5}}
+              {{0}}
 **********************************
 
 Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt, es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig fort, weshalb wir von Schall**wellen** sprechen. Je schneller die Luft schwingt, desto höher ist der Ton, den wir höhren.
 
-Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen Luftdruckunterschiede erst durch ein Mikrofon in Spannungen umgewandelt werden. Die Luftdruckunterschiede werden jetzt durch Spannungsunterschiede repliziert. 
+Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen diese Schwingungen erst durch ein Mikrofon in Spannungen umgewandelt werden. Die Luftdruckunterschiede werden jetzt durch Spannungsunterschiede repliziert. 
 
               {{1}}
 **********************************
@@ -1076,16 +1076,16 @@ Wie oft dabei pro Sekunde gemessen wird, bestimmt die Qualität der Audio-Datei,
 **********************************
 
               {{2}}
-Weil die Sampling-Rate in Samples pro Sekunde gemessen wird ähnelt sie der physischen Einheit für Amplitudenlänge Hertz<!-- style='color: orange; font-weight: bold' -->, kurz Hz<!-- style='color: orange; font-weight: bold' -->. Es ist deshalb üblich geworden, Abtastraten so anzugeben. Übliche Samplingraten im Audiobereich sind: **44,1 kHz**<!-- style='color: orange; font-weight: bold' --> (44.100 Hz), **48 kHz**<!-- style='color: orange; font-weight: bold' --> (48.000 Hz), **88,2 kHz**<!-- style='color: orange; font-weight: bold' --> (88.200 Hz) und **96 kHz**<!-- style='color: orange; font-weight: bold' --> (96.000 Hz). Dabei gilt 44,1 kHz als eine Art Minimumstandard, bzw. billigere Variante von 48 kHz. Jenseits von 48 kHz wird es jedoch schwer für das menschliche Gehör noch großartige unterschiede zu hören. Professionelle Musik-Produzenten nehmen gerne in den höheren Samplingraten auf, damit die Effekte in der Nachbearbeitung besser "greifen". Anschließend wird das fertige Produkt dann jedoch auf 44,1 oder 48 kHz heruntertransformiert, um Speicherplatzverbrauch und Downloadzeiten zu verkleinern. 
+Weil die Sampling-Rate in Samples pro Sekunde gemessen wird, ähnelt sie der physischen Einheit für Amplitudenlänge Hertz<!-- style='color: orange; font-weight: bold' -->, kurz Hz<!-- style='color: orange; font-weight: bold' -->. Es ist deshalb üblich geworden, Abtastraten so anzugeben. Übliche Samplingraten im Audiobereich sind: **44,1 kHz**<!-- style='color: orange; font-weight: bold' --> (44.100 Hz), **48 kHz**<!-- style='color: orange; font-weight: bold' --> (48.000 Hz), **88,2 kHz**<!-- style='color: orange; font-weight: bold' --> (88.200 Hz) und **96 kHz**<!-- style='color: orange; font-weight: bold' --> (96.000 Hz). Dabei gilt 44,1 kHz als eine Art Minimumstandard, bzw. billigere Variante von 48 kHz. Jenseits von 48 kHz wird es jedoch schwer, für das menschliche Gehör noch großartige Unterschiede zu hören. Professionelle Musik-Produzenten nehmen gerne in den höheren Samplingraten auf, damit die Effekte in der Nachbearbeitung besser "greifen". Anschließend wird das fertige Produkt dann jedoch auf 44,1 oder 48 kHz heruntertransformiert, um Speicherplatzverbrauch und Downloadzeiten zu verkleinern. 
 
 
                 {{3}}
 **********************************
-<figure style="float:right; width:50%;">
+<figure style="float:right; width:50%; background:#2f8080">
   <a href='https://commons.wikimedia.org/w/index.php?curid=29599378 '>
     <img src="bilder/4-bit-linear-PCM.svg" alt="Bittiefe 4Bits" style='background:white'>
   </a>
-  <div> Hier sehen wir eine anologes Signal, also  Spannungswellen, in rot, die durch die einzelnen Datenpunkte (blau) auf einer Skale von -8 bis 7 repräsentiert werden.</div>
+  <div style='color:white'> Hier sehen wir eine anologes Signal, also  Spannungswellen, in rot, die durch die einzelnen Datenpunkte (blau) auf einer Skale von -8 bis 7 repräsentiert werden.</div>
   <tooltip><small>Bildquelle: <i>By Aquegg - Own work, CC BY-SA 3.0 (Link auf dem Bild)</i></small></tooltip>
 </figure>
 Eine weitere Messeinheit ist entscheidend für die Qualität der Audio-Datei: die sogenannte Bittiefe<!-- style='color: orange; font-weight: bold' -->. Wie eingangs besprochen müssen alle zu speichernden Umstände als Bits auf Festplatten repräsentiert werden. Deshalb kommt hier noch einmal das Gimmick aus dem ersten Kapitel - dieses mal auf vier Bits begrenzt:
@@ -1146,11 +1146,16 @@ Wie Sie sehen, eskaliert diese Rechnung recht schnell. Doch audiotechnisch sind 
 **********************************
 
 
+
+                {{5}}
+**********************************
+Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch ein Unterschied zwischen verlustfreien und -behafteten sowie kompressierten und unkompressierten Formaten gemacht werden. Im folgenden werden wir zwischen verlustfreien und verlustbehafteten Formaten unterscheiden.
+
 **********************************
 
 
-                {{5}}
-Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch ein Unterschied zwischen verlustfreien und -behafteten sowie kompressierten und unkompressierten Formaten gemacht werden. Im folgenden werden wir zwischen verlustfreien und verlustbehafteten Formaten unterscheiden.
+**********************************
+
 
 
 <!-- Ende Abschnitt -->
@@ -1185,7 +1190,19 @@ In Bezug auf die Langzeitspeicherung<!-- style='color: orange; font-weight: bold
 
 #### Beispiel: Verlustbehaftete Formate
 
+<i>Verlustbehaftete Audio-Dateiformate wie MP3<!-- style='color: orange; font-weight: bold' -->, AAC<!-- style='color: orange; font-weight: bold' --> und WMA<!-- style='color: orange; font-weight: bold' --> sind die am häufigsten verwendeten Dateiformate, um Musik und Audioinhalte digital zu speichern. Diese Formate komprimieren die Audioinhalte, um Speicherplatz zu sparen, indem sie Teile der Audiodaten entfernen, die für das menschliche Ohr schwer wahrnehmbar oder jenseits des hörbaren Spektrums sind. Was an Signal übrig bleibt wird so gut es geht komprimiert. Dies führt jedoch zu einem Verlust an Audioqualität im Vergleich zum unkomprimierten Original.</i>[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 27.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustbehaftete Audio-Dateiformate. Nutze dabei MP3, AAC und WMA als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
 
+                {{1}}
+MP3<!-- style='color: orange; font-weight: bold' --> (MPEG-1 Audio Layer 3) war das erste verlustbehaftete Audioformat, das eine breite Akzeptanz erhielt. Es ist kompatibel mit den meisten Wiedergabegeräten und bietet eine hohe Komprimierungsrate bei annehmbarer Audioqualität. Im Gegensatz zu den anderen Formaten, handelt es sich um einen nicht-proprietären Standard, der durch die ISO<!-- style='color: orange; font-weight: bold' --> normiert und erhalten wird. Eine MP3-Datei ist jedoch möglicherweise nicht so detailliert wie das Original und kann hörbare Artefakte aufweisen, insbesondere bei niedrigen Bitraten.
+
+                {{2}}
+AAC<!-- style='color: orange; font-weight: bold' --> (Advanced Audio Coding) bietet eine höhere Audioqualität als MP3 bei einer ähnlichen Dateigröße. Es wird oft als Standardformat für Apple-Geräte wie iPhone und iPad verwendet. AAC ist jedoch nicht so weit verbreitet wie MP3 und wird möglicherweise nicht von allen Wiedergabegeräten unterstützt.
+
+                {{3}}
+WMA<!-- style='color: orange; font-weight: bold' --> (Windows Media Audio) wurde von Microsoft entwickelt und wird hauptsächlich auf Windows-basierten Systemen verwendet. Es bietet eine hohe Komprimierungsraten bei guter Audioqualität. WMA-Dateien können jedoch nicht auf allen Geräten wiedergegeben werden und sind daher möglicherweise nicht so vielseitig wie MP3 oder AAC.
+
+                {{4}}
+Wenn es um die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> von Audioinhalten geht, sind verlustbehaftete Audioformate nicht die beste Wahl. Da sie auf Komprimierung basieren, können sie bei jedem Konvertierungsvorgang oder jeder Bearbeitung zusätzliche Informationen verlieren und sich im Laufe der Zeit verschlechtern. Für die Langzeitspeicherung von Audioinhalten empfiehlt es sich, das Original unkomprimiert zu speichern oder auf verlustfreie Audioformate wie **WAV, AIFF oder FLAC**<!-- style='color: orange; font-weight: bold' -->  zurückzugreifen. Für kürzere Zeiträume unter 10 Jahren kann es sich alledings besonders bei großen Projekten mit viel Audiodaten lohnen, MP3 als ein nicht-proprietäres Format zu verwenden. 
 
 
 <!-- Ende Abschnitt -->
@@ -1458,7 +1475,15 @@ ISO 9660. ISO images for computer files. https://www.iso.org/iso-9660-images-for
 
 Popular standards and other ISO deliverables. Our greatest hits: the most popular ISO Standards, in cluding our management system standards. https://www.iso.org/popular-standards.html (23.02.2023)
 
+</i>
 
+
+
+**Makeuseof.com:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+The 10 Most Common Audio Formats: Which One Should You Use?, Joel Lee, 2022. https://www.makeuseof.com/tag/audio-file-format-right-needs/ (27.02.2023)
 
 </i>
 
