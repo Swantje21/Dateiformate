@@ -458,30 +458,30 @@ Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten
 
 ## Dateiformate für Text
 
-In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
+*In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.*[^ChatGPT](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
 
-Wir werden den Kurs in drei Teile gliedern: Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
+Wir werden den Abschnitt in drei Teile gliedern: Formate, die hauptsächlich für Menschen<!-- style='color: orange; font-weight: bold' --> gedacht sind und Formate, die hauptsächlich für Maschinen<!-- style='color: orange; font-weight: bold' --> gedacht sind. Zuerst werden wir uns mit dem einfachen, aber leistungsfähigen **Plain Text-Format**<!-- style='color: orange; font-weight: bold' --> (TXT) beschäftigen.
 
-Im zweiten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Menschen gedacht sind, wie RTF, MD, DOCX, ODT, PAGES und andere. Diese Formate sind mit Formatierungsoptionen ausgestattet, die es Benutzern ermöglichen, ihre Dokumente mit Stil und Klarheit zu gestalten.
+                  {{1}}
+Im ersten Teil werden wir uns mit Formaten befassen, die für Menschen gedacht sind, wie RTF<!-- style='color: orange; font-weight: bold' -->, MD<!-- style='color: orange; font-weight: bold' -->, DOCX<!-- style='color: orange; font-weight: bold' -->, ODT<!-- style='color: orange; font-weight: bold' --> und PAGES<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind mit Formatierungsoptionen<!-- style='color: orange; font-weight: bold' --> ausgestattet, die es Benutzern ermöglichen, ihre Dokumente mit **Stil und Klarheit**<!-- style='color: orange; font-weight: bold' --> zu gestalten.
 
-Im dritten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV, XML, JSON und HTML. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
-
-Am Ende dieses Kurses sollte man ein tiefes Verständnis für die verschiedenen textbasierten Dateiformate haben und wissen, wann es am besten ist, welches Format zu verwenden. Lass uns loslegen und tiefer in die Welt der textbasierten Dateiformate eintauchen!
+                  {{2}}
+Im zweiten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' -->, JSON<!-- style='color: orange; font-weight: bold' --> und HTML<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
 
 
 ### TXT – Mutter aller Textverarbeitung
 
-                {{0}}
-**Plain-Text (.txt)**<!-- style='color: orange; font-weight: bold' --> ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
+
+**Plain-Text (TXT)**<!-- style='color: orange; font-weight: bold' --> ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format **ohne Formatierungen**<!-- style='color: orange; font-weight: bold' --> oder **spezielle Zeichen**<!-- style='color: orange; font-weight: bold' -->, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.[^ChatGPT](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
 
                 {{1}}
-Es hat seine Wurzeln in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt. Es ist einfach zu lesen und zu bearbeiten, egal ob mit einem einfachen Texteditor oder einem leistungsstarken Textverarbeitungsprogramm, und es ist kompatibel mit fast allen Computern und Betriebssystemen.
+Es hat seine Wurzeln<!-- style='color: orange; font-weight: bold' --> in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit<!-- style='color: orange; font-weight: bold' --> des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt.
 
                 {{2}}
-Das .txt-Format ist für seine Portabilität bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor geöffnet und bearbeitet werden. Es ist auch sehr gut lesbar, da es nicht mit unnötigen Formatierungen überladen ist.
+Das TXT-Format ist für seine Portabilität<!-- style='color: orange; font-weight: bold' --> bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor<!-- style='color: orange; font-weight: bold' --> geöffnet und bearbeitet werden.
 
                 {{3}}
-Ein weiterer Vorteil des .txt-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
+Ein weiterer Vorteil des TXT-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
 
                 {{4}}
 Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.
