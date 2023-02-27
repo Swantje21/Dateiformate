@@ -69,18 +69,18 @@ logo: zerosOnesDalle.png
 
 ## Allgemeine Informationen
 
-{{0}} 
 Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**<!-- style='color: orange; font-weight: bold' -->. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein**<!-- style='color: orange; font-weight: bold' --> und **Aus**<!-- style='color: orange; font-weight: bold' -->, welche als **1** und **0** bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
 
-{{1}} Diese kleinsten Einheiten sind die berühmten **Bits**<!-- style='color: orange; font-weight: bold' -->.
+                {{1}} 
+>Diese kleinsten Einheiten sind die berühmten **Bits**<!-- style='color: orange; font-weight: bold' -->.
 
-{{2}}
-**************
-Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches Entstehen? 
-Die Lösung liegt auf der Hand: es werden mehrere Bits mit einander kombiniert.
+                {{2}}
+Doch wie kann aus einfachen Ladungen ein Text, Bild oder Ähnliches entstehen? 
+Die Lösung liegt auf der Hand: es werden **mehrere Bits**<!-- style='color: orange; font-weight: bold' --> mit einander kombiniert.
 Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte**<!-- style='color: orange; font-weight: bold' --> getauft.
 
-{{3}} Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System**<!-- style='color: orange; font-weight: bold' --> - zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
+                {{3}} 
+Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System**<!-- style='color: orange; font-weight: bold' --> - zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
 <script input="number" value="22" min="0" max="1000000">
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
@@ -88,15 +88,13 @@ let j = (@input >>> 0).toString(2)
 i + " = " + j
 </script>
 
-************
 
 
 
 ### Text vs Binär
-{{0}}
-******
+
 In ihrer Organisationsform unterscheiden sich Dateien jetzt in zwei Arten.
-Die einen halten sich strikt an eine Aufteilung in 8er-Blöcke, also **Bytes**<!-- style='color: orange; font-weight: bold' -->, in der Regel um Text zu codieren[^2](In Wirklichkeit gibt es viele Textformate, die auch Zeichen wie 'A' mit dem Binärcode '00000000' abenfalls als '0' darstellen, um Speicherplatz zu schonen.)
+Die einen halten sich strikt an eine Aufteilung in vorhersehbare Einheiten (meist 8er-Blöcke, also **Bytes**<!-- style='color: orange; font-weight: bold' -->), um Text zu codieren.
 Hier ist ein beispiel, wie aus Binärem Code Buchstaben werden: 
 <script input="number" value="65" min="33" max="126">
 let i = @input
@@ -105,18 +103,18 @@ let k = String.fromCharCode(i)
 
 i + " = " + j + " = " + k
 </script>
-Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiformate-für-Text) im Zusatzmaterial genauer behandelt.
+Es handelt sich um sogenannte **Plain-Text-Formate**<!-- style='color: orange; font-weight: bold' -->. Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiformate-für-Text) im Zusatzmaterial genauer behandelt.
 
-******
-
-{{1}}******
+                {{1}}
+*************************************
 Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere *uneinheitliche* Einheiten. Hier sprechen wir von **binären**<!-- style='color: orange; font-weight: bold' --> Dateiformaten.
 
-{{2}}Doch diese uneinheitlichen Dateien können nur noch von speziellen Programmen gelesen, bzw. verstanden werden. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen**<!-- style='color: orange; font-weight: bold' --> getrennt. 
+                {{2}}
+Doch diese binären<!-- style='color: orange; font-weight: bold' --> Dateien können nur von jenen Programmen gelesen, bzw. verstanden werden, die in der lage sind, diesen binären Code zu entziffern. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen**<!-- style='color: orange; font-weight: bold' --> getrennt. 
 
 Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mittel sind, die Computern zur verfügung stehen, um Dateiformate zu erkennen. Dazu mehr im nächsten Unterkapitel.
 
-******
+*************************************
 
 
 
@@ -127,11 +125,12 @@ Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mit
 1. Header<!-- style='color: orange; font-style: italic; font-weight: bold' --> oder **Kopf**
 2. Body<!-- style='color: orange; font-style: italic; font-weight: bold' --> oder **Körper**
 
-                {{1}}
-****************************************
+
 >Im Header finden sich sogenannten Metadaten<!-- style='color: orange; font-weight: bold' -->, die dem System Auskunft über die Beschaffenheit der Datei geben. Dazu können z.B. der Name der Datei, Erstellungsdatum, Dateierweiterung, Höhe/Breite (für Bilder), Magic Number etc. gehören. 
 
-Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung, Magic Number oder Dateistruktur. Die Dateierweitung (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, etc.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, einen Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
+                {{1}}
+****************************************
+Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung<!-- style='color: orange; font-weight: bold' -->, **Magic Number**<!-- style='color: orange; font-weight: bold' --> oder Dateistruktur<!-- style='color: orange; font-weight: bold' -->. Die Dateierweitung<!-- style='color: orange; font-weight: bold' --> (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, etc.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, einen Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
 
 ****************************************
 
@@ -140,21 +139,25 @@ Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiter
 ****************************************
 Um diesem Missbrauch vorzubeugen, gibt es für die meisten Dateiformate, eine sogenannte **Magic Number**<!-- style='color: orange; font-weight: bold' -->. Dabei handelt es sich um eine zwei bis vier Bytes lange Zahl, die für jedes Dateiformat einzigartig ist. Zum Beispiel ist die Magic Number für das GIF Format '47 49 46 38'.[^1] 
 
-Formate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktur erkannt, sofern die Dateierweiterung fehlt. Dabei handelt es sich üblicherweise um Plain-Text-Formate wie TXT, XML oder CSV.[^2]
+Formate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktur erkannt, sofern die Dateierweiterung fehlt. Dabei handelt es sich üblicherweise um **Plain-Text-Formate**<!-- style='color: orange; font-weight: bold' --> wie TXT<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' --> oder CSV<!-- style='color: orange; font-weight: bold' -->.[^2]
 
 ****************************************
 
 
-                {{1}}
+                {{3}}
 ****************************************
-Im Body<!-- style='color: orange; font-weight: bold' --> befinden sich dann die Kerninformationen, die die Datei ausmachen. Bei Textdateien sind dies die einzelnen Buchstaben und Formatierungen, bei Bildern die einzelnen Bildelemente oder Pixel, bei Tondateien liegen hier die Informationen für die digitalisierten Schallwellen. 
+>Im Body<!-- style='color: orange; font-weight: bold' --> befinden sich dann die Kerninformationen, die die Datei ausmachen. Plain-Text-Dateien bestehen nur aus diesem Teil.
 
-Dabei sind diese Daten oft unbrauchbar, wenn sie nicht durch Informationen im Header "erklärt" werden, weil sie sonst einfach zu einem einheitlichen Block Einsen und Nullen verschmelzen. 
-
-Was also tun, wenn diese Informationen fehlen?
-
+Bei anderen Textdateien sind dies die einzelnen Buchstaben und Formatierungen, bei Bildern die einzelnen Bildelemente oder Pixel, bei Tondateien liegen hier die Informationen für die digitalisierten Schallwellen.
+Dabei sind diese Daten oft unbrauchbar, wenn sie nicht durch Informationen im Header "erklärt" werden, weil sie sonst einfach zu einem einheitlichen Block von Einsen und Nullen verschmelzen. 
 
 ****************************************
+
+
+                {{4}}
+**Was also tun, wenn diese Informationen fehlen?**<!-- style='color: orange; font-size: 2vw; font-weight: bold' -->
+
+
 
 
 [^1]:  Einige andere Formate und ihrer Magic Numbers lauten: PNG (89 50 4E 47 0D 0A 1A 0A), JPEG (FF D8 FF), GIF (47 49 46 38), BMP (42 4D), TIFF (49 49 2A 00 / 4D 4D 00 2A), PDF (25 50 44 46), ZIP (50 4B 03 04), RAR (52 61 72 21), EXE (4D 5A), AVI (52 49 46 46), MP3 (49 44 33), WAV (52 49 46 46), MPEG (00 00 01), MP4 (00 00 00 18 66 74 79 70), MKV (1A 45 DF A3), FLV (46 4C 56), JAR (50 4B 03 04), HEIC (66 74 79 70 33 67 70 35), HEIF (66 74 79 70 68 65 69 66), PPTX (50 4B 03 04 14 00 06 00), XLSX (50 4B 03 04 14 00 06 00), DOCX (50 4B 03 04 14 00 06 00)
@@ -172,7 +175,7 @@ Wenn Dateien vorgefunden werden, die nicht korumpiert, deren Format dem Nutzer j
 
 <!-- Ende Abschnitt -->
 
-wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war, muss es nicht zwingend auch für die Lagerung sein. 
+
 
 
 
@@ -182,7 +185,9 @@ wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wi
 
 <i>Dieser Lehrbaustein soll nicht nur ein **Verständnis für Dateiformate**<!-- style='color: orange; font-weight: bold' --> erzeugen, sondern Ihnen auch bei der **Wahl eines idealen Formats**<!-- style='color: orange; font-weight: bold' --> für Ihr Forschungsprojekt helfen. Bevor wir jedoch die unterschiedlichen Vor- und Nachteile bestimmter Formate ansprechen können und worauf Sie bei ihrer Wahl achten sollten, müssen wir jedoch noch einen weiteren Aspekt mit in den Blick nehmen: das Forschungsdatenmanagement<!-- style='color: orange; font-weight: bold' --></i>
 
-Es ist ein häufiger Fehler, bei der Wahl der Arbeitsmaterialien nur an die Arbeit selbst und evtl. noch die Präsentation der Ergebnisse zu denken. Doch genau so muss auch an die Nachnutzung gedacht werden.
+<p> </p>
+
+Es ist ein häufiger Fehler, bei der Wahl der Arbeitsmaterialien nur an den Arbeitsprozess<!-- style='color: orange; font-weight: bold' --> und evtl. noch die Präsentation<!-- style='color: orange; font-weight: bold' --> der Ergebnisse zu denken. Doch genau so muss auch an die Nachnutzung<!-- style='color: orange; font-weight: bold' --> gedacht werden.
 
               {{1}}
 ***********************************
@@ -233,13 +238,13 @@ Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicheru
 
 ### Menschenlesbarkeit
 
-Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst wichtig, die Rohdaten auch menschenlesbar<!-- style='color: orange; font-weight: bold' --> vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
+Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst hilfreich, die Rohdaten auch menschenlesbar<!-- style='color: orange; font-weight: bold' --> vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
 
                 {{1}}
->Plain-Text-basierte Dateiformate eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit aus. Sie existieren bereits seit langer Zeit und lassen sich immer durch einen einfachen Editor offnen. Mehr dazu [hier](TXT---Muter-aller-Textverarbeitung). 
+>**Plain-Text-basierte Dateiformate**<!-- style='color: orange; font-weight: bold' --> eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit<!-- style='color: orange; font-weight: bold' --> aus. Sie existieren bereits seit langer Zeit und lassen sich immer durch einen einfachen Editor offnen. Mehr dazu [hier](TXT---Muter-aller-Textverarbeitung). 
 
                 {{2}}
-Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standardisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
+Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Wie können diese erhalten werden?
 
 <!-- Ende Abschnitt -->
 
@@ -251,15 +256,17 @@ Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zu
 
 ### Maschinenlesbarkeit
 
-Maschinenlesbarkeit<!-- style='color: orange; font-weight: bold' --> bedeutet vor allem die Möglichkeit, Daten mit leicht verfügbaren Programmen - am besten [Open-Source](Link-Me!), also frei verfügbar - öffnen zu können. Es gilt:
+Maschinenlesbarkeit<!-- style='color: orange; font-weight: bold' --> bedeutet vor allem die Möglichkeit, Daten mit leicht verfügbaren Programmen - am besten [Open-Source](Link-Me!), also frei verfügbar - öffnen zu können. Dabei gilt:
 
->Je weiter verbreitet die Software, desto besser!
+>**Je weiter verbreitet die Software, desto besser!**<!-- style='color: orange; font-weight: bold' -->
 
-Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. "*Weit verbreitet*" kann auch bedeuten, dass mehrere Programme das Format nutzen, es sich also um eine Art *Industriestandard* handelt. 
+Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. *"Weit verbreitet"* kann auch bedeuten, dass mehrere Programme das Format nutzen, bzw. es das meistverwendete Format für diesen Zweck ist, es sich also um einen Industriestandard<!-- style='color: orange; font-weight: bold' --> handelt. 
 
-Es muss auch zwischen offenen und proprietären Formaten untersschiden werden. Proprietäre Formate lassen sich nur durch eine Software der Hersteller-/Herausgeberfirma nutzen, welche oft bezahlt werden muss oder entscheidenden Änderungen unterliegen kann. Damit Machinenlesbarkeit über längere Zeit gewährleistet werden kann, sollten hier immer offene Formate verwendet werden.
+Es muss auch zwischen **offenen und proprietären Formaten**<!-- style='color: orange; font-weight: bold' --> untersschiden werden. **Proprietäre Formate**<!-- style='color: orange; font-weight: bold' --> lassen sich oft nur durch eine Software der Hersteller-/Herausgeberfirma nutzen, welche in der Regel bezahlt werden muss oder Änderungen nach Firmeninteressen unterliegen kann. Damit Machinenlesbarkeit über längere Zeit gewährleistet werden kann, sollten hier immer **offene Formate**<!-- style='color: orange; font-weight: bold' --> verwendet werden.
 
 <!-- Ende Abschnitt -->
+
+
 
 
 
@@ -268,19 +275,14 @@ Es muss auch zwischen offenen und proprietären Formaten untersschiden werden. P
 
 <span style='color:orange'>***"Nichts ist von Dauer in der Tech-Welt!"***</span>*, möchte man manchmal ausrufen. Denn, in der Tat, entwickeln sich in dieser doch noch relativ jungen Disziplin die Neuerung stets rasant. Wie kann in solch einer Umgebung überhaupt etwas entstehen, das von Dauer ist?*
 
-                {{1-2}}
+                {{1-7}}
 ****************************************
-Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Innovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten. 
-
-Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
-Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein. 
-
-****************************************
+Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Innovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards<!-- style='color: orange; font-weight: bold' --> für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten.[^Anmerkung](Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
+Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein.)
 
 
-                {{2-6}}
-****************************************
-Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen, die Standardformate veröffentlichen und in der Regel offen zur Verfügung stellen. Berühmte Bespiele sind: 
+                {{2}}
+Weil dieser Prozess eine Weile dauern kann, gibt es **unabhängige Organisationen**<!-- style='color: orange; font-weight: bold' -->, die Standardformate veröffentlichen und in der Regel offen zur Verfügung stellen. Berühmte Bespiele sind: 
 
                 {{3}}
 - die [**Internationale Organisation für Normierung**<!-- style='color: orange; font-weight: bold' -->](https://www.iso.org/home.html) auch **ISO**<!-- style='color: orange; font-weight: bold' --> (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
@@ -288,57 +290,75 @@ Weil dieser Prozess eine Weile dauern kann, gibt es unabhängige Organisationen,
                 {{4}}
 - das [**Unicode Consortium**<!-- style='color: orange; font-weight: bold' -->](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
 
-- das [W3C<!-- style='color: orange; font-weight: bold' -->](https://www.w3.org/Consortium/) (**World Wide Web Consortium**<!-- style='color: orange; font-weight: bold' -->) ist eine internationale Gemeinschaft bestehend aus Mitgliedsorganisationen, privaten Mitarbeitern und der Öffentlichkeit, die zusammenarbeiten, um Webstandards zu entwickeln.[^1](https://www.w3.org/Consortium/) Zu diesen Standards gehören wichtige Technologien wie HTML, CSS, SVG, XML und mehr.[^2](https://www.w3.org/standards/) 
-
                 {{5}}
-Wenn kein standardisiertes Format zur Verfügung steht, lohnt es sich ein weit verbreitetes zu nutzen. Ein großer Nutzerkreis zieht in der Regel Interessierte an, die sich aus eigenem Antrieb um den Erhalt des Formats bemühen, was der Langzezeitstabillität erheblich dient. 
-
-****************************************
-
+- das [W3C<!-- style='color: orange; font-weight: bold' -->](https://www.w3.org/Consortium/) (**World Wide Web Consortium**<!-- style='color: orange; font-weight: bold' -->) ist eine internationale Gemeinschaft bestehend aus Mitgliedsorganisationen, privaten Mitarbeitern und der Öffentlichkeit, die zusammenarbeiten, um Webstandards zu entwickeln.[^1](https://www.w3.org/Consortium/) Zu diesen Standards gehören wichtige Technologien wie HTML<!-- style='color: orange; font-weight: bold' -->, CSS<!-- style='color: orange; font-weight: bold' -->, SVG<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' --> und mehr.[^2](https://www.w3.org/standards/) 
 
                 {{6}}
 ****************************************
-<h4>Zuletzt sei noch von ~~Zeiträumen~~ die Rede.</h4>
+Wenn kein standardisiertes Format zur Verfügung steht, lohnt es sich ein weit verbreitetes zu nutzen. 
 
-Im Studium ist der Zeitraum, für den Unterlagen erstellt werden, meist recht kurz. Ein Exzerpt muss nur bis zur nächsten Stunde oder Hausarbeit existieren, eine PowerPoint nur bis zur Präsentation und gemeinsames Arbeitsmaterial bis zur Deadline. 
+>Ein großer Nutzerkreis zieht in der Regel Interessierte an, die sich aus eigenem Antrieb um den **Erhalt des Formats**<!-- style='color: orange; font-weight: bold' --> bemühen, was der Langzeitstabillität erheblich dient. 
 
-Doch das ändert sich schnell beim Berufseintritt. Als Lehrkraft wünscht sich seine markierten Scans von wichtigen Texten wieder, um sie in der nächsten Stunde als Material zu verwenden. Im Büro erinnert man sich an diese eine Studie, die man zwar gelesen aber einfach nicht mehr öffnen kann. Oder ein Experiment aus der Unizeit könnte den Druchbruch bringen - blöder Weise ist das Protokoll nicht mehr lesbar...
-
-Generell kann davon ausgegangen werden, dass alle Ergebnisse irgendwann eine Nachnutzung finden könnten. [Hier ist ein schönes Beispiel aus der Medizin.](https://www.nature.com/articles/s41591-020-1083-1) Als im September 2020 noch unklar war, wie langfristig die Immunisierung nach einer durchstandenen COVID-19 Erkrankung sein würde, konnte eine Gruppe von Forschern auf ihre Daten über HIV-Erkrankte, die über 35 Jahre hinweg regelmäßige Bluttests abgegeben hatten, zurückgreifen, um sie nach dem Wiederauftreten von COVID-19 ähnlichen Coronavirusantikörpern zu untersuchen. Auf diese Weise konnten sie zumindest Rückschlüsse auf COVOD-19 treffen.
-
->Es sind also immer unvorhergesehene Verwendungsmöglichkeiten mit in Betracht zu ziehen und möglichst lange Lagerung zu gewährleisten. Für einen Zeitraum von unter 10 Jahren empfehlen sich auch häufig verwendeten Formate. Will man jedoch über 10 Jahre hinaus so empfehlen sich immer standardisierte Formate. 
+****************************************
 
 
 ****************************************
 
 
+                {{7}}
+<h4>Zuletzt sei noch von Zeiträumen<!-- style='color: orange; font-weight: bold' --> die Rede.</h4>
+
+                {{8}}
+**Im Studium**<!-- style='color: orange; font-weight: bold' --> ist der Zeitraum, für den Unterlagen erstellt werden, meist recht kurz. Ein Exzerpt muss nur bis zur nächsten Stunde oder Hausarbeit existieren, eine PowerPoint nur bis zur Präsentation und gemeinsames Arbeitsmaterial bis zur Deadline. 
+
+                {{9}}
+Doch das ändert sich schnell beim Berufseintritt<!-- style='color: orange; font-weight: bold' -->. Eine Lehrkraft wünscht sich seine markierten Scans von wichtigen Texten wieder, um sie in der nächsten Stunde als Material zu verwenden. Im Büro erinnert man sich an diese eine Studie, die man zwar gelesen aber einfach nicht mehr öffnen kann. Oder ein Experiment aus der Unizeit könnte den Druchbruch bringen - blöder Weise ist das Protokoll nicht mehr lesbar...
+
+                {{10}}
+****************************************
+>Generell sollte davon ausgegangen werden, dass **alle Ergebnisse**<!-- style='color: orange; font-weight: bold' --> irgendwann eine Nachnutzung finden könnten. 
+
+[Hier ist ein schönes Beispiel aus der Medizin.](https://www.nature.com/articles/s41591-020-1083-1) Als im September 2020 noch unklar war, wie langfristig die Immunisierung nach einer durchstandenen COVID-19 Erkrankung sein würde, konnte eine Gruppe von Forschern auf ihre Daten über HIV-Erkrankte, die über 35 Jahre hinweg regelmäßige Bluttests abgegeben hatten, zurückgreifen, um sie nach dem Wiederauftreten von COVID-19 ähnlichen Coronavirusantikörpern zu untersuchen. Auf diese Weise konnten sie zumindest Rückschlüsse auf COVOD-19 treffen.
+
+****************************************
+
+
+                {{11}}
+>Es sind also immer **unvorhergesehene Verwendungsmöglichkeiten**<!-- style='color: orange; font-weight: bold' --> mit in Betracht zu ziehen und **möglichst lange Lagerung**<!-- style='color: orange; font-weight: bold' --> zu gewährleisten. Für einen Zeitraum von **unter 10 Jahren**<!-- style='color: orange; font-weight: bold' --> empfehlen sich auch häufig verwendeten Formate. Will man jedoch **über 10 Jahre**<!-- style='color: orange; font-weight: bold' --> hinaus so empfehlen sich immer standardisierte Formate. 
+
 <!-- Ende Abschnitt -->
+
+
+
 
 
 
 ### Metadaten
 
-Wir hatten Metadaten eingangs beim Aufbau von Dateien erklärt. Sie sind im Header oder Kopf einer Datei enthaltene Daten, die weitere Informationen über die Datei geben. Das können Erstellungs- und Änderungsdatum sein. Kompressionen und Dateilängen sowie die Art der Datei, Magic Number und vieles mehr können unter diesen Daten enthalten sein. 
+*Wir hatten Metadaten<!-- style='color: orange; font-weight: bold' --> eingangs beim Aufbau von Dateien erklärt. Sie sind im Header oder Kopf einer Datei enthaltene Daten, die weitere Informationen über die Datei geben. Das können Erstellungs- und Änderungsdatum sein, Kompressionen und Dateilängen, sowie die Art der Datei, Magic Number und vieles mehr. *
 
->**Metadaten**<!-- style='color: orange; font-weight: bold' --> sind auf lange Zeit wichtig, weil sie als Ersatz dienen, wenn andere Informationsgeber versagen. 
+>**Metadaten**<!-- style='color: orange; font-weight: bold' --> sind auf lange Zeit wichtig, weil sie als Ersatz dienen, wenn andere Informationsgeber versagen. *Nicht-Plain-Text*-Dateien können ohne sie in der Regel gar nicht gelesen werden.
 
                 {{1}}
-Wenn zum Beispiel Dateiendungen fehlen, kann eine Magic Number helfen. Beim Durchstöbern, bzw. Auswählen von Daten kann es extrem wichtig sein, die Erstellungsdaten nachzuvollziehen. Bei Projekten mit vielen Mitarbeitern kann es nötig werden bestimmte Ersteller zu filtern. Die Liste lässt sich beliebig verlängern.
+Wenn zum Beispiel Dateiendungen fehlen, kann eine **Magic Number** helfen. Beim Durchstöbern, bzw. Auswählen von Daten kann es extrem wichtig sein, die **Erstellungsdaten** nachzuvollziehen. Bei Projekten mit vielen Mitarbeitern kann es nötig werden bestimmte **Ersteller** zu filtern. Die Liste lässt sich beliebig verlängern.
 
                 {{2}}
-Selbstverständlich können diese Daten auch verloren gehen. In einem solchen Fall kann es wichtig sein, Informationen über den Datensatz separat niederzuschreiben. Hierfür wird in der Regel eine sogenannte **README-Datei**<!-- style='color: orange; font-weight: bold' --> erstellt. Meist als **MARKDOWN**- oder **TXT**-Datei gespeichert, können Autoren die Logik ihres Datensatzes sowie wichtige Randdaten hier verewigen. 
+Selbstverständlich können diese Daten auch verloren gehen. In einem solchen Fall ist es wichtig, Informationen über den Datensatz separat niederzuschreiben. Hierfür lohnt es sich, eine sogenannte **README-Datei**<!-- style='color: orange; font-weight: bold' --> zu erstellt. Meist als **MARKDOWN**- oder **TXT**-Datei gespeichert, können Autoren die Logik ihres Datensatzes, sowie wichtige Randdaten hier verewigen. 
 
                 {{3}}
->**README-Dateien** sind kleine Textdateien, in denen besondere Informationen und Bedienhinweise an Datensätzen angehängt werden. Sie sind separate Dateien und werden in der Regel in einem Oberordner des Relevanten Verzeichnis gespeichert.
+>**README-Dateien**<!-- style='color: orange; font-weight: bold' --> sind kleine Textdateien<!-- style='color: orange; font-weight: bold' -->, in denen besondere **Informationen und Bedienhinweise**<!-- style='color: orange; font-weight: bold' --> an Datensätzen angehängt werden. Sie sind separate Dateien und werden in der Regel in einem Oberordner des Relevanten Verzeichnis gespeichert.
 
 <!-- Ende Abschnitt -->
+
+
+
 
 
 
 
 ### Zusammenfassung
 
-Zusammenfassend lassen sich die vorangegangen Kapitel in dieser Tabelle ausdrücken:
+Zusammenfassend lassen sich die vorangegangen Erwägungen für die Eignung zur Langzeitspeicherung in dieser Tabelle ausdrücken:
 
 | Eignung  | Machinenlesbarkeit| Menschenlesbarkeit | Langzeitstabilität | Metadaten |
 | sehr gut | mit weit ver­breiteter offener Software | ja und ohne Spezial­software | genormter Standard | vollständig enthalten |
@@ -349,10 +369,7 @@ Zusammenfassend lassen sich die vorangegangen Kapitel in dieser Tabelle ausdrüc
 <sup>Übernommen von [Forschungsdaten.info](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/formate-erhalten/)</sup>
 
                 {{1}}
-Natürlich ist bei der Langzeitspeicherung auch der Speicherplatz von Wichtigkeit. Wenn also ein nachhaltigeres Format dazu führt, dass wichtige Daten weggeworfen werden müssten, sollte ein Kompromiss gefunden werden, der so vielen Gütekriterien wie möglich genügt und trotzdem noch genug Platz lässt. 
-
-                {{2}}
-Wer auf der Suche nach mehr Details über Dateiformate ist, wird im nächsten Teil glücklich werden...
+Natürlich ist bei der Langzeitspeicherung auch der Speicherplatz<!-- style='color: orange; font-weight: bold' --> von Wichtigkeit. Wenn also ein nachhaltigeres Format dazu führt, dass wichtige Daten weggeworfen werden müssten, sollte ein Kompromiss<!-- style='color: orange; font-weight: bold' --> gefunden werden, der so vielen Gütekriterien wie möglich genügt und trotzdem noch genug Platz lässt. 
 
 <!-- Ende Abschnitt -->
 
@@ -360,7 +377,7 @@ Wer auf der Suche nach mehr Details über Dateiformate ist, wird im nächsten Te
 
 
 
-## Zusatzmaterial
+## Dateiformate
 
                 {{0-3}}
 *************************************
@@ -368,17 +385,17 @@ Mit diesen Grundlagen sei der offizielle Teil dieses Teilbausteins abgeschlossen
 
                 {{1}}
 *************************************
-<div style="float:right; width:40%;">
+<div style="float:right; width:60%;">
   <img src="bilder/crazy.jpg" alt="crazy">
   </div>
-<span style="color:orange">*...komplex*</span> werden. Deshalb verstehen wir diese Teil als eine Art *Lexikon*, in dem Sie stöbern können.
+<span style="color:orange">*...komplex*</span> werden.
 
 *************************************
 
 
                 {{2}}
-Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu auszuwählen. Geisteswissenschaftler dürften sich verstärkt für Textverarbeitung und -präsentation interessieren. Wer mit komplexeren Daten Arbeiten will, sollte sich mit dem Abschnitt über Datenverarbeitung auseinandersetzen. Psychologen oder Pädagogen werden sich auf den Abschnitt über Videos für ihre nächste Interviewstudie freuen. Und Zoologen auf der Jagd seltenen Vogelrufe, können sicher sein, das richtige Audioformat zu wählen. 
-Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihren Interessen. 
+Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu wählen. Geisteswissenschaftler<!-- style='color: orange;' --> dürften sich verstärkt für Textverarbeitung<!-- style='color: orange;' --> und<!-- style='color: orange;' --> -präsentation<!-- style='color: orange;' --> interessieren. Wer mit komplexeren<!-- style='color: orange;' --> Daten<!-- style='color: orange;' --> arbeiten will, sollte sich mit dem Abschnitt über Datenverarbeitung<!-- style='color: orange;' --> auseinandersetzen. Psychologen<!-- style='color: orange;' --> oder Pädagogen<!-- style='color: orange;' --> werden sich auf den Abschnitt über Videos<!-- style='color: orange;' --> für die nächste Interviewstudie freuen. Und Zoologen<!-- style='color: orange;' --> auf der Jagd seltenen Vogelrufe, können sicher sein, das richtige Audioformat<!-- style='color: orange;' --> zu wählen. 
+**Nutzen Sie dazu das Menü auf der linken Seite**<!-- style='color: orange; font-weight: bold' --> und wählen Sie entsprechend Ihrer Interessen.
 
 *************************************
 
@@ -386,48 +403,49 @@ Nutzen Sie dazu das Menü auf der rechten Seite und wählen Sie entsprechend Ihr
                 {{3}}
 *************************************
 
-**Fangen wir an!**<!-- style="color: red; font-size: 9vw; font-family: serif;" -->
+<div style='text-align: center;'>
 
-<center>
-  <img src="bilder/crazyExplain.jpeg" alt="Explain it!" class="center">
+  <p style="color: red; font-size: 9vw; font-weight: bold; font-family: serif;">Fangen wir an!</p>
 
-<h3>
+    <img src="bilder/crazyExplain.jpeg" alt="Explain it!" class="center">
 
-[Dateiformate für Text](Dateiformate-für-Text)
+  <h3>
 
-</h3>
+    [Dateiformate für Text](Dateiformate-für-Text)
 
-<h4>
+  </h3>
 
-[TXT - Mutter aller Textverarbeitung](TXT---Mutter-aller-Textverarbeitung)
+  <h4>
 
-[RTF, MD, DOCX, ODT, PAGES — Informationen für Menschen aufbereiten](RTF,-MD,-DOCX,-ODT,-PAGES-—-Informationen-für-Menschen-aufbereiten)
+    [TXT - Mutter aller Textverarbeitung](TXT---Mutter-aller-Textverarbeitung)
 
-[CSV, XML, JSON, HTML — Informationen für Computer aufbereiten](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten)
+    [RTF, MD, DOCX, ODT, PAGES — Informationen für Menschen aufbereiten](RTF,-MD,-DOCX,-ODT,-PAGES-—-Informationen-für-Menschen-aufbereiten)
 
-[PDFs — Text und Bild überall!](PDFs-—-Text-und-Bild-überall!)
+    [CSV, XML, JSON, HTML — Informationen für Computer aufbereiten](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten)
 
-</h4>
+    [PDFs — Text und Bild überall!](PDFs-—-Text-und-Bild-überall!)
 
-<h3></h3>
+  </h4>
 
-<h3>
+  <h3> </h3>
 
-[Ton, Bild, Video](Ton,-Bild,-Video)
+  <h3>
 
-</h3>
+    [Ton, Bild, Video](Ton,-Bild,-Video)
 
-<h4>
+  </h3>
 
-[WAV, MP3 — Ton und Tonqualität](WAV,-MP3-—-Ton-und-Tonqualität)
+  <h4>
 
-[JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität)
+    [WAV, MP3 — Ton und Tonqualität](WAV,-MP3-—-Ton-und-Tonqualität)
 
-[MP4, MOV, AVI, WMV — Bild und Ton vereint](MP4,-MOV,-AVI,-WMV-—-Bild-und-Ton-vereint)
+    [JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität)
 
-</h4>
+    [MP4, MOV, AVI, WMV — Bild und Ton vereint](MP4,-MOV,-AVI,-WMV-—-Bild-und-Ton-vereint)
 
-</center>
+  </h4>
+
+</div>
 
 
 
