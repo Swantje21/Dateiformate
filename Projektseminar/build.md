@@ -112,7 +112,7 @@ Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiform
 {{1}}******
 Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere *uneinheitliche* Einheiten. Hier sprechen wir von **binären**<!-- style='color: orange; font-weight: bold' --> Dateiformaten.
 
-{{2}}Doch diese uneinheitlichen Dateien können nur noch von speziellen Programmen gelesen, bzw. verstanden werden. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen** getrennt. 
+{{2}}Doch diese uneinheitlichen Dateien können nur noch von speziellen Programmen gelesen, bzw. verstanden werden. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen**<!-- style='color: orange; font-weight: bold' --> getrennt. 
 
 Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mittel sind, die Computern zur verfügung stehen, um Dateiformate zu erkennen. Dazu mehr im nächsten Unterkapitel.
 
@@ -124,20 +124,37 @@ Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mit
 
 Üblicherweise bestehen Dateien aus:
 
-1. *Header* oder **Kopf**
-2. *Body* oder **Körper**
+1. Header<!-- style='color: orange; font-style: italic; font-weight: bold' --> oder **Kopf**
+2. Body<!-- style='color: orange; font-style: italic; font-weight: bold' --> oder **Körper**
 
-...und optionaler Weise...
+                {{1}}
+****************************************
+>Im Header finden sich sogenannten Metadaten<!-- style='color: orange; font-weight: bold' -->, die dem System Auskunft über die Beschaffenheit der Datei geben. Dazu können z.B. der Name der Datei, Erstellungsdatum, Dateierweiterung, Höhe/Breite (für Bilder), Magic Number etc. gehören. 
 
-3. *Footer* oder **Fuß**
+Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung, Magic Number oder Dateistruktur. Die Dateierweitung (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, etc.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, einen Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
 
-Im Header finden sich sogenannte Metadaten, die dem System Auskunft über die Beschaffenheit der Datei geben. Dazu können z.B. der Name der Datei, Erstellungsdatum, Dateierweiterung, Höhe/Breite (für Bilder), Magic Number etc. gehören. 
+****************************************
 
-Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung, Magic Number oder Dateistruktur. Die Dateierweitung (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, etc.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, den Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
 
-Um diesem Missbrauch vorzubeugen, gibt es für die meisten Dateiformate, eine sogenannte **Magic Number**. Dabei handelt es sich um eine zwei bis vier Bytes lange Zahl, die für jedes Dateiformat einzigartig ist. Zum Beispiel ist die Magic Number für das GIF Format '47 49 46 38'.[^1] 
+                {{2}}
+****************************************
+Um diesem Missbrauch vorzubeugen, gibt es für die meisten Dateiformate, eine sogenannte **Magic Number**<!-- style='color: orange; font-weight: bold' -->. Dabei handelt es sich um eine zwei bis vier Bytes lange Zahl, die für jedes Dateiformat einzigartig ist. Zum Beispiel ist die Magic Number für das GIF Format '47 49 46 38'.[^1] 
 
-Fromate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktur erkennt, sofern die Dateierweiterung fehlt. Dabei handelt es sich üblicherweise um Plain-Text-Formate wie .txt oder .csv.[^2]
+Formate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktur erkannt, sofern die Dateierweiterung fehlt. Dabei handelt es sich üblicherweise um Plain-Text-Formate wie TXT, XML oder CSV.[^2]
+
+****************************************
+
+
+                {{1}}
+****************************************
+Im Body<!-- style='color: orange; font-weight: bold' --> befinden sich dann die Kerninformationen, die die Datei ausmachen. Bei Textdateien sind dies die einzelnen Buchstaben und Formatierungen, bei Bildern die einzelnen Bildelemente oder Pixel, bei Tondateien liegen hier die Informationen für die digitalisierten Schallwellen. 
+
+Dabei sind diese Daten oft unbrauchbar, wenn sie nicht durch Informationen im Header "erklärt" werden, weil sie sonst einfach zu einem einheitlichen Block Einsen und Nullen verschmelzen. 
+
+Was also tun, wenn diese Informationen fehlen?
+
+
+****************************************
 
 
 [^1]:  Einige andere Formate und ihrer Magic Numbers lauten: PNG (89 50 4E 47 0D 0A 1A 0A), JPEG (FF D8 FF), GIF (47 49 46 38), BMP (42 4D), TIFF (49 49 2A 00 / 4D 4D 00 2A), PDF (25 50 44 46), ZIP (50 4B 03 04), RAR (52 61 72 21), EXE (4D 5A), AVI (52 49 46 46), MP3 (49 44 33), WAV (52 49 46 46), MPEG (00 00 01), MP4 (00 00 00 18 66 74 79 70), MKV (1A 45 DF A3), FLV (46 4C 56), JAR (50 4B 03 04), HEIC (66 74 79 70 33 67 70 35), HEIF (66 74 79 70 68 65 69 66), PPTX (50 4B 03 04 14 00 06 00), XLSX (50 4B 03 04 14 00 06 00), DOCX (50 4B 03 04 14 00 06 00)
@@ -147,14 +164,15 @@ Fromate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktu
 
 ### Was tun bei unbekannten Formaten? 
 
-(Infotext)
+Wenn die Metadaten durch Dateibeschädigung<!-- style='color: orange; font-weight: bold' --> oder andere Umstände verloren gegangen sein sollten, können sie nur noch anhand ihrer Struktur erkannt werfen. [DROID<!-- style='color: orange; font-weight: bold' -->](https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/) ist ein kostenloses OpenSource Projekt entwickelt vom britischen Nationalarchiv. Es kann Dateien im Cluster analysieren und die Dateiformate erkennen. 
 
-
+                  {{1}}
+Wenn Dateien vorgefunden werden, die nicht korumpiert, deren Format dem Nutzer jedoch trotzdem unbekannt<!-- style='color: orange; font-weight: bold' --> sind, so hilft stets eine Online-Recherche. Gerade die englische Wikipedia<!-- style='color: orange; font-weight: bold' --> kann hier sehr aufschlussreich sein. Auch Webseiten wie [**Fileformats.com**<!-- style='color: orange; font-weight: bold' -->](https://docs.fileformat.com), [**Fileformat.info**<!-- style='color: orange; font-weight: bold' -->](https://www.fileformat.info/format/all.htm) oder [**FileInfo.com**<!-- style='color: orange; font-weight: bold' -->](https://fileinfo.com/filetypes/common) bieten die Informationen. Obendrein erlaubt der Aufbau dieser Wissensbasen,  einen leichteren Zugriff auf ähnliche Formate, was das Stöbern ermöglicht. 
 
 
 <!-- Ende Abschnitt -->
 
-
+wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war, muss es nicht zwingend auch für die Lagerung sein. 
 
 
 
@@ -162,9 +180,12 @@ Fromate, die keine Magic Number haben werden üblicherweise anhand ihrer Struktu
 
 ## Forschungsdatenmanagement 
 
-All die Informationen, die hier ausgebreitet wurden, haben den Sinn, Ihnen bei der Wahl eines idealen Formats für Ihr Forschungsprojekt zu helfen. Wir haben unterschiedliche Vor- und Nachteile angesprochen und worauf bei der Wahl zu achten ist. 
+<i>Dieser Lehrbaustein soll nicht nur ein **Verständnis für Dateiformate**<!-- style='color: orange; font-weight: bold' --> erzeugen, sondern Ihnen auch bei der **Wahl eines idealen Formats**<!-- style='color: orange; font-weight: bold' --> für Ihr Forschungsprojekt helfen. Bevor wir jedoch die unterschiedlichen Vor- und Nachteile bestimmter Formate ansprechen können und worauf Sie bei ihrer Wahl achten sollten, müssen wir jedoch noch einen weiteren Aspekt mit in den Blick nehmen: das Forschungsdatenmanagement<!-- style='color: orange; font-weight: bold' --></i>
 
-Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frage, wie die Ergebnisse am besten konserviert und für zukünftige Weiterverarbeitung gelagert werden können. Was für den Arbeitsprozess sinnvoll war muss es nicht zwingend auch für die Lagerung sein. 
+Es ist ein häufiger Fehler, bei der Wahl der Arbeitsmaterialien nur an die Arbeit selbst und evtl. noch die Präsentation der Ergebnisse zu denken. Doch genau so muss auch an die Nachnutzung gedacht werden.
+
+              {{1}}
+***********************************
 
 ![Life of Forschungsdaten](/bilder/Datenlebenszyklus.png)
 
@@ -177,9 +198,36 @@ Doch wenn der Arbeits-/Forschungsprozess abgeschlossen ist, stellt sich die Frag
 <p></p>
 
 
-Hier sehen wir den Lebenszyklus von Forschungsdaten. Es wird klar, dass jedes Ergebnis wieder zur Grundlage weiterer Forschung werden kann und dass es unerlässlich ist, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
+Hier sehen wir den **Lebenszyklus von Forschungsdaten**<!-- style='color: orange; font-weight: bold' -->. Entgegen der subjektiven Wahrnehmung, handelt es sich nicht um einen linearen Ablauf, sondern viel mehr um einen Kreislauf<!-- style='color: orange; font-weight: bold' -->.[^1](Diese Fehleinschätzung kann besonders Studenten ereilen, die in der Regel nur für ihren Prüfer arbeiten, sich jedoch nicht wiklich am globalen Forschungsprojekt beteiligen.)
 
-Wie bei so Vielem gilt es hier wieder Vor- und Nachteile abzuwiegen und die gegebenen Möglichkeiten optimal auszunutzen. Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren. 
+>**Jedes Ergebnis kann wieder zur Grundlage weiterer Forschung werden.**<!-- style='color: orange; font-weight: bold' --> Nur wer in der Lage ist, Forschungsdaten auch für eine Nachnutzung gut zur Verfügung zu stellen, kann davon ausgehen, einen Beitrag zur Forschung zu leisten.
+
+***********************************
+
+
+              {{2}}
+***********************************
+Gleichzeitig gilt:
+
+>Je höher die Qualität<!-- style='color: orange; font-weight: bold' --> der Daten und ihre Verfügbarkeit<!-- style='color: orange; font-weight: bold' -->, desto relevanter<!-- style='color: orange; font-weight: bold' --> ist Ihre Arbeit.
+
+Es ist also unerlässlich, durchgängig auf hohem Niveau zu arbeiten und Forschungsdaten zuverlässig zu speichern und zu veröffentlichen. Nur so kann der Forschungsprozess als Ganzes zuverlässig weiterlaufen und dabei transparant bleiben.
+
+***********************************
+
+
+              {{3}}
+***********************************
+Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicherung charakterisieren: Menschenlesbarkeit<!-- style='color: orange; font-weight: bold' -->, Maschinenlesbarkeit<!-- style='color: orange; font-weight: bold' -->, Langzeitstabilität<!-- style='color: orange; font-weight: bold' --> und Metadaten<!-- style='color: orange; font-weight: bold' -->. 
+
+***********************************
+
+
+<!-- Ende Abschnitt -->
+
+
+
+
 
 
 
@@ -194,6 +242,10 @@ Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach de
 Unterschiedliche Datenformen benötigen jedoch Daten in binären Formaten wie zum Beispiel Bild- und Tondateien. Damit diese über lange Zeit lesbar bleiben ist es wichtig, Formate zu wählen, die so standardisiert sind, dass sie von vielen Programmen lesbar sind und nicht nur ein bestimmtes. 
 
 <!-- Ende Abschnitt -->
+
+
+
+
 
 
 
@@ -1193,7 +1245,7 @@ In Bezug auf die Langzeitspeicherung<!-- style='color: orange; font-weight: bold
 <i>Verlustbehaftete Audio-Dateiformate wie MP3<!-- style='color: orange; font-weight: bold' -->, AAC<!-- style='color: orange; font-weight: bold' --> und WMA<!-- style='color: orange; font-weight: bold' --> sind die am häufigsten verwendeten Dateiformate, um Musik und Audioinhalte digital zu speichern. Diese Formate komprimieren die Audioinhalte, um Speicherplatz zu sparen, indem sie Teile der Audiodaten entfernen, die für das menschliche Ohr schwer wahrnehmbar oder jenseits des hörbaren Spektrums sind. Was an Signal übrig bleibt wird so gut es geht komprimiert. Dies führt jedoch zu einem Verlust an Audioqualität im Vergleich zum unkomprimierten Original.</i>[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 27.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustbehaftete Audio-Dateiformate. Nutze dabei MP3, AAC und WMA als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
 
                 {{1}}
-MP3<!-- style='color: orange; font-weight: bold' --> (MPEG-1 Audio Layer 3) war das erste verlustbehaftete Audioformat, das eine breite Akzeptanz erhielt. Es ist kompatibel mit den meisten Wiedergabegeräten und bietet eine hohe Komprimierungsrate bei annehmbarer Audioqualität. Im Gegensatz zu den anderen Formaten, handelt es sich um einen nicht-proprietären Standard, der durch die ISO<!-- style='color: orange; font-weight: bold' --> normiert und erhalten wird. Eine MP3-Datei ist jedoch möglicherweise nicht so detailliert wie das Original und kann hörbare Artefakte aufweisen, insbesondere bei niedrigen Bitraten.
+MP3<!-- style='color: orange; font-weight: bold' --> (MPEG-1 Audio Layer 3) war das erste verlustbehaftete Audioformat, das eine breite Akzeptanz erhielt. Es ist kompatibel mit den meisten Wiedergabegeräten und bietet eine hohe Komprimierungsrate bei annehmbarer Audioqualität. Im Gegensatz zu den anderen Formaten, handelt es sich um einen **nicht-proprietären Standard**<!-- style='color: orange; font-weight: bold' -->, der durch die ISO<!-- style='color: orange; font-weight: bold' --> normiert und erhalten wird. Eine MP3-Datei ist jedoch möglicherweise nicht so detailliert wie das Original und kann hörbare Artefakte aufweisen, insbesondere bei niedrigen Bitraten.
 
                 {{2}}
 AAC<!-- style='color: orange; font-weight: bold' --> (Advanced Audio Coding) bietet eine höhere Audioqualität als MP3 bei einer ähnlichen Dateigröße. Es wird oft als Standardformat für Apple-Geräte wie iPhone und iPad verwendet. AAC ist jedoch nicht so weit verbreitet wie MP3 und wird möglicherweise nicht von allen Wiedergabegeräten unterstützt.
@@ -1283,7 +1335,7 @@ Das lesende Programm nutzt diese beiden Informationen, um dann die binären Date
 
 
 
-                {{4-5}}
+                {{4-7}}
 *******************************************
 <span style='color:orange'><b>Vectorbasierte Formate</b></span> nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden, denken Sie wieder an die Farbkodirung für die einzelnen Pixel bei Raster-Graphiken. 
 
@@ -1293,6 +1345,8 @@ Das lesende Programm nutzt diese beiden Informationen, um dann die binären Date
 </figure>
 Ein schönes Beispiel sind Comics. Comics werden erst vorgezeichnet und dann innerhalb der Linien "ausgemalt". So ähnlich können Sie sich auch den Darstellungsrozess bei Vektorgraphiken vorstellen. Mit dem einzigen Unterschied, dass die Kanten nicht angezeigt werden. 
 
+                {{5}}
+*******************************************
 Was auf den ersten Blick als umständlich erscheint, ermöglicht kleinere Dateigrößen und bessere Skalierbarkeit. Während man beim Vergrößern von Rasterbilddateien irgendwann auf der Pixelebene endet, kann in Vektorgraphiken "endlos" hineingezoomt werden. Nehmen wir zum Beispiel dieses missglückte Experiment für die Wortwolke am Anfang dieses Kurses:
 
 
@@ -1301,13 +1355,16 @@ Was auf den ersten Blick als umständlich erscheint, ermöglicht kleinere Dateig
 
 Bei den folgenden zwei Bildern handelt es sich um Screen-Shots mit eskalierender Zoomstärke. Klicken Sie auch gerne auf das Original und vergrößern Sie nach belieben.
 
+*******************************************
 
+
+                {{7}}
 Beispiele für solche Formate wären [**Scalable Vector Graphics**](https://www.w3.org/Graphics/SVG/) (**SVG**) und [**PostScript**](https://www.compart.com/de/postscript) (**PS**). PostScript war der Vorläufer der PDF und findet seit deren Erscheinen nur noch Verwendung als Nischen-Format für spezielle Druckformate. SVG hingegen darf als die vektorbasierte Variante des JPEG verstanden werden. Es findet seine Nutze vor allem in der Design-Welt. 
 
 *******************************************
 
 
-                {{5-6}}
+                {{8}}
 *******************************************
 <h4 style='color:orange'>Anwendungsbereiche: </h4>
 
@@ -1376,7 +1433,81 @@ Wenn es um die Langzeitspeicherung geht, sollten Vektorgrafiken im Allgemeinen b
 
 ### MP4, MOV, AVI, WMV — Bild und Ton vereint
 
-(Infotext)
+<i>Videodateien sind in der Tat die Vereinigung von Bild und Ton. Da wir bereits über Wege verfügen, diese beiden Komponenten zu speichern musste für Video-Dateien nur noch ein Weg gefunden werden, die beiden zusammen zu halten und die Bilder in der richtigen Reihenfolge abzuspielen. Video-Dateien sind deshalb einfach ein Wrapper<!-- style='color: orange; font-weight: bold; font-style: italic;' -->, also eine Art digitales Gefäß oder Umschlag, für die beiden Kernkomponenten, sowie eine Vielzahl anderer Daten: z.B. Untertitel, Metadaten, Stand-/Titelbilder, Geolokationsdaten, usw.</i>
+
+<p></p>
+
+<p style="padding: 10px; color: orange; font-style: italic; background: black; border: 2px solid orange;">Wenn Sie dieses Kapitel separat lesen, sei empfohlen zumindest in die oberste Ebene der vorherigen Kapitel über Bild und Ton reinzuschauen, um ein Verständnis für die Speicherung dieser Formate zu gewinnen.</p>
+
+<p></p>
+
+Stellen Sie sich für die Speicherung von Video einfach eine Verlängerung von einer [Rastergraphik](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität) vor: Die einzelnen Pixel werden der Reihe nach abgespeichert. Am Ende einer Reihe kommt die nächste. Schließlich, wenn der letzte Pixel des aktuellen Bildes erreicht ist, wird mit dem nächsten begonnen. 
+
+                  {{1}}
+******************************************
+Die einzelnen Bilder werden als Frames<!-- style='color: orange; font-weight: bold;' --> bezeichnet. Wie viele Frames dabei in einer Sekunde gezeigt werden wird als Framerate<!-- style='color: orange; font-weight: bold;' --> bezeichnet und häufig als FPS<!-- style='color: orange; font-weight: bold;' --> (*frames per second*) angegeben.
+
+>Je höher die Framerate, desto flüssiger erscheint dabei das Bild. 12 fps bildet dabei ungefähr das unterste Niveau, dass das menschliche Auge als flüssig wahrnimmt.[^💡🕷](Traditionelle Zeichentrickfilme wurden in 12 fps gezeichnet. Stummfilme wurden in der Regel als 16 fps gedreht und mit dem Tonfilm stieg man auf 24 fps um. Ein interessantes Experiment mit Framerates findet sich in Sonys *Spider-Man: Into the Spider-Verse*, in dem der Haupcharakter Miles Morales zu Beginn des Films in 12 fps gezeichnet ist, während der Rest des Films in 24 fps gezeichnet wurde. Auf diese Weise wollten die Poduzenten die Unerfahrenheit des Protagonisten wortwörtlich untermalen.) Jenseits von 25/30 fpm sind nur noch leichte Verbesserungen und ab 120 fps nahezu keine mehr wahrzunehmen.
+
+Vor dem digitalen Zeitalter war diese Einheit eine bezeichnende Trennung in der Film-Branche. Amerikanische Produktionen hatte sich auf eine Framerate von 30 fps europäische hingegen auf 25fps geeinigt. Dieser Unterschied ist noch heute so, spielt aber in der Regel keine so große Rolle mehr. 
+
+******************************************
+
+
+
+                  {{2}}
+******************************************
+In den vorherigen Kapiteln hatten wir besprochen, dass Bild- und Ton-Dateien besonders in unkomprimierten Formaten enorme Größen annehmen können. Dieser Effekt vervielfältigt sich bei Videodateien aus offensichtlichen Gründen. Um die Dateigrößen überschaubar zu halten, werden sogenannte Video-**Codecs**<!-- style='color: orange; font-weight: bold;' --> verwendet. 
+
+>Codec<!-- style='color: orange; font-weight: bold;' --> ist ein Kofferwort für einen Algorithmus, der für die  **Kompression und Dekompression**<!-- style='color: orange; font-weight: bold;' --> (aus dem engl.: *compression / decompression*) von digitalen Videoinhalten verwendet wird. Der Kompressionsprozess reduziert die Größe des Videos, um Speicherplatz zu sparen und die Übertragung über das Internet oder andere Netzwerke zu erleichtern. Der Dekompressionsprozess stellt das Video wieder in seiner ursprünglichen Form her, damit es auf einem Bildschirm angezeigt oder auf einem Speichermedium gespeichert werden kann.[^ChatGPT](Dieser Absatz wurde teilweise von ChatGPT am 27.02.2023 mit dem Prompt "Beschreibe den Prozess der Kompression und Dekompression, den ein Video-Codec betreibt." erstellt und leicht modifiziert)
+
+******************************************
+
+
+
+                  {{3}}
+******************************************
+Der Kompressionsprozess beginnt damit, dass der Codec das Video analysiert und **redundante Informationen**<!-- style='color: orange; font-weight: bold;' --> identifiziert. Diese können zum Beispiel Teile des Videos sein, die sich nicht stark von benachbarten Frames unterscheiden oder Farbinformationen, die für das menschliche Auge schwer wahrnehmbar sind. Diese redundanten Informationen werden dann entfernt oder zusammengefasst, um die Größe des Videos zu reduzieren.[^ChatGPT](Dieser Absatz wurde von ChatGPT am 27.02.2023 mit dem Prompt "Beschreibe den Prozess der Kompression und Dekompression, den ein Video-Codec betreibt." erstellt und leicht modifiziert)
+
+Ein weiterer Schritt im Kompressionsprozess ist die Verwendung von Vorhersagen<!-- style='color: orange; font-weight: bold;' -->. Der Codec analysiert das aktuelle Frame und versucht dann vorherzusagen, wie sich das nächste Frame ändern wird. Wenn das nächste Frame sich nur geringfügig von dem vorhergesagten unterscheidet, werden nur die Änderungen zwischen den Frames gespeichert, anstatt das gesamte Frame zu speichern.[^ChatGPT](Dieser Absatz wurde von ChatGPT am 27.02.2023 mit dem Prompt "Beschreibe den Prozess der Kompression und Dekompression, den ein Video-Codec betreibt." erstellt und leicht modifiziert)
+
+Es gibt viele verschiedene Video-Codecs, und jede hat seine eigenen spezifischen Methoden für die Kompression und Dekompression. Einige bekannte Video-Codecs sind H.264<!-- style='color: orange; font-weight: bold;' -->, VP9<!-- style='color: orange; font-weight: bold;' --> und AV1<!-- style='color: orange; font-weight: bold;' -->.[^ChatGPT](Dieser Absatz wurde von ChatGPT am 27.02.2023 mit dem Prompt "Beschreibe den Prozess der Kompression und Dekompression, den ein Video-Codec betreibt." erstellt und leicht modifiziert)
+
+******************************************
+
+
+<!-- Ende Abschnitt -->
+
+
+#### Beispiele: Videoformate
+
+***Es folgen einige Beispiele für populäre Videoformate:***[^ChatGPT](Diese Kapitel wurde von ChatGPT am 27.02.2023 mit dem Prompt "Schreibe ein kurzes Kapitel über Videoformate. Gehe dabei jeweils kurz auf die Geschichte des Formats sowie den Hersteller/Veröffentlicher, sowie die Vor und Nachteile und das verwendete Codec ein. Kommentiere abschließend die Brauchbarkeit der Formate für eine Langzeitspeicherung. Beziehe dich auf die Formate: MP4, MOV, WMV, AVI, AVCHD, MKV, WEBM." erstellt und leicht modifiziert)
+
+Das MP4<!-- style='color: orange; font-weight: bold;' -->-Format wurde 1998 von der Internationalen Organisation für Normung (ISO) entwickelt. Es ist ein universelles Videoformat, das für die Speicherung und Übertragung von Videos auf verschiedenen Geräten und Plattformen verwendet wird. MP4 verwendet den H.264-Codec, der eine gute Komprimierung und eine hohe Videoqualität bietet. MP4 ist sehr weit verbreitet und wird von vielen Herstellern und Plattformen unterstützt. Der Nachteil ist jedoch, dass es möglicherweise nicht für alle Anwendungen geeignet ist, da es für die Videobearbeitung manchmal nicht ideal ist.
+
+                {{1}}
+Das MOV<!-- style='color: orange; font-weight: bold;' -->-Format wurde 1991 von Apple entwickelt. Es ist ein Containerformat, das sowohl Video- als auch Audio-Daten enthält. MOV-Dateien können mit verschiedenen Codecs wie H.264, ProRes und Animation komprimiert werden. MOV wird häufig für die Videobearbeitung verwendet, da es eine hohe Qualität und Flexibilität bietet. Ein Nachteil ist, dass es manchmal nicht auf allen Plattformen unterstützt wird.
+
+                {{2}}
+Das WMV<!-- style='color: orange; font-weight: bold;' -->-Format wurde von Microsoft entwickelt und wurde erstmals im Jahr 1999 eingeführt. Es ist ein **proprietäres Format**<!-- style='color: orange; font-weight: bold;' -->, das speziell für die Verwendung mit Windows-Plattformen entwickelt wurde. WMV verwendet den VC-1-Codec und bietet eine gute Komprimierung, insbesondere für HD-Videos. Ein Nachteil ist, dass es möglicherweise nicht auf allen Plattformen unterstützt wird und manchmal eine geringere Qualität aufweist als andere Formate.
+
+                {{3}}
+Das AVI<!-- style='color: orange; font-weight: bold;' -->-Format wurde 1992 von Microsoft entwickelt und ist ein Containerformat, das Video- und Audio-Daten enthält. AVI kann mit verschiedenen Codecs wie DivX, XviD und MJPEG komprimiert werden. Es ist ein älteres Format, das häufig für ältere Videos verwendet wird. Ein Nachteil ist, dass AVI-Dateien tendenziell größer sind als andere Formate und möglicherweise nicht auf allen Plattformen unterstützt werden.
+
+                {{4}}
+AVCHD<!-- style='color: orange; font-weight: bold;' --> wurde 2006 von Panasonic und Sony eingeführt und ist ein Format für HD-Videos. Es verwendet den H.264-Codec und bietet eine gute Komprimierung und Videoqualität. AVCHD wird häufig von Camcordern und anderen Aufnahmegeräten verwendet. Ein Nachteil ist, dass es möglicherweise nicht auf allen Plattformen unterstützt wird.
+
+                {{5}}
+Das MKV<!-- style='color: orange; font-weight: bold;' -->-Format (Matroska-Multimedia-Containerfomat) wurde 2002 eingeführt und ist ein [OpenSource](Link-ME!) Containerformat, das nahezu alle Video- und Audio-Codecs unterstützt. MKV bietet eine hohe Qualität und Flexibilität und wird häufig für die Videobearbeitung verwendet. Ein Nachteil ist, dass es möglicherweise nicht auf allen Plattformen unterstützt wird und manchmal größere Dateien erzeugt.
+
+                {{6}}
+Das WEBM<!-- style='color: orange; font-weight: bold;' -->-Format wurde 2010 von Google eingeführt und ist ein offenes, lizenzfreies Format für Webvideos. WEBM verwendet den VP8-Codec und bietet eine gute Komprimierung und Videoqualität. WEBM wird häufig für Streaming-Video und HTML5-Video verwendet. Ein Nachteil ist, dass es möglicherweise nicht auf allen Plattformen unterstützt wird.
+
+                {{7}}
+Für die Langzeitspeicherung von Videos sind einige der oben genannten Formate besser geeignet als andere. MP4<!-- style='color: orange; font-weight: bold;' -->, MOV<!-- style='color: orange; font-weight: bold;' --> und AVCHD<!-- style='color: orange; font-weight: bold;' --> sind gut geeignet für die Langzeitspeicherung, da sie eine hohe Komprimierung und Videoqualität bieten und von vielen Plattformen und Geräten unterstützt werden. MKV<!-- style='color: orange; font-weight: bold;' --> und WEBM<!-- style='color: orange; font-weight: bold;' --> sind auch geeignet, aber da sie nicht von allen Plattformen unterstützt werden, kann es in Zukunft schwieriger werden, auf die gespeicherten Dateien zuzugreifen. AVI<!-- style='color: orange; font-weight: bold;' --> und WMV<!-- style='color: orange; font-weight: bold;' --> sind ältere Formate und können in Zukunft möglicherweise nicht mehr unterstützt werden, daher sind sie möglicherweise nicht die beste Wahl für eine Langzeitspeicherung.
+
+
+
 
 
 
@@ -1402,9 +1533,21 @@ Wenn es um die Langzeitspeicherung geht, sollten Vektorgrafiken im Allgemeinen b
 
 <i>
 
+Ein Leitfaden für die Wahl der richtigen Videoformate. https://www.adobe.com/de/creativecloud/video/discover/best-video-format.html (27.02.2023)
+
 Raster files. https://www.adobe.com/creativecloud/file-types/image/raster.html (23.02.2023)
 
 Raster vs Vector. https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html (23.02.2023)
+
+</i>
+
+
+
+**Comicbook.com:**
+
+<i>
+
+https://comicbook.com/marvel/news/spider-man-into-the-spider-verse-vfx-animation-break-down/
 
 </i>
 
@@ -1440,6 +1583,17 @@ Dateiformat(Dateiart, Dateityp). https://forschungsdaten.info/praxis-kompakt/glo
 Metadaten und Metadatenstandards. Beschreiben hilft verstehen. https://forschungsdaten.info/themen/beschreiben-und-dokumentieren/metadaten-und-metadatenstandards/ (25.02.2023)
 
 </i>
+
+
+**Healtchline.com:**<!-- style='color: orange; font-weight: bold;' -->
+
+<i>
+
+How Many Frames Per Second Can the Human Eye See? https://www.healthline.com/health/human-eye-fps (27.02.2023)
+
+</i>
+
+
 
 
 
@@ -1488,6 +1642,36 @@ The 10 Most Common Audio Formats: Which One Should You Use?, Joel Lee, 2022. htt
 </i>
 
 
+
+**MP4RA.org:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+Codecs. http://mp4ra.org/#/codecs (27.02.2023)
+
+</i>
+
+
+**Nationalarchives.gov.uk:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+Download DROID: file format identification tool. https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/ (27.02.2023)
+
+</i>
+
+
+**Wikipedia.org:**<!-- style='color: orange; font-weight: bold;' -->
+
+<i>
+
+Video Codec. https://en.wikipedia.org/wiki/Video_codec#Video_codec_design (27.02.2023)
+
+</i>
+
+
+
+
 **World Wide Web Consortium (W3C):**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1501,11 +1685,15 @@ SCALABLE VECTOR GRAPHICS (SVG). https://www.w3.org/Graphics/SVG/ (23.02.2023)
 </i>
 
 
-**Xiph.org:**
+**Xiph.org:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
 
 What is FLAC? https://xiph.org/flac/ (25.02.2023)
 
+Developers. Goals. https://xiph.org/flac/developers.html (27.02.2023)
 
+</i>
 
 
 <!-- Ende Abschnitt -->

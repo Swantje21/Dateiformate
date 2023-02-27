@@ -1,7 +1,9 @@
 # Verlinkungen:
 1. In ##Maschinenlesbarkeit, erster Absatz, in den Spiegelstrichen: Link zu Open-Source-Lernbaustein
 
-2. In ####Beispiel: Verlustfreie Formate (WAV, AIFF, FLAC), vierter Absatz: Ling zu Open-Source-Lernbaustein
+2. In ####Beispiel: Verlustfreie Formate (WAV, AIFF, FLAC), vierter Absatz: Link zu Open-Source-Lernbaustein
+
+3. In ####Beispiele: Videoformate, unter {{5}}: Link zu Open-Source-Lernbaustein
 
 
 
