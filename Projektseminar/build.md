@@ -34,7 +34,16 @@ logo: zerosOnesDalle.png
 *Designed auf* [*WordArt.com*](https://wordart.com/create)
 
                 {{1}}
-(Begrüßungstext)
+****************************************
+Willkommen in der Welt der Dateiformate. Sie sind klein, uns egal und meistens tun sie was sie sollen. Was auf den ersten Blick trivial erscheint, ist in Wirklichkeit ein entscheidender Teil von Digital Literacies. Diese untersten Bausteine der Digitalen Welt verstehen, heißt auch ein Fundament für nachhaltige Arbeit in der Digitalen Welt zu legen. 
+
+Im Laufe dieses Bausteins werden wir uns mit den Grundlagen des Dateiensystems beschäftien und anschließend einen Blick auf Forschungsdatenmangement und Archivierung werden. Anschließend wollen wir dann ans Eingemachte: Der hintere Teil dieses Bausteins befasst sich mit unterschiedlichen Bereichen und mich welchen Formaten in ihnen gearbeitet wird. Damit wir in der Zeit bleiben können, sollten Sie hier nach Ihrem Intersesse und vor allem akademischen Bedarf auswählen.
+
+> Ein Hinweis<!-- style='color: orange' --> sei noch gegeben: Über den Baustein hinweg sind einige Kapitel mit OpenAIs ChatGPT erstellt worden. Sie erkennen die Abschnitte an den entsprechenden Fußnoten[^ChatGPT](Hier gibt's nicht zu sehen.). Wenn Sie mehr über diese Technologie erfahren wollen, klicken Sie sich den [Teil](Link-ME!) über AI hinein.
+
+Es folgt das Inhaltsverzeichnis.
+
+****************************************
 
 ****************************************
 
@@ -44,10 +53,9 @@ logo: zerosOnesDalle.png
                 {{2}}
 ****************************************
 
-<center>
-<h1>**Inhalt**</h1>
+<h1 style='text-align: center;'>**Inhalt**</h1>
 
-<h4>
+<h4 style='text-align: center;'>
 
 [Allgemeine Informationen](#Allgemeine-Informationen)
 
@@ -58,7 +66,7 @@ logo: zerosOnesDalle.png
 [Ton, Bild, Video](#Ton,-Bild,-Video)
 
 </h4>
-</center>
+
 ****************************************
 
 
@@ -381,14 +389,14 @@ Natürlich ist bei der Langzeitspeicherung auch der Speicherplatz<!-- style='col
 
                 {{0-3}}
 *************************************
-Mit diesen Grundlagen sei der offizielle Teil dieses Teilbausteins abgeschlossen. Im Zusatzmaterial wollen wir nun ein wenig mehr ins Detail gehen. Dabei könnte es passieren, dass  wir stellenweise etwas...
+Damit schließen wir mit den Grundlagen und widmen und den Details<!-- style='color: orange; font-weight: bold' -->. Im nächsten Teil wollen wir in **spezielle Anwendungsbereiche**<!-- style='color: orange; font-weight: bold' --> und **deren geläufigsten Formate**<!-- style='color: orange; font-weight: bold' --> vertiefen. Dabei könnte es passieren, dass  wir stellenweise etwas...
 
                 {{1}}
 *************************************
 <div style="float:right; width:60%;">
   <img src="bilder/crazy.jpg" alt="crazy">
   </div>
-<span style="color:orange">*...komplex*</span> werden.
+<span style="color:orange; font-style: italic; font_weight: bold">*...komplex*</span> werden.
 
 *************************************
 
@@ -448,9 +456,12 @@ Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten
 </div>
 
 
-
-
 *************************************
+
+<!-- Ende Abschnitt -->
+
+
+
 
 
 
@@ -458,55 +469,69 @@ Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten
 
 ## Dateiformate für Text
 
-*In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text widergeben, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.*[^ChatGPT](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text (TXT), Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
+<i><b>In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text<!-- style='color: orange; font-weight: bold' --> widergeben<!-- style='color: orange; font-weight: bold' -->, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.</b></i>[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text TXT, Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
 
-Wir werden den Abschnitt in drei Teile gliedern: Formate, die hauptsächlich für Menschen<!-- style='color: orange; font-weight: bold' --> gedacht sind und Formate, die hauptsächlich für Maschinen<!-- style='color: orange; font-weight: bold' --> gedacht sind. Zuerst werden wir uns mit dem einfachen, aber leistungsfähigen **Plain Text-Format**<!-- style='color: orange; font-weight: bold' --> (TXT) beschäftigen.
+Wir werden den Kurs in drei Teile gliedern: **Plain Text (TXT)**<!-- style='color: orange; font-weight: bold' -->, Formate, die **hauptsächlich für Menschen**<!-- style='color: orange; font-weight: bold' --> gedacht sind und Formate, die **hauptsächlich für Maschinen**<!-- style='color: orange; font-weight: bold' --> gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
 
-                  {{1}}
-Im ersten Teil werden wir uns mit Formaten befassen, die für Menschen gedacht sind, wie RTF<!-- style='color: orange; font-weight: bold' -->, MD<!-- style='color: orange; font-weight: bold' -->, DOCX<!-- style='color: orange; font-weight: bold' -->, ODT<!-- style='color: orange; font-weight: bold' --> und PAGES<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind mit Formatierungsoptionen<!-- style='color: orange; font-weight: bold' --> ausgestattet, die es Benutzern ermöglichen, ihre Dokumente mit **Stil und Klarheit**<!-- style='color: orange; font-weight: bold' --> zu gestalten.
+Im **zweiten Teil**<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Menschen gedacht sind, wie RTF<!-- style='color: orange; font-weight: bold' -->, MD<!-- style='color: orange; font-weight: bold' -->, DOCX<!-- style='color: orange; font-weight: bold' -->, ODT<!-- style='color: orange; font-weight: bold' --> und PAGES<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind mit Formatierungsoptionen<!-- style='color: orange; font-weight: bold' --> ausgestattet, die es Benutzern ermöglichen, ihre Dokumente mit **Stil und Klarheit**<!-- style='color: orange; font-weight: bold' --> zu gestalten.
 
-                  {{2}}
-Im zweiten Teil werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' -->, JSON<!-- style='color: orange; font-weight: bold' --> und HTML<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
+Im **dritten Teil**<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' -->, JSON<!-- style='color: orange; font-weight: bold' --> und HTML<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
+
+<!-- Ende Abschnitt -->
+
+
+
+
+
 
 
 ### TXT – Mutter aller Textverarbeitung
 
-
-**Plain-Text (TXT)**<!-- style='color: orange; font-weight: bold' --> ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format **ohne Formatierungen**<!-- style='color: orange; font-weight: bold' --> oder **spezielle Zeichen**<!-- style='color: orange; font-weight: bold' -->, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.[^ChatGPT](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
+                {{0}}
+**Plain-Text (.txt)**<!-- style='color: orange; font-weight: bold' --> ist eines der einfachsten und ältesten Dateiformate für Textverarbeitungen. Es handelt sich hierbei um ein Format ohne Formatierungen oder spezielle Zeichen, welches lediglich reinen Text enthält. Dieser Text kann mit jedem Texteditor geöffnet, bearbeitet und gespeichert werden.[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe einen informativen Text über das Plain-Text-Format .txt. Die Überschrift lautet "TXT – Mutter aller Textverarbeitung"." erstellt und leicht modifiziert.)
 
                 {{1}}
-Es hat seine Wurzeln<!-- style='color: orange; font-weight: bold' --> in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. Die Einfachheit<!-- style='color: orange; font-weight: bold' --> des Plain-Text-Formats hat es zu einem wertvollen Werkzeug für die Textverarbeitung gemacht und es ist auch heute noch ein wichtiger Bestandteil der Computerwelt.
+Es hat seine Wurzeln<!-- style='color: orange; font-weight: bold' --> in den frühen Tagen der Computertechnologie, als einfache Textdateien die einzigen Arten von Dokumenten waren, die auf Computern gespeichert und verarbeitet werden konnten. Es entstand aus dem Bedarf heraus, Informationen in einer einfachen, universell lesbaren und maschinenlesbaren Form zu speichern. 
 
                 {{2}}
-Das TXT-Format ist für seine Portabilität<!-- style='color: orange; font-weight: bold' --> bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor<!-- style='color: orange; font-weight: bold' --> geöffnet und bearbeitet werden.
+Das TXT-Format ist für seine Portabilität<!-- style='color: orange; font-weight: bold' --> bekannt. Da es keine Formatierungen oder spezielle Zeichen enthält, kann es auf jedem Gerät mit einem Texteditor geöffnet und bearbeitet werden. Es ist auch sehr gut lesbar, da es nicht mit unnötigen Formatierungen überladen ist.
 
                 {{3}}
-Ein weiterer Vorteil des TXT-Formats ist seine Einfachheit. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine unübersichtlichen Formatierungen enthält.
+Ein weiterer Vorteil des TXT-Formats ist seine Einfachheit<!-- style='color: orange; font-weight: bold' -->. Es ist einfach zu erstellen, da keine besonderen Kenntnisse erforderlich sind. Außerdem ist es einfach zu lesen, da es keine<!-- style='color: orange; font-weight: bold' --> unübersichtlichen Formatierungen<!-- style='color: orange; font-weight: bold' --> enthält.
 
                 {{4}}
-Da das .txt-Format so einfach gehalten ist, eignet es sich auch hervorragend für einfache Texte oder Notizen. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie Fett- oder Kursivdruck hinzuzufügen.
+Da das TXT-Format so einfach gehalten ist, eignet es sich auch hervorragend für **einfache Texte oder Notizen**<!-- style='color: orange; font-weight: bold' -->. Es ist jedoch wichtig zu beachten, dass es keine Möglichkeit gibt, Textformatierungen wie **Fett- oder Kursivdruck**<!-- style='color: orange; font-weight: bold' --> hinzuzufügen.
 
                 {{5}}
-TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden, einschließlich Notepad auf Windows-Systemen und TextEdit auf MacOS-Systemen. Darüber hinaus gibt es auch eine Vielzahl von kostenlosen und Open-Source-Texteditoren, die TXT-Dateien unterstützen, wie z.B. [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com) und [Atom](https://github.blog/2022-06-08-sunsetting-atom/). Diese Programme bieten oft mehr Funktionen als die einfachen Texteditoren, wie Syntax-Hervorhebung, Zeilennummerierung und Unterstützung für mehrere Dateiformate.[^ChatGPT2](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe noch einen weiteren Absatz über Programme, mit denen man txt Dateien öffnet." erstellt und leicht modifiziert)
+TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden, einschließlich Notepad<!-- style='color: orange; font-weight: bold' --> auf Windows-Systemen und TextEdit<!-- style='color: orange; font-weight: bold' --> auf MacOS-Systemen. Darüber hinaus gibt es auch eine Vielzahl von kostenlosen und Open-Source-Texteditoren, die TXT-Dateien unterstützen, wie z.B. [**Notepad++**<!-- style='color: orange; font-weight: bold' -->](https://notepad-plus-plus.org), [**Sublime Text**<!-- style='color: orange; font-weight: bold' -->](https://www.sublimetext.com) und [Atom<!-- style='color: orange; font-weight: bold' -->](https://github.blog/2022-06-08-sunsetting-atom/). Diese Programme bieten oft mehr Funktionen als die einfachen Texteditoren, wie Syntax-Hervorhebung, Zeilennummerierung und Unterstützung für mehrere Dateiformate.[^ChatGPT2](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe noch einen weiteren Absatz über Programme, mit denen man txt Dateien öffnet." erstellt und leicht modifiziert)
 
                 {{6}}
-Insgesamt ist das .txt-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.
+Insgesamt ist das TXT-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.
+
+<!-- Ende Abschnitt -->
+
+
+
+
+
 
 
 
 
 ### RTF, MD, DOCX, ODT, PAGES — Informationen für Menschen aufbereiten
 
-Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe von Dateiformaten, die speziell für diesen Zweck entwickelt wurden. Hier sind einige der wichtigsten:
+***Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe von Dateiformaten, die speziell für diesen Zweck entwickelt wurden. Hier sind einige der wichtigsten:***
 
 
                 {{1-3}}
-***************************************         
+***************************************
 <h3>RTF (Rich Text Format): </h3>
 
-{{1}}RTF<!-- style='color: orange; font-weight: bold' --> ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
+                {{1}}
+RTF<!-- style='color: orange; font-weight: bold' --> ist ein Textformat, das es Benutzern ermöglicht, Text mit Formatierungen wie Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. zu speichern. RTF-Dateien können mit den meisten Textverarbeitungsprogrammen gelesen und bearbeitet werden und sind eine gute Wahl, wenn Sie eine einfache Möglichkeit zur Aufbereitung von Texten für Menschen benötigen.
 
-{{2}}Das RTF wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten, Schriftgrößen, Schriftstilen und Farben zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an Popularität verloren, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
+                {{2}}
+Das RTF wurde 1987 von Microsoft eingeführt und war eines der ersten Textformate, das die **Formatierung von Texten über mehrere Anwendungen und Betriebssysteme hinweg**<!-- style='color: orange; font-weight: bold' --> beibehält. Es ermöglichte es Benutzern, Texte mit verschiedenen Schriftarten<!-- style='color: orange; font-weight: bold' -->, Schriftgrößen<!-- style='color: orange; font-weight: bold' -->, Schriftstilen<!-- style='color: orange; font-weight: bold' --> und Farben<!-- style='color: orange; font-weight: bold' --> zu formatieren und diese Formatierung bei Übertragungen auf andere Computer beizubehalten. Mit dem Aufkommen anderer Formate, wie z.B. DOCX, hat RTF jedoch an **Popularität verloren**<!-- style='color: orange; font-weight: bold' -->, obwohl es immer noch von einigen Textverarbeitungsprogrammen unterstützt wird, wie z.B. Microsoft Word.
 
 ***************************************
 
@@ -515,9 +540,10 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 ***************************************
 <h3>DOCX ("Das Word-Dokument"): </h3>
 
-{{3}}DOCX<!-- style='color: orange; font-weight: bold' --> ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit Microsoft Word und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
+DOCX<!-- style='color: orange; font-weight: bold' --> ist das Standardformat für Microsoft Word-Dokumente. Es bietet eine reiche Palette an Formatierungsmöglichkeiten, einschließlich Schriftart, Größe, Farbe, Absatz- und Zeichenformatierungen usw. DOCX-Dateien können mit **Microsoft Word**<!-- style='color: orange; font-weight: bold' --> und einigen anderen Textverarbeitungsprogrammen gelesen und bearbeitet werden.
 
-{{4}}Das DOCX Format wurde erstmals im Jahr 2007 mit Microsoft Word 2007 eingeführt und hat sich seitdem zum Industriestandard entwickelt. Es hat das ältere DOC Format, das seit 1993 verwendet wurde, abgelöst und bietet eine Vielzahl von Vorteilen, darunter eine bessere Kompatibilität und Zusammenarbeit mit anderen Anwendungen und Betriebssystemen. Darüber hinaus ermöglicht DOCX eine flexiblere Textformatierung, eine kleinere Dateigröße und die Möglichkeit, interaktive Elemente wie Tabellen, Grafiken und Formulare einzufügen. Aufgrund dieser Vorteile und seiner breiten Akzeptanz in der Geschäftswelt hat sich DOCX zum Industriestandard für Textverarbeitung entwickelt.
+                {{4}}
+Das DOCX Format wurde erstmals im Jahr 2007<!-- style='color: orange; font-weight: bold' --> mit Microsoft Word 2007 eingeführt und hat sich seitdem zum Industriestandard entwickelt. Es hat das ältere DOC Format, das seit 1993 verwendet wurde, abgelöst und bietet eine Vielzahl von Vorteilen, darunter eine bessere **Kompatibilität und Zusammenarbeit mit anderen Anwendungen**<!-- style='color: orange; font-weight: bold' --> und Betriebssystemen<!-- style='color: orange; font-weight: bold' -->. Darüber hinaus ermöglicht DOCX eine flexiblere Textformatierung, eine kleinere Dateigröße und die Möglichkeit, interaktive Elemente wie Tabellen, Grafiken und Formulare einzufügen. Aufgrund dieser Vorteile und seiner breiten Akzeptanz in der Geschäftswelt hat sich DOCX zum Industriestandard für Textverarbeitung entwickelt.
 
 ***************************************
 
@@ -535,16 +561,18 @@ Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe
 ***************************************
 <h3>MD (Markdown): </h3>
 
-                {{6}}
-Markdown<!-- style='color: orange; font-weight: bold' --> ist ein einfaches Textformat, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
+Markdown<!-- style='color: orange; font-weight: bold' --> ist ein Plain-Text-Format, das es Benutzern ermöglicht, Texte mit einer einfachen Syntax zu formatieren. Diese Syntax kann später in HTML umgewandelt werden, um den Text auf einer Webseite darzustellen. MD-Dateien sind einfach zu lesen und zu bearbeiten und eignen sich hervorragend für die Aufbereitung von Texten für Menschen, die nicht viel Erfahrung mit Textformatierung haben.
 
                 {{7}}
-Markdown wurde  2006 von John Gruber und Aaron Swartz eingeführt. Die Idee dahinter war, dass es einfacher sein sollte, Texte zu formatieren, als mit HTML oder anderen Markup-Sprachen. Markdown wurde schnell zu einem beliebten Format für Blogging, Dokumentation und andere Anwendungen, bei denen Texte formatiert werden müssen.
+Markdown wurde 2006 von John Gruber und Aaron Swartz eingeführt. Die Idee dahinter war, dass es einfacher sein sollte, Texte zu formatieren, als mit HTML oder anderen Markup-Sprachen. Markdown wurde schnell zu einem beliebten Format für Blogging, Dokumentation und andere Anwendungen, bei denen Texte formatiert werden müssen.
 
                 {{8}}
-Die Syntax von Markdown ist sehr einfach und besteht aus einer Kombination aus Text und einfachen Zeichen, die für Formatierungen verwendet werden. Beispielsweise kann ein Überschrift durch eine Reihe von #-Zeichen gekennzeichnet werden, während fett gedruckter Text durch zwei Asterisken eingerahmt wird. Die Schönheit von Markdown liegt darin, dass es einfach zu erlernen und zu verwenden ist, aber dennoch eine Vielzahl an Formatierungen ermöglicht. Dieser ganze Kurs ist zum Beispiel in Mardown geschrieben.
+Die Syntax<!-- style='color: orange; font-weight: bold' --> von Markdown ist sehr einfach und besteht aus einer Kombination aus Text und einfachen Zeichen, die für Formatierungen verwendet werden. Beispielsweise kann ein Überschrift<!-- style='color: orange; font-weight: bold' --> durch eine Reihe von **#-Zeichen** gekennzeichnet werden, während **fett gedruckter Text**<!-- style='color: orange; font-weight: bold' --> durch zwei **Asterisken** eingerahmt wird. Die Schönheit von Markdown liegt darin, dass es einfach zu erlernen und zu verwenden ist, aber dennoch eine [Vielzahl an Formatierungen](https://www.markdownguide.org/basic-syntax/) ermöglicht. Dieser ganze Kurs ist zum Beispiel in Markdown geschrieben.
 
 ***************************************
+
+
+<!-- Ende Abschnitt -->
 
 
 
@@ -554,20 +582,22 @@ Die Syntax von Markdown ist sehr einfach und besteht aus einer Kombination aus T
 
 ### CSV, XML, JSON, HTML — Informationen für Computer aufbereiten
 
-                {{0-1}}
 In der Welt der digitalen Datenverarbeitung ist es von größter Bedeutung, Informationen in einer Form zu speichern, die für Computer und andere digitale Geräte leicht lesbar ist. Dies ist der Hauptgrund, warum es eine Vielzahl von Dateiformaten gibt, die speziell für die Verarbeitung von Informationen durch Maschinen ausgelegt sind. In diesem Kapitel werden wir uns mit einigen dieser Formate beschäftigen, die sich durch ihre maschinenlesbare Struktur auszeichnen, darunter **CSV**<!-- style='color: orange; font-weight: bold' -->, **XML**<!-- style='color: orange; font-weight: bold' -->, **JSON**<!-- style='color: orange; font-weight: bold' --> und **HTML**<!-- style='color: orange; font-weight: bold' -->.
 
-                {{1-4}}
-***********************
-<h3>CSV (Comma Separated Values): </h3>
+<p> </p>
+
+
+
+
+
+#### CSV (Comma Separated Values)
+
+CSV<!-- style='color: orange; font-weight: bold' --> ist ein sehr einfaches Format, das nur durch **Kommas getrennte Werte**<!-- style='color: orange; font-weight: bold' --> enthält. Es sind auch auch Trennungen durch andere Zeichen wie Semikolon<!-- style='color: orange; font-weight: bold' --> und Tabulator<!-- style='color: orange; font-weight: bold' --> möglich. Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
 
                 {{1}}
-CSV<!-- style='color: orange; font-weight: bold' --> ist ein sehr einfaches Format, das nur durch Kommas getrennte Werte enthält.[^1](ACHTUNG! Es sind auch auch Trennungen mit anderen Zeichen wie Semikolon<!-- style='color: orange; font-weight: bold' --> und Tabulator<!-- style='color: orange; font-weight: bold' --> möglich) Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
+CSV ist **eines der ältesten und am weitesten verbreiteten Dateiformate**<!-- style='color: orange; font-weight: bold' --> für den Austausch von Daten. Es wurde in den 1960er Jahren entwickelt und hat sich bis heute als einfaches und effektives Format für den Datenaustausch etabliert. CSV ermöglicht es, Daten in einer **tabellarischen Form**<!-- style='color: orange; font-weight: bold' --> zu speichern, bei der jede Zeile einen Datensatz und jede Spalte eine bestimmte Eigenschaft oder ein Attribut darstellt. Die Daten werden durch Kommas getrennt, wodurch sie von einfachen Texteditoren und Tabellenkalkulationsprogrammen wie Microsoft Excel oder Google Sheets gelesen und bearbeitet werden können.
 
                 {{2}}
-CSV ist eines der ältesten und am weitesten verbreiteten Dateiformate für den Austausch von Daten. Es wurde in den 1960er Jahren entwickelt und hat sich bis heute als einfaches und effektives Format für den Datenaustausch etabliert. CSV ermöglicht es, Daten in einer tabellarischen Form zu speichern, bei der jede Zeile einen Datensatz und jede Spalte eine bestimmte Eigenschaft oder ein Attribut darstellt. Die Daten werden durch Kommas getrennt, wodurch sie von einfachen Texteditoren und Tabellenkalkulationsprogrammen wie Microsoft Excel oder Google Sheets gelesen und bearbeitet werden können.
-
-                {{3}}
 Die Syntax von CSV ist sehr einfach und intuitiv. Jede Zeile stellt einen Datensatz dar, während die Spaltenüberschriften und die Daten in jeder Spalte durch Kommas voneinander getrennt sind:
 
                 {{3}}
@@ -579,27 +609,30 @@ Tom,42,Hamburg
 Jane,31,Köln
 ````
 
+
+
+
+
+
+#### XML und JSON
+
+<i>XML<!-- style='color: orange; font-weight: bold' --> (**Extensible Markup Language**<!-- style='color: orange; font-weight: bold' -->) und JSON<!-- style='color: orange; font-weight: bold' --> (**JavaScript Object Notation**<!-- style='color: orange; font-weight: bold' -->) sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.</i>
+
+
+                {{1-4}}
 ***********************
 
-
-
-                {{4-5}}
-<h3>XML (Extensible Markup Language) und JSON (JavaScript Object Notation): </h3>
-XML<!-- style='color: orange; font-weight: bold' --> und JSON<!-- style='color: orange; font-weight: bold' --> sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.
-
-
-                {{5-8}}
-***********************
+<p> </p>
 
 <h4>XML</h4>
 
-                {{5}}
-XML<!-- style='color: orange; font-weight: bold' --> (**Extensible Markup Language**) ist ein textbasiertes <!-- style='color: orange; font-weight: bold' -->Format, das für Computer lesbar ist und das Austausch und Speicherung von Daten ermöglicht. Es nutzt eine hierarchische Struktur, um Informationen in einer Baumstruktur zu organisieren. Jedes Element im XML-Dokument hat einen Namen und kann Attribute und Inhalte haben.
+                {{1}}
+XML<!-- style='color: orange; font-weight: bold' --> (**Extensible Markup Language**) ist ein textbasiertes<!-- style='color: orange; font-weight: bold' --> Format, das für Computer lesbar ist und das Austausch und Speicherung von Daten ermöglicht. Es nutzt eine hierarchische Struktur, um Informationen in einer Baumstruktur zu organisieren. Jedes Element im XML-Dokument hat einen Namen und kann Attribute und Inhalte haben.
 
-                {{6-7}}
+                {{2}}
 Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
 
-                {{6-8}}
+                {{2}}
 ````XML
 <?xml version="1.0" encoding="UTF-8"?>
 <person>
@@ -617,21 +650,24 @@ Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
 </person>
 ````
 
-                {{7}}
-XML verwendet eine syntaktische Struktur, die von HTML ähnlich ist. Es werden Hierarchien von Elementen und Attributen verwendet, um Daten zu beschreiben. Jedes Element repräsentiert eine bestimmte Dateneinheit und kann andere untergeordnete Elemente enthalten. Jedes Attribut enthält zusätzliche Informationen zu einem Element. Ein XML-Dokument muss mit einer Prolog-Zeile beginnen, die die verwendete XML-Version und Zeichenkodierung angibt. Zudem muss jedes geöffnete Element auch geschlossen werden, um eine valide Syntax zu erreichen.
+                {{3}}
+XML verwendet eine syntaktische Struktur, die von HTML ähnlich ist. Es werden **Hierarchien von Elementen und Attributen**<!-- style='color: orange; font-weight: bold' --> verwendet, um Daten zu beschreiben. Jedes Element repräsentiert eine bestimmte Dateneinheit und kann andere untergeordnete Elemente enthalten. Jedes Attribut enthält zusätzliche Informationen zu einem Element. Ein XML-Dokument muss mit einer **Prolog-Zeile**<!-- style='color: orange; font-weight: bold' --> beginnen, die die verwendete XML-Version und Zeichenkodierung angibt. Zudem muss jedes geöffnete Element auch geschlossen werden, um eine valide Syntax zu erreichen.
 
 ***********************
 
 
 
-                {{8-10}}
+                {{4-7}}
 ***********************
+
+<p> </p>
+
 <h4>JSON</h4>
 
         
-JSON<!-- style='color: orange; font-weight: bold' -->, oder **JavaScript Object Notation**<!-- style='color: orange; font-weight: bold' -->, ist ein Datenformat, das Anfang der 2000er Jahre entwickelt wurde. Ursprünglich wurde es als einfachere Alternative zu XML entwickelt, um Daten zwischen Server und Anwendung auszutauschen. JSON nutzt eine einfache Syntax aus geschweiften Klammern und Anführungszeichen, um Datenstrukturen darzustellen. Es hat sich schnell zu einem der weitverbreitetsten Datenformate im Internet entwickelt und wird heute von vielen Anwendungen und APIs genutzt, um Daten effizient und einfach zu verarbeiten und auszutauschen. Hier ein Beispiel: 
+JSON<!-- style='color: orange; font-weight: bold' -->, oder **JavaScript Object Notation**<!-- style='color: orange; font-weight: bold' -->, ist ein Datenformat, das Anfang der 2000er Jahre entwickelt wurde. Ursprünglich wurde es als einfachere Alternative zu XML entwickelt, um Daten zwischen Server und Anwendung auszutauschen. JSON nutzt eine einfache Syntax aus geschweiften Klammern und Anführungszeichen, um Datenstrukturen darzustellen. Es hat sich schnell zu einem der weitverbreitetsten Datenformate im Internet entwickelt und wird heute von vielen Anwendungen und APIs genutzt, um Daten effizient und einfach zu verarbeiten und auszutauschen. Hier das Beispiel aus dem XML-Teil als JSON: 
 
-                {{9}}
+                {{5}}
 ````JSON
 {
   "person": {
@@ -656,38 +692,42 @@ JSON<!-- style='color: orange; font-weight: bold' -->, oder **JavaScript Object 
 }
 ````
 
+                {{6}}
+JSON verwendet eine **hierarchische Struktur**<!-- style='color: orange; font-weight: bold' -->, die aus **Schlüssel-Wert-Paaren**<!-- style='color: orange; font-weight: bold' -->  besteht und durch geschweifte Klammern "**{}**<!-- style='color: orange; font-weight: bold' --> " begrenzt wird. Jedes Schlüssel-Wert-Paar besteht aus einem Schlüssel<!-- style='color: orange; font-weight: bold' -->[^1](einem String<!-- style='color: orange; font-style: italic; font-weight: bold' -->, einer Buchstabenfolge) und einem Wert<!-- style='color: orange; font-weight: bold' -->, der entweder ein String, eine Zahl, ein Boolean<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^2](WAHR oder FALSCH), null<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^3](Oder besser: NICHTS) oder ein Array<!-- style='color: orange; font-style: italic; font-weight: bold' --> [^4](Alles vorherige in eckigen Klammern durch Kommata getrennt, also eine Art Sammlung) oder ein Objekt<!-- style='color: orange; font-weight: bold' -->[^5](Wieder ein weiteres komplexes Schlüsselpaar) sein kann. Die einzelnen Schlüssel-Wert-Paare werden durch Kommata<!-- style='color: orange; font-weight: bold' --> getrennt.[^ChatGPT](Dieser Absatz wurden von ChatGPT am 28.02.2023 mit dem Prompt "Schreibe einen einführeden Absatz über die Syntax von JSON." erstellt und leicht modifiziert.)
+
+
+
 ***********************
 
 
 
-                {{10-12}}
+                {{7}}
 ***********************
 
 <h4>XML und JSON im Vergleich</h4>
 
-Im Gegensatz zu JSON ist XML<!-- style='color: orange; font-weight: bold' --> ein umfassenderes Format und bietet eine größere Flexibilität bei der Strukturierung von Daten. Mit XML kann man komplexere Datenstrukturen aufbauen und es bietet auch die Möglichkeit, eigene Markups zu definieren. Außerdem kann XML auch semantische Informationen bereitstellen, die für Maschinen nützlich sind.
+Im Gegensatz zu JSON ist XML<!-- style='color: orange; font-weight: bold' --> ein umfassenderes Format und bietet eine **größere Flexibilität**<!-- style='color: orange; font-style: italic; font-weight: bold' --> bei der Strukturierung von Daten. Mit XML kann man komplexere Datenstrukturen aufbauen und es bietet auch die Möglichkeit, **eigene Markups zu definieren**<!-- style='color: orange; font-style: italic; font-weight: bold' -->. Außerdem kann XML auch semantische Informationen bereitstellen, die für Maschinen nützlich sind.
 
-                {{11}}
-Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfordert eine stärkere Überwachung, um Fehler zu vermeiden und es kann auch größere Datenmengen erzeugen, da es mehr Informationen speichert. JSON<!-- style='color: orange; font-weight: bold' --> ist dagegen einfacher zu lesen und zu schreiben und eignet sich besser für den Austausch von Daten zwischen Anwendungen und ist deshalb hier of die bevorzugte Wahl.
-
-***********************
-
-
-                {{12-14}}
-***********************
-
-<h3>HTML (Hypertext Markup Language)</h3>
-
-
-HTML<!-- style='color: orange; font-weight: bold' --> ist ein Format, das hauptsächlich für Webseiten verwendet wird. Es ermöglicht es, Texte, Bilder und andere Inhalte in einer für Computer lesbaren Form darzustellen. HTML-Dokumente enthalten Informationen über die Layout- und Formatierungselemente einer Seite, was es ermöglicht, Inhalte auf eine benutzerfreundliche Art und Weise darzustellen.
-
-                {{13}}
-HTML wurde bereits 1990 von Tim Berners-Lee, dem Vater des World Wide Web, entwickelt. Die Syntax von HTML basiert auf den sogenannten "Tags", welche innerhalb von angleichen Klammern stehen. Diese Tags geben an, wie ein bestimmter Teil des Dokuments formatiert werden soll, beispielsweise als Überschrift, Absatz, Liste, Tabellen usw. HTML ermöglicht es auch, Links und Bilder einzubetten, wodurch eine Verknüpfung von Dokumenten im World Wide Web entsteht. Mit fortschreitender Weiterentwicklung, wurde HTML immer komplexer und bietet heute umfassende Möglichkeiten für die Gestaltung von Webseiten.
+                {{8}}
+Allerdings ist XML auch aufwendiger zu lesen und zu schreiben als JSON. Es erfordert eine stärkere Überwachung, um Fehler zu vermeiden und es kann auch größere Datenmengen erzeugen, da es mehr Informationen speichert. JSON<!-- style='color: orange; font-weight: bold' --> ist dagegen **einfacher zu lesen und zu schreiben**<!-- style='color: orange; font-style: italic; font-weight: bold' --> und eignet sich besser für den Austausch von Daten zwischen Anwendungen und ist deshalb hier oft die bevorzugte Wahl.
 
 ***********************
 
 
-                {{14-16}}
+
+
+#### HTML (Hypertext Markup Language)
+
+
+HTML<!-- style='color: orange; font-weight: bold' --> ist ein Format, das hauptsächlich für Webseiten verwendet wird. Es ermöglicht es, Texte, Bilder und andere Inhalte in einer für Computer lesbaren Form darzustellen. HTML-Dokumente enthalten Informationen über die Layout- und Formatierungselemente einer Seite, was es ermöglicht, Inhalte auf eine benutzerfreundliche Art und Weise darzustellen. 
+
+                {{1}}
+HTML wurde bereits 1990 von Tim Berners-Lee, dem Vater des World Wide Web, entwickelt. Die Syntax<!-- style='color: orange; font-weight: bold' --> von HTML basiert auf den sogenannten "Tags", welche innerhalb von angleichen Klammern stehen. Diese Tags geben an, wie ein bestimmter Teil des Dokuments formatiert<!-- style='color: orange; font-weight: bold' --> werden soll, beispielsweise als Überschrift, Absatz, Liste, Tabellen usw. HTML ermöglicht es auch, Links und Bilder einzubetten, wodurch eine Verknüpfung von Dokumenten im World Wide Web entsteht. Mit fortschreitender Weiterentwicklung, wurde HTML immer komplexer und bietet heute umfassende Möglichkeiten für die Gestaltung von Webseiten.
+
+
+
+
+                {{2}}
 ***********************
 
 Hier ist ein Beispiel für eine extrem einfache Website:
@@ -710,30 +750,103 @@ Hier ist ein Beispiel für eine extrem einfache Website:
 </html>
 ```
 
-Dieser Text wird von sogenannten Browsern interpretiert, um die angenehmen Weboberflächen anzuzeigen, an die wir uns so gewöhnt haben. Mit der Zeit haben sich dabei auch die Möglichkeiten und auch ansprüche vervielfältigt, sodass selbst simpel anmutende Weseiten enorm lange und komplexe HTML-Dokumente generieren. 
+Dieser Text wird von sogenannten Browsern<!-- style='color: orange; font-weight: bold' --> (*Firefox, Safari, GoogleChrome, Edge, Brave,* usw.) interpretiert, um die angenehmen Weboberflächen anzuzeigen, an die wir uns so gewöhnt haben. Mit der Zeit haben sich dabei auch die Möglichkeiten und Ansprüche vervielfältigt, sodass selbst simpel anmutende Weseiten enorm lange und komplexe HTML-Dokumente generieren. Dieser Code generiert folgende Website:
 
+![Website lame](bilder/htmlExampleLame.png "*Screenshot der dargestellten HTML im Browser*")
+
+***********************
+
+
+                {{3}}
+***********************
+
+Dabei können solche HTML-Dokumente rasant anwachsen. Folgendes ist eine etwas "schönere" Variante unseres Beispiels:
+
+````html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mein erstes HTML-Dokument</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #333;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #666;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+      li {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Willkommen zu meiner Website!</h1>
+    <p>Dies ist ein einfaches Beispiel eines HTML-Dokuments.</p>
+    <ul>
+      <li>Punkt 1</li>
+      <li>Punkt 2</li>
+      <li>Punkt 3</li>
+    </ul>
+  </body>
+</html>
+````
+
+Es generiert folgende Website:
+
+![Website fancy](bilder/htmlExampleFancy.png "*Screenshot der dargestellten HTML im Browser*")
+
+
+***********************
+
+                {{4}}
+***********************
+Wenn Sie den in HTML geschriebenen sogenannten Quelltext<!-- style='color: orange; font-weight: bold' --> einer Webseite sichbar machen wollen, so können Sie in den meisten Browsern auf ein beliebiges Element einer Website einen Rechtsklick ausführen und aus dem Ausklappmenü "Elementinformationen anzeigen" wählen. Sie werden sehen, dass unser Beispiel hier an Komplexität doch ein wenig zu wünschen über lässt...
+
+![Element-Informationen wählen](bilder/elementInformationen.png "*Screenshot*")
 
 ***********************
 
 
 
-#### Selbsttest
 
-<h4>Es kann sinnvoll sein, auf Plain-Text basierende Dokumente identifizieren zu können. Also testen Sie sich selbst und erkennen die die folgenden Beispielformate: </h4>
+
+
+
+#### Übungen
+
+<h4>Es kann sinnvoll sein, Plain-Text-Dokumente identifizieren zu können, falls Dateiendungen verloren gegangen sein sollten. Also testen Sie sich selbst und erkennen Sie die folgenden Beispielformate: </h4>
 
                 {{0-1}}
 ***************************************
 Um welches Format handelt es sich? 
 
-       
 - [( )] CSV
-- [(X)] XML
+- [(x)] XML
 - [( )] JSON
 - [( )] HTML
-        
 
-        
-````XML
+
+
+````xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Sesamstrasse>
   <Charakter>
@@ -746,7 +859,7 @@ Um welches Format handelt es sich?
     <Name>Bert</Name>
     <Alter>7</Alter>
     <Beruf>Künstler</Beruf>
-    <Besonderheit>Pflegt seine viele Sammelsurien</Besonderheit>
+    <Besonderheit>Pflegt seine vielen Sammelsurien</Besonderheit>
   </Charakter>
   <Charakter>
     <Name>Oscar</Name>
@@ -778,7 +891,7 @@ Okay, das war zu einfach! Versuchen wir es mit diesem Kandidaten:
 
 - [( )] CSV
 - [( )] XML
-- [(X)] JSON
+- [(x)] JSON
 - [( )] HTML
 
 
@@ -904,7 +1017,7 @@ Wie sieht es hier aus?
 ````HTML
 <!DOCTYPE html>
 <head>
-	<title>KreativerName - Deine Suchmaschine</title>
+	<title>KreativerSuche - Wir finden, was Sie nicht suchen</title>
 	<style>
 		body {
 			text-align: center;
@@ -936,7 +1049,7 @@ Wie sieht es hier aus?
 	</style>
 </head>
 <body>
-	<h1>Wer hier sucht, der findet</h1>
+	<h1>Wer hier sucht, der findet ... irgendwas.</h1>
 	<form action="">
 		<input type="text" placeholder="Gib deinen Suchbegriff ein">
 		<input type="submit" value="Suchen">
@@ -953,7 +1066,7 @@ Wie sieht es hier aus?
 
         {{4-5}}
 ************************
-Diese Beispiele waren recht und künstlich und vor allem durch die Darstellung leicht zu erfassen. In der "freien Wildbahn" kann einem jedoch so manches weniger lesbares Dokument begegnen deshalb jetzt etwas schwerere Beispiele, die ihrer länge wegen gekürzt wurden.
+Diese Beispiele waren künstlich und vor allem durch die Darstellung leicht zu erfassen. In der "freien Wildbahn" kann einem jedoch so manches weniger lesbares Dokument begegnen deshalb jetzt etwas schwerere Beispiele, die ihrer länge wegen gekürzt wurden.
 
 - [( )] CSV
 - [( )] XML
@@ -962,10 +1075,10 @@ Diese Beispiele waren recht und künstlich und vor allem durch die Darstellung l
 
 
 ````
-{"Instruments":[{"InstrumentID":1,"TypeID":1,"BuyCurrencyID":2,"SellCurrencyID":1,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":3805935,"NonLeveragedSellEndOfWeekFee":-0.00012384,"NonLeveragedBuyEndOfWeekFee":0.00031146,"LeveragedSellEndOfWeekFee":-0.00012384,"LeveragedBuyEndOfWeekFee":0.00031146,"NonLeveragedBuyOverNightFee":0.00010382,"NonLeveragedSellOverNightFee":-0.00004128,"LeveragedBuyOverNightFee":0.00010382,"LeveragedSellOverNightFee":-0.00004128,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":2,"TypeID":1,"BuyCurrencyID":3,"SellCurrencyID":1,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00002228,"NonLeveragedBuyEndOfWeekFee":0.00019958,"LeveragedSellEndOfWeekFee":0.00002228,"LeveragedBuyEndOfWeekFee":0.00019958,"NonLeveragedBuyOverNightFee":0.00006653,"NonLeveragedSellOverNightFee":0.00000743,"LeveragedBuyOverNightFee":0.00006653,"LeveragedSellOverNightFee":0.00000743,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":3,"TypeID":1,"BuyCurrencyID":8,"SellCurrencyID":1,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00005929,"NonLeveragedBuyEndOfWeekFee":0.00010429,"LeveragedSellEndOfWeekFee":0.00005929,"LeveragedBuyEndOfWeekFee":0.00010429,"NonLeveragedBuyOverNightFee":0.00003476,"NonLeveragedSellOverNightFee":0.00001976,"LeveragedBuyOverNightFee":0.00003476,"LeveragedSellOverNightFee":0.00001976,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":4,"TypeID":1,"BuyCurrencyID":1,"SellCurrencyID":7,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00010374,"NonLeveragedBuyEndOfWeekFee":0.00008438,"LeveragedSellEndOfWeekFee":0.00010374,"LeveragedBuyEndOfWeekFee":0.00008438,"NonLeveragedBuyOverNightFee":0.00002813,"NonLeveragedSellOverNightFee":0.00003458,"LeveragedBuyOverNightFee":0.00002813,"LeveragedSellOverNightFee":0.00003458,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":5,"TypeID":1,"BuyCurrencyID":1,"SellCurrencyID":4,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":3,"AboveDollarPrecision":3,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00053367,"NonLeveragedBuyEndOfWeekFee":-0.00025235,"LeveragedSellEndOfWeekFee":0.00053367,"LeveragedBuyEndOfWeekFee":-0.00025235,"NonLeveragedBuyOverNightFee":-0.00008412,"NonLeveragedSellOverNightFee":0.00017789,"LeveragedBuyOverNightFee":-0.00008412,"LeveragedSellOverNightFee":0.00017789,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":6,"TypeID":1,"BuyCurrencyID":1,"SellCurrencyID":6,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00043415,"NonLeveragedBuyEndOfWeekFee":-0.00019502,"LeveragedSellEndOfWeekFee":0.00043415,"LeveragedBuyEndOfWeekFee":-0.00019502,"NonLeveragedBuyOverNightFee":-0.00006501,"NonLeveragedSellOverNightFee":0.00014472,"LeveragedBuyOverNightFee":-0.00006501,"LeveragedSellOverNightFee":0.00014472,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":7,"TypeID":1,"BuyCurrencyID":5,"SellCurrencyID":1,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":-0.00002851,"NonLeveragedBuyEndOfWeekFee":0.00016949,"LeveragedSellEndOfWeekFee":-0.00002851,"LeveragedBuyEndOfWeekFee":0.00016949,"NonLeveragedBuyOverNightFee":0.00005650,"NonLeveragedSellOverNightFee":-0.00000950,"LeveragedBuyOverNightFee":0.00005650,"LeveragedSellOverNightFee":-0.00000950,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":8,"TypeID":1,"BuyCurrencyID":2,"SellCurrencyID":3,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":-0.00003364,"NonLeveragedBuyEndOfWeekFee":0.00024845,"LeveragedSellEndOfWeekFee":-0.00003364,"LeveragedBuyEndOfWeekFee":0.00024845,"NonLeveragedBuyOverNightFee":0.00008282,"NonLeveragedSellOverNightFee":-0.00001121,"LeveragedBuyOverNightFee":0.00008282,"LeveragedSellOverNightFee":-0.00001121,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":9,"TypeID":1,"BuyCurrencyID":2,"SellCurrencyID":6,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":5,"AboveDollarPrecision":5,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00024517,"NonLeveragedBuyEndOfWeekFee":0.00001932,"LeveragedSellEndOfWeekFee":0.00024517,"LeveragedBuyEndOfWeekFee":0.00001932,"NonLeveragedBuyOverNightFee":0.00000644,"NonLeveragedSellOverNightFee":0.00008172,"LeveragedBuyOverNightFee":0.00000644,"LeveragedSellOverNightFee":0.00008172,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},{"InstrumentID":10,"TypeID":1,"BuyCurrencyID":2,"SellCurrencyID":4,"IsDelisted":false,"AllowManualTrading":true,"RestrictedManualOpen":false,"AllowSell":true,"AllowBuy":true,"Precision":3,"AboveDollarPrecision":3,"MaxPositionUnits":2000000,"NonLeveragedSellEndOfWeekFee":0.00035996,"NonLeveragedBuyEndOfWeekFee":-0.00003882,"LeveragedSellEndOfWeekFee":0.00035996,"LeveragedBuyEndOfWeekFee":-0.00003882,"NonLeveragedBuyOverNightFee":-0.00001294,"NonLeveragedSellOverNightFee":0.00011999,"LeveragedBuyOverNightFee":-0.00001294,"LeveragedSellOverNightFee":0.00011999,"AllowPendingOrders":true,"AllowEntryOrders":true,"AllowExitOrder":true,"IsNonRealAsTRS":false},...
-
+{
+  {"players": [{"id": 1, "name": "Patrick Mahomes", "position": "Quarterback", "jersey_number": 15, "height": "6-3", "weight": 230, "age": 26, "college": "Texas Tech", "stats": {"passing_yards": 5000, "passing_touchdowns": 45, "interceptions": 6, "completion_percentage": 66.3, "passer_rating": 108.2}}, {"id": 2, "name": "Tyreek Hill", "position": "Wide Receiver", "jersey_number": 10, "height": "5-10", "weight": 185, "age": 27, "college": "West Alabama", "stats": {"receiving_yards": 1276, "receiving_touchdowns": 15, "rushing_yards": 123, "rushing_touchdowns": 2, "return_yards": 243, "return_touchdowns": 1}}, {"id": 3, "name": "Travis Kelce", "position": "Tight End", "jersey_number": 87, "height": "6-5", "weight": 260, "age": 32, "college": "Cincinnati", "stats": {"receiving_yards": 1416, "receiving_touchdowns": 11}}, {"id": 4, "name": "Chris Jones", "position": "Defensive End", "jersey_number": 95, "height": "6-6", "weight": 310, "age": 27, "college": "Mississippi State", "stats": {"sacks": 7.5, "tackles": 36, "forced_fumbles": 1}}, {"id": 5, "name": "Tyrann Mathieu", "position": "Safety", "jersey_number": 32, "height": "5-9", "weight": 190, "age": 29, "college": "LSU", "stats": {"interceptions": 6, "sacks": 3, "tackles": 62, "forced_fumbles": 1}}, {"id": 6, "name": "Frank Clark", "position": "Defensive End", "jersey_number": 55, "height": "6-3", "weight": 260, "age": 28, "college": "Michigan", "stats": {"sacks": 6, "tackles": 23, "forced_fumbles": 2}}]}
 ````
-
+<sub>Anmerkung: <i>Daten sind nicht mehr aktuell...</i></sub>
 
 ************************
 
@@ -1076,37 +1189,48 @@ Diese Beispiele waren recht und künstlich und vor allem durch die Darstellung l
 
 ### PDFs — Text und Bild überall!
 
-Eine der im Studium am häufigsten verwendeten Formate ist die PDF<!-- style='color: orange; font-weight: bold' -->. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für *Portable Document Format* und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein offenes Format, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, auf jedem Computer oder Mobilgerät zu öffnen.
+<i>Eins der im Studium am häufigsten verwendeten Formate ist die PDF<!-- style='color: orange; font-weight: bold' -->. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für **Portable Document Format**<!-- style='color: orange; font-weight: bold' --> und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein **offenes Format**<!-- style='color: orange; font-weight: bold' -->, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, **auf jedem Computer**<!-- style='color: orange; font-weight: bold' --> oder Mobilgerät zu öffnen.</i>
+
+<p> </p>
 
         {{1}}
-Es gibt zwei Arten von PDFs: **text-basierte**<!-- style='color: orange; font-weight: bold' --> und **bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' -->. **Text-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert und durchsucht werden. Der Text wird als plain text gespreichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
-Diese Dateien werden meistens durch Textverarbeitungsprogramme wie Word, OpenOffice oder Pages direkt erstellt, da diese sowohl über die Daten der Schriftarten als auch den reinen Text verfügen und diese in einer PDF vereinen können. 
+Es gibt zwei Arten von PDFs: **text-basierte**<!-- style='color: orange; font-weight: bold' --> und **bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' -->. **Text-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert und **durchsucht werden**<!-- style='color: orange; font-weight: bold' -->. Der Text wird als plain text gespreichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
+Diese Dateien werden meistens durch Textverarbeitungsprogramme wie Word, OpenOffice oder Pages direkt erstellt<!-- style='color: orange; font-weight: bold' -->, da diese sowohl über die Daten der Schriftarten als auch den reinen Text verfügen und diese in einer PDF vereinen können. 
 
         {{2}}
-**Bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> hingegen sind einfache Abbildungen von Dokumenten, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
-Diese Sorte PDF wird in der Regel von Bildverarbeitungssoftwares erzeugt. Modernere Scanner und KI-Bildverarbeitungsprogramme erkennen jetzt auch immer öfter Text auf Bildern und können diesen in die PDFs mit einfließen lassen. Dabei sei gedoch vorsicht geboten, weil diese Maschinen bei besonders schlechten Aufnahmen auch gerne raten. [^1](Siehe für eine besonders schockierendes Beispiel den XEROX-Bug und seine verheerenden Folgen: https://www.dkriesel.com/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)
+**********************
+**Bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> hingegen sind einfache Abbildungen, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
+Diese Sorte PDF wird in der Regel von Bildverarbeitungssoftwares oder älteren Scannern erzeugt. 
+
+Modernere Scanner und KI-Bildverarbeitungsprogramme erkennen jetzt  immer öfter und vor allem kostengünstiger Text auf Bildern und können diesen in  PDFs mit einfließen lassen, sie also zu Text-PDFs machen. Dabei sei jedoch Vorsicht geboten, weil diese Maschinen bei besonders schlechten Aufnahmen darauf angewiesen sind, zu raten. [^Beispiel](Siehe für ein besonders schockierendes Beispiel, den XEROX-Bug, und seine verheerenden Folgen: https://www.dkriesel.com/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)
+
+**********************
+
 
         {{3}}
-PDFs haben einige Vorteile gegenüber anderen Dateiformaten, wie z.B. Unabhängigkeit von Plattform und Gerät, Schutz gegen Überschreiben und Änderungen, hohe Kompatibilität und die Möglichkeit, Dokumente konsistent darzustellen. Allerdings haben PDFs auch einige Nachteile, wie z.B. die Schwierigkeit bei der Bearbeitung und Änderung von Inhalten, die Notwendigkeit zusätzlicher Software zum Anzeigen oder Bearbeiten und die manchmal größere Dateigröße im Vergleich zu anderen Formaten.
+PDFs haben einige Vorteile<!-- style='color: orange; font-weight: bold' --> gegenüber anderen Dateiformaten, wie z.B. **Unabhängigkeit** von Plattform und Gerät, **Schutz** gegen Überschreiben und Änderungen, hohe **Kompatibilität** und die Möglichkeit, Dokumente **konsistent** darzustellen. Allerdings haben PDFs auch einige Nachteile<!-- style='color: orange; font-weight: bold' -->, wie z.B. die Schwierigkeit bei der **Bearbeitung und Änderung** von Inhalten, die Notwendigkeit **zusätzlicher Software** zum Anzeigen oder Bearbeiten und die manchmal **größere Dateigröße** im Vergleich zu anderen Formaten.
 
 
+        {{4}}
+**********************
+Was die Langzeitspeicherung betrifft, so lohnen sich PDFs für alle abgeschlossenen Produkte. Für die Archivierung wurde durch die ISO speziell das **PDF/A-Format**<!-- style='color: orange; font-weight: bold' --> herausgegeben. Anders als Standard-PDFs erlauben PDF/As keine Formatierungen oder Hintergrundscripts, die in Zukunft nicht mehr existieren könnten. Es wird auch sichergestellt, dass alle verwendeten Schriftarten und Zeichen hinterlegt wurden.
 
+PDF/A kann direkt aus WORD oder Adobe Acrobat Reader exportiert werden. Eine Anleitung finden Sie [hier](https://www.research.gov/common/attachment/Desktop/How_do_I_create_a_PDF-A_file.pdf). Sie können den PDF/A-Status ihrer PDF in Acrobat Reader überprüfen. Alternativ gibt es den [PDF Checker](https://www.pdfa.org/product/pdf-checker/) für Windows- und Linux-Systeme. 
 
-
-
-
+******
 
 
 <!-- Ende Abschnitt -->
 
+
+
+
+
+
 ## Ton, Bild, Video
 
-(Infotext)
-
-
-
-
-
+<span style='font-size: 1.7vw; font-style: italic; font-weight: bold;'>Multimedia<!-- style='color: orange; font-weight: bold' -->-Formate spielen in der heutigen digitalen Welt eine zentrale Rolle, da sie es uns ermöglichen, eine Vielzahl von Informationen in verschiedenen Formen zu teilen und zu konsumieren. Insbesondere Ton<!-- style='color: orange; font-weight: bold' -->, Bild<!-- style='color: orange; font-weight: bold' --> und Video<!-- style='color: orange; font-weight: bold' --> sind drei wichtige Arten von Multimedia-Formaten, die täglich von Milliarden von Menschen weltweit genutzt werden. Tonformate, wie MP3<!-- style='color: orange; font-weight: bold' --> oder WAV<!-- style='color: orange; font-weight: bold' -->, ermöglichen es uns, Musik, Sprache und Soundeffekte zu hören, während Bildformate wie JPEG<!-- style='color: orange; font-weight: bold' --> oder PNG<!-- style='color: orange; font-weight: bold' --> es uns ermöglichen, statische Bilder anzuzeigen. Videodateien, wie z.B. MP4<!-- style='color: orange; font-weight: bold' --> oder AVI<!-- style='color: orange; font-weight: bold' -->, bieten uns die Möglichkeit, bewegte Bilder und Ton zu kombinieren und somit vollständige audiovisuelle Erfahrungen zu schaffen. 
+In diesem Lernbaustein werden wir uns eingehender mit diesen drei Arten von Multimedia-Formaten beschäftigen, ihre Eigenschaften<!-- style='color: orange; font-weight: bold' -->, **Vor- und Nachteile**<!-- style='color: orange; font-weight: bold' --> sowie ihre Anwendungen<!-- style='color: orange; font-weight: bold' --> in verschiedenen Bereichen untersuchen, sowie ihre Brauchbarkeit für die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> erörtern.</span>[^ChatGPT](Dieses Kapitel wurden von ChatGPT am 28.02.2023 mit dem Prompt "Schreibe eine Einleitung zu einem Lernbaustein über Multimediaformate, besonders jene über Ton, Bild und Video." erstellt und leicht modifiziert.)
 
 <!-- Ende Abschnitt -->
 
@@ -1236,7 +1360,7 @@ Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch
 
 #### Beispiel: Verlustfreie Formate (WAV, AIFF, FLAC)
 
-<i>Verlustfreie Audio-Dateiformate werden verwendet, um Audiodaten in **hoher Qualität** zu speichern, ohne dabei Informationen zu verlieren. Es gibt verschiedene Formate, die diese Funktion erfüllen können, wie zum Beispiel WAV<!-- style='color: orange; font-weight: bold' --> (Wafeform Audio File), AIFF<!-- style='color: orange; font-weight: bold' --> (Audio Interchange File Format) und FLAC<!-- style='color: orange; font-weight: bold' --> (Free Lossless Audio Codec).</i> [^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 25.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustfreie Audio-Dateiformate. Nutze dabei WAV, AIFF und FLAC als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
+<i>Verlustfreie Audio-Dateiformate werden verwendet, um Audiodaten in **hoher Qualität** zu speichern, ohne dabei Informationen zu verlieren. Es gibt verschiedene Formate, die diese Funktion erfüllen können, wie zum Beispiel WAV<!-- style='color: orange; font-weight: bold' --> (Wafeform Audio File), AIFF<!-- style='color: orange; font-weight: bold' --> (Audio Interchange File Format) und FLAC<!-- style='color: orange; font-weight: bold' --> (Free Lossless Audio Codec).</i> [^ChatGPT](Dieses Kapitel wurden von ChatGPT am 25.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustfreie Audio-Dateiformate. Nutze dabei WAV, AIFF und FLAC als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
 
                 {{1}}
 **************************************
@@ -1386,13 +1510,15 @@ Beispiele für solche Formate wären [**Scalable Vector Graphics**](https://www.
 *******************************************
 <h4 style='color:orange'>Anwendungsbereiche: </h4>
 
-Fotografien werden generell als **Rasterbilddateien** gespeichert, weil dies der Funktion der Kamerasensoren entspricht.[^1](Diese winzigen Sensoren sind ebenfalls in einem Rastermuster angeordnet und messen beim Belichten die Farbe des Lichts, das auf sie trifft. Diese wird dann in einen Pixel umgesetzt.) Wie erwähnt kann es besonders beim Verwenden in starker Vergrößerung dazu kommen, dass das Bild nicht mehr ansprechend aussieht.
+Fotografien<!-- style='color: orange; font-weight: bold' --> werden generell als **Rasterbilddateien**<!-- style='color: orange; font-weight: bold' --> gespeichert, weil dies der Funktion der Kamerasensoren entspricht.[^1](Diese winzigen Sensoren sind ebenfalls in einem Rastermuster angeordnet und messen beim Belichten die Farbe des Lichts, das auf sie trifft. Diese wird dann in einen Pixel umgesetzt.) Wie erwähnt kann es besonders beim Verwenden in starker Vergrößerung dazu kommen, dass das Bild nicht mehr ansprechend aussieht.
 
-**Vektorgrafiken** werden nun besonders in den Gebieten verwendet, in denen sie in unterschiedlichen Größen bei gleichhbleibender Qualität zur Verfügung stehen müssen. Logos sind ein häufiger Anwendungsbereich. Ihre kleinere Größe bietet sich auch an, um sie in Webapplikationen zu verwenden, weil hier alles einzeln vom Server zum Klienten transferiert werden soll. 
+**Vektorgrafiken**<!-- style='color: orange; font-weight: bold' --> werden nun besonders in den Gebieten verwendet, in denen sie in unterschiedlichen Größen bei gleichhbleibender Qualität zur Verfügung stehen müssen. Logos<!-- style='color: orange; font-weight: bold' --> sind ein häufiger Anwendungsbereich. Ihre kleinere Größe bietet sich auch an, um sie in Webapplikationen zu verwenden, weil hier alles einzeln vom Server zum Klienten transferiert werden soll. 
 
 *******************************************
 
-<span style='color:orange'><b></b></span> 
+
+
+
 
 #### Beispiele: Rastergraphiken
 
@@ -1551,6 +1677,8 @@ Für die Langzeitspeicherung von Videos sind einige der oben genannten Formate b
 
 <i>
 
+Convert PDFs to PDF/X, PDF/A, or PDF/E. https://helpx.adobe.com/acrobat/using/pdf-x-pdf-a-pdf.html (28.02.2023)
+
 Ein Leitfaden für die Wahl der richtigen Videoformate. https://www.adobe.com/de/creativecloud/video/discover/best-video-format.html (27.02.2023)
 
 Raster files. https://www.adobe.com/creativecloud/file-types/image/raster.html (23.02.2023)
@@ -1581,6 +1709,16 @@ PostScript.PostScript (PS) – Vorläufer des PDF und immer noch beliebt in der 
 
 
 
+**ETH-Bibliothek Dokumentation:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+File formats for archiving. https://documentation.library.ethz.ch/display/DD/File+formats+for+archiving (23.02.2023)
+
+</i>
+
+
+
 **Fileformat.com:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1588,6 +1726,7 @@ PostScript.PostScript (PS) – Vorläufer des PDF und immer noch beliebt in der 
 WAV. https://docs.fileformat.com/audio/wav/ (25.02.2023)
 
 </i>
+
 
 
 **Forschungsdaten.info:**<!-- style='color: orange; font-weight: bold' -->
@@ -1603,37 +1742,12 @@ Metadaten und Metadatenstandards. Beschreiben hilft verstehen. https://forschung
 </i>
 
 
+
 **Healtchline.com:**<!-- style='color: orange; font-weight: bold;' -->
 
 <i>
 
 How Many Frames Per Second Can the Human Eye See? https://www.healthline.com/health/human-eye-fps (27.02.2023)
-
-</i>
-
-
-
-
-
-**Unicode.org:**<!-- style='color: orange; font-weight: bold' -->
-
-<i>
-
-About the Unicode Consortium. https://home.unicode.org/about-unicode/ (23.02.2023)
-
-Unicode® 15.0.0. https://www.unicode.org/versions/Unicode15.0.0/ (23.02.2023)
-
-Unicode 15.0 Character Code Charts. https://www.unicode.org/charts/ (23.02.2023)
-
-</i>
-
-
-
-**ETH-Bibliothek Dokumentation:**<!-- style='color: orange; font-weight: bold' -->
-
-<i>
-
-File formats for archiving. https://documentation.library.ethz.ch/display/DD/File+formats+for+archiving (23.02.2023)
 
 </i>
 
@@ -1646,6 +1760,20 @@ File formats for archiving. https://documentation.library.ethz.ch/display/DD/Fil
 ISO 9660. ISO images for computer files. https://www.iso.org/iso-9660-images-for-computer-files.html (23.02.2023)
 
 Popular standards and other ISO deliverables. Our greatest hits: the most popular ISO Standards, in cluding our management system standards. https://www.iso.org/popular-standards.html (23.02.2023)
+
+</i>
+
+
+
+**Markdownguide.org:**https://www.markdownguide.org/basic-syntax/
+
+<i>
+
+Basic Syntax. https://www.markdownguide.org/basic-syntax/ (28.02.2023)
+
+Cheat Sheet. https://www.markdownguide.org/cheat-sheet/ (28.02.2023)
+
+Extended Syntax. https://www.markdownguide.org/extended-syntax/ (28.02.2023)
 
 </i>
 
@@ -1670,6 +1798,7 @@ Codecs. http://mp4ra.org/#/codecs (27.02.2023)
 </i>
 
 
+
 **Nationalarchives.gov.uk:**<!-- style='color: orange; font-weight: bold' -->
 
 <i>
@@ -1679,14 +1808,54 @@ Download DROID: file format identification tool. https://www.nationalarchives.go
 </i>
 
 
+
+**PDF Association:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+PDF Checker. https://www.pdfa.org/product/pdf-checker/ (28.02.2023)
+
+PDF/A in a Nutshell 2.0. PDF for long-term archiving. (pdf) https://www.pdfa.org/wp-content/uploads/2013/05/PDFA_in_a_Nutshell_211.pdf (28.02.2023)
+
+PDF/A-3 vs. PDF. https://www.pdfa.org/pdfa-3-vs-pdf/ (28.02.2023)
+
+</i>
+
+
+
+**Research.gov:**
+
+<i>
+
+Converting files to PDF/A Format. (pdf) https://www.research.gov/common/attachment/Desktop/How_do_I_create_a_PDF-A_file.pdf (28.02.2023)
+
+</i>
+
+
+
+**Unicode.org:**<!-- style='color: orange; font-weight: bold' -->
+
+<i>
+
+About the Unicode Consortium. https://home.unicode.org/about-unicode/ (23.02.2023)
+
+Unicode® 15.0.0. https://www.unicode.org/versions/Unicode15.0.0/ (23.02.2023)
+
+Unicode 15.0 Character Code Charts. https://www.unicode.org/charts/ (23.02.2023)
+
+</i>
+
+
+
 **Wikipedia.org:**<!-- style='color: orange; font-weight: bold;' -->
 
 <i>
 
+PDF/A. https://en.wikipedia.org/wiki/PDF/A (28.02.2023)
+
 Video Codec. https://en.wikipedia.org/wiki/Video_codec#Video_codec_design (27.02.2023)
 
 </i>
-
 
 
 
@@ -1701,6 +1870,7 @@ Standards. https://www.w3.org/standards/ (23.02.2023)
 SCALABLE VECTOR GRAPHICS (SVG). https://www.w3.org/Graphics/SVG/ (23.02.2023)
 
 </i>
+
 
 
 **Xiph.org:**<!-- style='color: orange; font-weight: bold' -->
