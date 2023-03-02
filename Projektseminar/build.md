@@ -27,7 +27,7 @@ logo: zerosOnesDalle.png
 
 # Dateiformate verstehen
 
-                {{0-2}}
+                {{0-4}}
 ****************************************
 ![Wordcloud](bilder/wordCloudTwister.png)
 
@@ -35,12 +35,19 @@ logo: zerosOnesDalle.png
 
                 {{1}}
 ****************************************
-Willkommen in der Welt der Dateiformate. Sie sind klein, uns egal und meistens tun sie was sie sollen. Was auf den ersten Blick trivial erscheint, ist in Wirklichkeit ein entscheidender Teil von Digital Literacies. Diese untersten Bausteine der Digitalen Welt verstehen, heißt auch ein Fundament für nachhaltige Arbeit in der Digitalen Welt zu legen. 
+Willkommen in der Welt der Dateiformate. Sie sind klein, uns egal und meistens tun sie was sie sollen. Doch was auf den ersten Blick trivial erscheint, ist in Wirklichkeit ein entscheidender Teil von Digital Literacies. Diese untersten Bausteine der Digitalen Welt verstehen, heißt auch ein Fundament für nachhaltige Arbeit in der digitalen Welt zu legen. 
 
-Im Laufe dieses Bausteins werden wir uns mit den Grundlagen des Dateiensystems beschäftien und anschließend einen Blick auf Forschungsdatenmangement und Archivierung werden. Anschließend wollen wir dann ans Eingemachte: Der hintere Teil dieses Bausteins befasst sich mit unterschiedlichen Bereichen und mich welchen Formaten in ihnen gearbeitet wird. Damit wir in der Zeit bleiben können, sollten Sie hier nach Ihrem Intersesse und vor allem akademischen Bedarf auswählen.
+Im Laufe dieses Bausteins werden wir uns mit den **Grundlagen des Dateiensystems**<!-- style='color: orange; font-weight: bold;' --> beschäftien und anschließend einen Blick auf **Forschungsdatenmangement und Archivierung**<!-- style='color: orange; font-weight: bold;' --> werfen. Anschließend gehen wir ans Eingemachte<!-- style='color: orange; font-weight: bold;' -->: Der hintere Teil dieses Bausteins befasst sich mit unterschiedlichen Bereichen und mit welchen Formaten in ihnen gearbeitet wird. Damit wir in der Zeit bleiben können, sollten Sie hier nach Ihrem Intersesse und vor allem akademischen Bedarf auswählen.
 
-> Ein Hinweis<!-- style='color: orange' --> sei noch gegeben: Über den Baustein hinweg sind einige Kapitel mit OpenAIs ChatGPT erstellt worden. Sie erkennen die Abschnitte an den entsprechenden Fußnoten[^ChatGPT](Hier gibt's nicht zu sehen.). Wenn Sie mehr über diese Technologie erfahren wollen, klicken Sie sich den [Teil](Link-ME!) über AI hinein.
+                {{2}}
+<p style="padding: 10px; color: orange; background: black; border: 2px solid orange;">
+  <h4>Zwei Hinweise: </h4> 
+  <p>Über den Baustein hinweg sind einige Kapitel mit OpenAIs ChatGPT erstellt worden. Sie erkennen die Abschnitte an den entsprechenden Fußnoten[^ChatGPT](Hier gibt's nicht zu sehen.). Wenn Sie mehr über diese Technologie erfahren wollen, klicken Sie sich in den [Kurs](Link-ME!) über Künstliche Intelligenz hinein.</p>
 
+  <p>Darüber hinaus sind einige Unterkapitel recht "reichhaltig" geworden, was dazu führt, dass sie nicht sofort erscheinen, wenn sie angeklickt werden. Wir bitten deshalb um ein wenig Geduld. Die entsprechenden Kapitel sind mit dem ♻️-Emoji gekennzeichnet</p>
+</p>
+
+                {{3}}
 Es folgt das Inhaltsverzeichnis.
 
 ****************************************
@@ -50,7 +57,7 @@ Es folgt das Inhaltsverzeichnis.
 
 
 
-                {{2}}
+                {{4}}
 ****************************************
 
 <h1 style='text-align: center;'>**Inhalt**</h1>
@@ -61,7 +68,7 @@ Es folgt das Inhaltsverzeichnis.
 
 [Forschungsdatenmanagement](#Forschungsdatenmanagement)
 
-[Textbasierte Dateiformate](#Textbasierte-Dateiformate)
+[Dateiformate für Text](#Dateiformate-für-Text)
 
 [Ton, Bild, Video](#Ton,-Bild,-Video)
 
@@ -77,7 +84,7 @@ Es folgt das Inhaltsverzeichnis.
 
 ## Allgemeine Informationen
 
-Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**<!-- style='color: orange; font-weight: bold' -->. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein**<!-- style='color: orange; font-weight: bold' --> und **Aus**<!-- style='color: orange; font-weight: bold' -->, welche als **1** und **0** bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
+Eine der wichtigsten Funktionen von Computern ist ihre Fähigkeit, sich Dinge zu merken - wir sprechen vom **Speichern**<!-- style='color: orange; font-weight: bold' -->. Computer bewerkstelligen dies, in dem sie Daten als magnetische Ladungen auf Festplatten speichern. Weil unterschiedliche Spannungen oder Ladungen schnell verfälscht werden und Daten daruch unleserlich werden könnten[^1](Man denke nur an Spannungsabfälle oder magnetische Einflüsse von außen, die das Ablesen oder Übertragen beeinflussen könnten und den gesamten Datenfluss durcheinanderbringen. Es ist hier also viel einfacher, nur mit zwei Zuständen zu arbeiten. Dabei ist es natürlich effektiver, pro Einheit so viele Zustände wie möglich zu verwenden. Dies ist jedoch etwas, das sich nur Quantencomputer verlässlich zu Nutze machen können. LINK), begrenzt man sich in der Regel auf zwei Zustände: **Ein**<!-- style='color: orange; font-weight: bold' --> und **Aus**<!-- style='color: orange; font-weight: bold' -->, welche als **1**<!-- style='color: orange; font-weight: bold' --> und **0**<!-- style='color: orange; font-weight: bold' --> bekannt sind. Diese können entweder ausgelesen oder verändert werden. 
 
                 {{1}} 
 >Diese kleinsten Einheiten sind die berühmten **Bits**<!-- style='color: orange; font-weight: bold' -->.
@@ -88,7 +95,7 @@ Die Lösung liegt auf der Hand: es werden **mehrere Bits**<!-- style='color: ora
 Dabei hat sich die Verwendung von **acht Bits** als erstes durchgesetzt und wurde auf den Namen **Byte**<!-- style='color: orange; font-weight: bold' --> getauft.
 
                 {{3}} 
-Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System**<!-- style='color: orange; font-weight: bold' --> - zu verdeutlichen ist hier ein kleines Beispiel (interagiere mit dem Element): 
+Um die Zählweise eines Systems mit nur zwei Ziffern - ein **Binäres System**<!-- style='color: orange; font-weight: bold' --> - zu verdeutlichen ist hier ein kleines Beispiel (interagieren Sie mit dem Element): 
 <script input="number" value="22" min="0" max="1000000">
 let i = @input // direct usage as a number
 let j = (@input >>> 0).toString(2)
@@ -101,9 +108,9 @@ i + " = " + j
 
 ### Text vs Binär
 
-In ihrer Organisationsform unterscheiden sich Dateien jetzt in zwei Arten.
+In ihrer Organisationsform unterscheiden sich Dateien jetzt in **zwei Arten**<!-- style='color: orange; font-weight: bold' -->.
 Die einen halten sich strikt an eine Aufteilung in vorhersehbare Einheiten (meist 8er-Blöcke, also **Bytes**<!-- style='color: orange; font-weight: bold' -->), um Text zu codieren.
-Hier ist ein beispiel, wie aus Binärem Code Buchstaben werden: 
+Hier ist ein Beispiel, wie aus Binärem Code Buchstaben werden: 
 <script input="number" value="65" min="33" max="126">
 let i = @input
 let j = (@input >>> 0).toString(2)
@@ -111,16 +118,19 @@ let k = String.fromCharCode(i)
 
 i + " = " + j + " = " + k
 </script>
-Es handelt sich um sogenannte **Plain-Text-Formate**<!-- style='color: orange; font-weight: bold' -->. Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiformate-für-Text) im Zusatzmaterial genauer behandelt.
+Es handelt sich um sogenannte **Plain-Text-Formate**<!-- style='color: orange; font-weight: bold' -->. Diese Dateiformate werden im [Unterkapitel über textbasierte Formate](Dateiformate-für-Text) im Dateiformateabschnitt genauer behandelt.
 
                 {{1}}
 *************************************
 Problematisch an der Vorgehendweise ist jedoch, dass relativ viel Platz verwendet werden muss, um relativ einfache Zustände zu speichern, da enorm viele Schriftzeichen zur Verfügung stehen. Doch nicht alle Programme brauchen so viele Zustände. Die Lösung sind kürzere *uneinheitliche* Einheiten. Hier sprechen wir von **binären**<!-- style='color: orange; font-weight: bold' --> Dateiformaten.
 
                 {{2}}
-Doch diese binären<!-- style='color: orange; font-weight: bold' --> Dateien können nur von jenen Programmen gelesen, bzw. verstanden werden, die in der lage sind, diesen binären Code zu entziffern. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, etc. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen**<!-- style='color: orange; font-weight: bold' --> getrennt. 
+*************************************
+Doch diese binären<!-- style='color: orange; font-weight: bold' --> Dateien können nur von jenen Programmen gelesen, bzw. verstanden werden, die in der Lage sind, diesen binären Code zu entziffern. Damit der Computer - oder besser sein Betriebssystem - diese Dateien den zugehörigen Programmen zuordnen können, kommen **Dateierweiterungen**<!-- style='color: orange; font-weight: bold' --> ins Spiel (auch bekannt als *Dateiendungen* oder -*kürzel*). Beispiele für Dateikürzel wären: .*docx*, .*mp3*, .*mov*, .*heic*, usw. Sie sind, wie hier angedeutet jeweils durch einen '.' vom **Dateinamen**<!-- style='color: orange; font-weight: bold' --> getrennt. 
 
 Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mittel sind, die Computern zur verfügung stehen, um Dateiformate zu erkennen. Dazu mehr im nächsten Unterkapitel.
+
+*************************************
 
 *************************************
 
@@ -134,11 +144,11 @@ Es sei an dieser Stelle erwähnt, dass Dateierweiterungen nicht die einzigen Mit
 2. Body<!-- style='color: orange; font-style: italic; font-weight: bold' --> oder **Körper**
 
 
->Im Header finden sich sogenannten Metadaten<!-- style='color: orange; font-weight: bold' -->, die dem System Auskunft über die Beschaffenheit der Datei geben. Dazu können z.B. der Name der Datei, Erstellungsdatum, Dateierweiterung, Höhe/Breite (für Bilder), Magic Number etc. gehören. 
+>Im Header<!-- style='color: orange; font-weight: bold' --> befinden sich die sogenannten Metadaten<!-- style='color: orange; font-weight: bold' -->, die dem System Auskunft über die Beschaffenheit der Datei geben. Dazu können z.B. der **Name der Datei**<!-- style='color: orange; font-weight: bold' -->, Erstellungsdatum<!-- style='color: orange; font-weight: bold' -->, Dateierweiterung<!-- style='color: orange; font-weight: bold' -->, **Höhe/Breite**<!-- style='color: orange; font-weight: bold' --> (für Bilder), **Magic Number**<!-- style='color: orange; font-weight: bold' --> usw. gehören. 
 
                 {{1}}
 ****************************************
-Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung<!-- style='color: orange; font-weight: bold' -->, **Magic Number**<!-- style='color: orange; font-weight: bold' --> oder Dateistruktur<!-- style='color: orange; font-weight: bold' -->. Die Dateierweitung<!-- style='color: orange; font-weight: bold' --> (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, etc.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, einen Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
+Besonder interessant für die Verarbeitung sind dabei entweder die Dateierweiterung<!-- style='color: orange; font-weight: bold' -->, **Magic Number**<!-- style='color: orange; font-weight: bold' --> oder Dateistruktur<!-- style='color: orange; font-weight: bold' -->. Die Dateierweitung<!-- style='color: orange; font-weight: bold' --> (z.B. .*docx*, .*mp3*, .*mov*, .*heic*, usw.) wird als Teil des Dateinamens gespeichert. Sie kann jedoch missbraucht werden. So könnte jemand z.B. einen Virus in einer .exe-Datei programmieren, die Dateierweiterung jedoch im Nachhinein auf .jpg ändern und auf diese Weise einen Benutzer dazu verleiten, einen Virus auszuführen, wenn eigentlich niedliche Katzen angezeigt werden sollten. 
 
 ****************************************
 
@@ -175,7 +185,7 @@ Dabei sind diese Daten oft unbrauchbar, wenn sie nicht durch Informationen im He
 
 ### Was tun bei unbekannten Formaten? 
 
-Wenn die Metadaten durch Dateibeschädigung<!-- style='color: orange; font-weight: bold' --> oder andere Umstände verloren gegangen sein sollten, können sie nur noch anhand ihrer Struktur erkannt werfen. [DROID<!-- style='color: orange; font-weight: bold' -->](https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/) ist ein kostenloses OpenSource Projekt entwickelt vom britischen Nationalarchiv. Es kann Dateien im Cluster analysieren und die Dateiformate erkennen. 
+Wenn die Metadaten durch Dateibeschädigung<!-- style='color: orange; font-weight: bold' --> oder andere Umstände verloren gegangen sein sollten, können sie nur noch anhand ihrer Struktur erkannt werfen. [DROID<!-- style='color: orange; font-weight: bold' -->](https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/) ist ein kostenloses [OpenSource](Link-ME!) Projekt entwickelt vom britischen Nationalarchiv. Es kann Dateien im Cluster analysieren und die Dateiformate erkennen. 
 
                   {{1}}
 Wenn Dateien vorgefunden werden, die nicht korumpiert, deren Format dem Nutzer jedoch trotzdem unbekannt<!-- style='color: orange; font-weight: bold' --> sind, so hilft stets eine Online-Recherche. Gerade die englische Wikipedia<!-- style='color: orange; font-weight: bold' --> kann hier sehr aufschlussreich sein. Auch Webseiten wie [**Fileformats.com**<!-- style='color: orange; font-weight: bold' -->](https://docs.fileformat.com), [**Fileformat.info**<!-- style='color: orange; font-weight: bold' -->](https://www.fileformat.info/format/all.htm) oder [**FileInfo.com**<!-- style='color: orange; font-weight: bold' -->](https://fileinfo.com/filetypes/common) bieten die Informationen. Obendrein erlaubt der Aufbau dieser Wissensbasen,  einen leichteren Zugriff auf ähnliche Formate, was das Stöbern ermöglicht. 
@@ -246,7 +256,7 @@ Deshalb werden wir jetzt vier Prinzipien vorstellen, die eine optimale Speicheru
 
 ### Menschenlesbarkeit
 
-Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst hilfreich, die Rohdaten auch menschenlesbar<!-- style='color: orange; font-weight: bold' --> vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie Übungen mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
+Bei der Planung für mögliche Wiederverwertbarkeit gilt immer die Frage nach dem *Worst-Case*-Szenario. Hier ist es der Fall, dass die Daten in irgendeiner Form beschädigt wurden und jetzt unklar ist, um was für Daten es sich handelt. In diesem Fall wird es äußerst hilfreich, die Rohdaten auch menschenlesbar<!-- style='color: orange; font-weight: bold' --> vorzufinden. Im Abschnitt [*CSV, XML, JSON, HTML — Informationen für Computer aufbereiten*](CSV,-XML,-JSON,-HTML-—-Informationen-für-Computer-aufbereiten) finden Sie [Übungen](Übungen) mit denen Sie lernen können zwischen den genannten Formaten zu unterscheiden. So ähnlich könnte auch ein Wiederentdeckungsprozess für eine Datenset aussehen, bei dem nicht klar ist, worum es sich handelt, weil z.B. Dateiendugen fehlen usw. 
 
                 {{1}}
 >**Plain-Text-basierte Dateiformate**<!-- style='color: orange; font-weight: bold' --> eignen sich besonders gut, um Daten auch über lange Zeit zu speichern und zeichnen sich durch ihre Menschenlesbarkeit<!-- style='color: orange; font-weight: bold' --> aus. Sie existieren bereits seit langer Zeit und lassen sich immer durch einen einfachen Editor offnen. Mehr dazu [hier](TXT---Muter-aller-Textverarbeitung). 
@@ -268,7 +278,7 @@ Maschinenlesbarkeit<!-- style='color: orange; font-weight: bold' --> bedeutet vo
 
 >**Je weiter verbreitet die Software, desto besser!**<!-- style='color: orange; font-weight: bold' -->
 
-Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. *"Weit verbreitet"* kann auch bedeuten, dass mehrere Programme das Format nutzen, bzw. es das meistverwendete Format für diesen Zweck ist, es sich also um einen Industriestandard<!-- style='color: orange; font-weight: bold' --> handelt. 
+Auf diese Weise kann davon ausgegangen werden, dass auch nach längerer Zeit das Programm noch zur Verfügung steht, um die Dateien zu öffnen. **Nur weil etwas OpenSource und kostenlos ist, muss es noch nicht gut oder weit verbreitet sein.**<!-- style='color: orange; font-weight: bold' --> (!) *"Weit verbreitet"* kann auch bedeuten, dass mehrere Programme das Format nutzen, bzw. es das meistverwendete Format für diesen Zweck ist, es sich also um einen Industriestandard<!-- style='color: orange; font-weight: bold' --> handelt. 
 
 Es muss auch zwischen **offenen und proprietären Formaten**<!-- style='color: orange; font-weight: bold' --> untersschiden werden. **Proprietäre Formate**<!-- style='color: orange; font-weight: bold' --> lassen sich oft nur durch eine Software der Hersteller-/Herausgeberfirma nutzen, welche in der Regel bezahlt werden muss oder Änderungen nach Firmeninteressen unterliegen kann. Damit Machinenlesbarkeit über längere Zeit gewährleistet werden kann, sollten hier immer **offene Formate**<!-- style='color: orange; font-weight: bold' --> verwendet werden.
 
@@ -285,7 +295,7 @@ Es muss auch zwischen **offenen und proprietären Formaten**<!-- style='color: o
 
                 {{1-7}}
 ****************************************
-Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Innovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards<!-- style='color: orange; font-weight: bold' --> für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten.[^Anmerkung](Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, etc. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
+Dieses Problem ist natürlich schon früh aufgekommen. Und während eine Innovation der nächsten die Klinke in die Hand gedrückt hat, ist man schnell dazu übergegangen Standards<!-- style='color: orange; font-weight: bold' --> für bestimmte Formate einzuführen, um eine gewisse Kompatibilität zu gewährleisten.[^Anmerkung](Es sei an dieser Stelle darauf hingewiesen, dass es sich für Entwicklerfirmen - denken Sie an Apple, Microsoft, Google, usw. - nicht unbedingt lohnt, alles standardisieren zu lassen. Erstellen sie z.B. ein Programm zum Auslesen bestimmter Daten - sagen wir die Geschwindigkeit von Tretrollern -, kann es sich lohnen diese Technik nicht zu teilen, um eine Monopolstellung auf die Auslesung von Tretrollergeschwindigkeiten zu erhalten und so größeren Gewinn aus dem Produkt ziehen zu können. 
 Die Bereitschaft, einen öffentlichen Standard zu unterstützen wächst in der Regel genau dann, wenn die Konkurrenz beginnt Alternativen auf den Markt zu bringen. Jetzt lohnt es sich Hersteller des Industriestandards zu sein.)
 
 
@@ -296,7 +306,7 @@ Weil dieser Prozess eine Weile dauern kann, gibt es **unabhängige Organisatione
 - die [**Internationale Organisation für Normierung**<!-- style='color: orange; font-weight: bold' -->](https://www.iso.org/home.html) auch **ISO**<!-- style='color: orange; font-weight: bold' --> (von engl. *International Standardisation Organisation*), ein Verein mit Sitz in der Schweiz, der Standards von [Datum und Uhrzeit](https://www.iso.org/iso-8601-date-and-time-format.html) oder [Währungsdarstellungen](https://www.iso.org/iso-4217-currency-codes.html) über [Kindersitze](https://www.iso.org/isofix-child-seats-iso-13216.html) hin zum berühmten Kreuzworträtsel-Klassiker [ISO](https://www.iso.org/iso-6-camera-film-speed.html) (ASA in Amerika) für die Lichtempfindlichkeit von Kamerafilm normiert. Für unser Thema besonders interessant ist die Arbeit des ***Joint Photographic Experts Group***, ein Unterkommitee der ISO, das die [**JPEG** und **JPEG2000** Standards](https://www.iso.org/iso-9660-images-for-computer-files.html) entwickelt hat. Mehr dazu [später](RAW,-JPEG,-PNG---Bild-und-Bildqualität)...
 
                 {{4}}
-- das [**Unicode Consortium**<!-- style='color: orange; font-weight: bold' -->](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten ASCII-Symbolsammlung, die nur englische Textzeichen abgebildet hat, auf die neuen Standards UTF-8 und UTF-16. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
+- das [**Unicode Consortium**<!-- style='color: orange; font-weight: bold' -->](https://home.unicode.org), welches für die Standardisierung von Textzeichen zuständig ist. Die wohl größte Leistung ist die Erweiterung der alten **ASCII-Symbolsammlung**<!-- style='color: orange; font-weight: bold' -->, die nur englische Textzeichen<!-- style='color: orange; font-weight: bold' --> abgebildet hat, auf die neuen Standards **UTF-8**<!-- style='color: orange; font-weight: bold' --> und **UTF-16**<!-- style='color: orange; font-weight: bold' -->. In ihnen sind nicht nur alle Variaten des Römischen Schriftbilds, sondern die meisten bekannten Schriftzeichen der Welt enthalten. Eine neuere Leistung ist die Einführung von standadisierten Emojis. 🙌
 
                 {{5}}
 - das [W3C<!-- style='color: orange; font-weight: bold' -->](https://www.w3.org/Consortium/) (**World Wide Web Consortium**<!-- style='color: orange; font-weight: bold' -->) ist eine internationale Gemeinschaft bestehend aus Mitgliedsorganisationen, privaten Mitarbeitern und der Öffentlichkeit, die zusammenarbeiten, um Webstandards zu entwickeln.[^1](https://www.w3.org/Consortium/) Zu diesen Standards gehören wichtige Technologien wie HTML<!-- style='color: orange; font-weight: bold' -->, CSS<!-- style='color: orange; font-weight: bold' -->, SVG<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' --> und mehr.[^2](https://www.w3.org/standards/) 
@@ -402,8 +412,8 @@ Damit schließen wir mit den Grundlagen und widmen und den Details<!-- style='co
 
 
                 {{2}}
-Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu wählen. Geisteswissenschaftler<!-- style='color: orange;' --> dürften sich verstärkt für Textverarbeitung<!-- style='color: orange;' --> und<!-- style='color: orange;' --> -präsentation<!-- style='color: orange;' --> interessieren. Wer mit komplexeren<!-- style='color: orange;' --> Daten<!-- style='color: orange;' --> arbeiten will, sollte sich mit dem Abschnitt über Datenverarbeitung<!-- style='color: orange;' --> auseinandersetzen. Psychologen<!-- style='color: orange;' --> oder Pädagogen<!-- style='color: orange;' --> werden sich auf den Abschnitt über Videos<!-- style='color: orange;' --> für die nächste Interviewstudie freuen. Und Zoologen<!-- style='color: orange;' --> auf der Jagd seltenen Vogelrufe, können sicher sein, das richtige Audioformat<!-- style='color: orange;' --> zu wählen. 
-**Nutzen Sie dazu das Menü auf der linken Seite**<!-- style='color: orange; font-weight: bold' --> und wählen Sie entsprechend Ihrer Interessen.
+Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten, so möchten wir Sie einladen, entsprechend Ihren akademischen Bedürfnisse selektiv aus dem Katalog zu wählen. Geisteswissenschaftler<!-- style='color: orange;' --> dürften sich verstärkt für Textverarbeitung<!-- style='color: orange;' --> und<!-- style='color: orange;' --> -präsentation<!-- style='color: orange;' --> interessieren. Wer mit komplexeren<!-- style='color: orange;' --> Daten<!-- style='color: orange;' --> arbeiten will, sollte sich mit dem Abschnitt über Datenverarbeitung<!-- style='color: orange;' --> auseinandersetzen. Psychologen<!-- style='color: orange;' --> oder Pädagogen<!-- style='color: orange;' --> werden sich auf den Abschnitt über Videos<!-- style='color: orange;' --> für die nächste Interviewstudie freuen. Und Zoologen<!-- style='color: orange;' --> auf der Jagd nach seltenen Vogelrufe, können sicher sein, das richtige Audioformat<!-- style='color: orange;' --> zu wählen. 
+**Nutzen Sie dazu das Menü auf der linken Seite**<!-- style='color: orange; font-weight: bold' --> oder das Verzeichnis unten und wählen Sie entsprechend Ihrer Interessen.
 
 *************************************
 
@@ -445,9 +455,9 @@ Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten
 
   <h4>
 
-    [WAV, MP3 — Ton und Tonqualität](WAV,-MP3-—-Ton-und-Tonqualität)
+    [WAV, MP3 — Ton und Tonqualität](WAV,-MP3-—-Ton-und-Tonqualität-♻️)
 
-    [JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität)
+    [JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität-♻️)
 
     [MP4, MOV, AVI, WMV — Bild und Ton vereint](MP4,-MOV,-AVI,-WMV-—-Bild-und-Ton-vereint)
 
@@ -471,11 +481,15 @@ Wenngleich es von Vorteil sein kann, den folgenden Teil komplett durchzuarbeiten
 
 <i><b>In diesem Abschnitt werden wir uns mit verschiedenen Arten von Dateiformaten beschäftigen, die Text<!-- style='color: orange; font-weight: bold' --> widergeben<!-- style='color: orange; font-weight: bold' -->, und ihre Funktionsweise und Einsatzmöglichkeiten genauer untersuchen.</b></i>[^ChatGPT1](Diese Abstätze wurden von ChatGPT am 15.01.2023 mit dem Prompt "Schreibe ein Intro zu einem Lernbaustein über textbasierte Dateiformate. Der Kurs gliedert sich in die Teile Plain Text TXT, Formate, die hauptsächlich für Menschen gedacht sind und Formate, die hauptsächlich für Maschinen gedacht sind." erstellt und leicht modifiziert)
 
-Wir werden den Kurs in drei Teile gliedern: **Plain Text (TXT)**<!-- style='color: orange; font-weight: bold' -->, Formate, die **hauptsächlich für Menschen**<!-- style='color: orange; font-weight: bold' --> gedacht sind und Formate, die **hauptsächlich für Maschinen**<!-- style='color: orange; font-weight: bold' --> gedacht sind. Im ersten Teil werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT) beschäftigen.
+Wir werden den Kurs in vier Teile gliedern: **Plain Text (TXT)**<!-- style='color: orange; font-weight: bold' -->, Formate, die **hauptsächlich für Menschen**<!-- style='color: orange; font-weight: bold' --> gedacht sind, PDF<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten und Formate, die **hauptsächlich für Maschinen**<!-- style='color: orange; font-weight: bold' --> gedacht sind. 
+
+Im **ersten Teil**<!-- style='color: orange; font-weight: bold' --> werden wir uns mit dem einfachen, aber leistungsfähigen Plain Text-Format (TXT<!-- style='color: orange; font-weight: bold' -->) beschäftigen.
 
 Im **zweiten Teil**<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Menschen gedacht sind, wie RTF<!-- style='color: orange; font-weight: bold' -->, MD<!-- style='color: orange; font-weight: bold' -->, DOCX<!-- style='color: orange; font-weight: bold' -->, ODT<!-- style='color: orange; font-weight: bold' --> und PAGES<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind mit Formatierungsoptionen<!-- style='color: orange; font-weight: bold' --> ausgestattet, die es Benutzern ermöglichen, ihre Dokumente mit **Stil und Klarheit**<!-- style='color: orange; font-weight: bold' --> zu gestalten.
 
-Im **dritten Teil**<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' -->, JSON<!-- style='color: orange; font-weight: bold' --> und HTML<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
+Im **dritten Teil**<!-- style='color: orange; font-weight: bold' --> werfen wir noch einen Blick auf PDF<!-- style='color: orange; font-weight: bold' -->-Formate. Diese eignen sich besonders, um Text und Bild in einer für Menschen angenehmen Form dazustellen und über Zeit und Geräte hinweg stabil anzuzeigen.
+
+Abschließen<!-- style='color: orange; font-weight: bold' --> werden wir uns mit Formaten befassen, die hauptsächlich für Maschinen gedacht sind, wie CSV<!-- style='color: orange; font-weight: bold' -->, XML<!-- style='color: orange; font-weight: bold' -->, JSON<!-- style='color: orange; font-weight: bold' --> und HTML<!-- style='color: orange; font-weight: bold' -->. Diese Formate sind gut geeignet, um Daten zwischen Anwendungen auszutauschen und zu verarbeiten.
 
 <!-- Ende Abschnitt -->
 
@@ -508,6 +522,9 @@ TXT-Dateien können mit den meisten Textverarbeitungsprogrammen geöffnet werden
                 {{6}}
 Insgesamt ist das TXT-Format ein zuverlässiger und unkomplizierter Weg, Text zu speichern und zu teilen. Es ist einfach zu verstehen und eignet sich hervorragend für einfache Texte oder Notizen. Obwohl es eingeschränktere Funktionen als andere Formate hat, bleibt es dennoch eine wertvolle Ressource für alle, die einfache Texte verwalten müssen.
 
+                {{7}}
+Was die Langzeitspeicherung betrifft, so ist klar: TXT geht nirgendwohin! Hat es seit den 60 Jahren bestand so wird es auch noch weiter 60 Jahre überstehen.
+
 <!-- Ende Abschnitt -->
 
 
@@ -520,7 +537,7 @@ Insgesamt ist das TXT-Format ein zuverlässiger und unkomplizierter Weg, Text zu
 
 ### RTF, MD, DOCX, ODT, PAGES — Informationen für Menschen aufbereiten
 
-***Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe von Dateiformaten, die speziell für diesen Zweck entwickelt wurden. Hier sind einige der wichtigsten:***
+***Wenn es darum geht, Texte für Menschen lesbar aufzubereiten, gibt es eine Reihe von Dateiformaten, die speziell für diesen Zweck entwickelt wurden. Hier sind einige der wichtigsten:***[^ChatGPT](In diesem Kapitel sind ungefähr die Hälfte der Texte mit ChatGPT Mitte Januar erstellt worden. Leider ist der exakte Prompt nicht mehr erhalten.)
 
 
                 {{1-3}}
@@ -578,6 +595,46 @@ Die Syntax<!-- style='color: orange; font-weight: bold' --> von Markdown ist seh
 
 
 
+### PDFs — Text und Bild überall!
+
+<i>Eins der im Studium am häufigsten verwendeten Formate ist die PDF<!-- style='color: orange; font-weight: bold' -->. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für **Portable Document Format**<!-- style='color: orange; font-weight: bold' --> und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein **offenes Format**<!-- style='color: orange; font-weight: bold' -->, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, **auf jedem Computer**<!-- style='color: orange; font-weight: bold' --> oder Mobilgerät zu öffnen.</i>
+
+<p> </p>
+
+        {{1}}
+Es gibt zwei Arten von PDFs: **text-basierte**<!-- style='color: orange; font-weight: bold' --> und **bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' -->. **Text-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert<!-- style='color: orange; font-weight: bold' --> und **durchsucht werden**<!-- style='color: orange; font-weight: bold' -->. Der Text wird als *plain text* gespeichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet für die verwendeten Schriftarten in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
+Diese Dateien werden meistens durch Textverarbeitungsprogramme wie Word, OpenOffice oder Pages direkt erstellt<!-- style='color: orange; font-weight: bold' -->, da diese sowohl über die Daten der Schriftarten als auch den reinen Text verfügen und diese in einer PDF vereinen können. 
+
+        {{2}}
+**********************
+**Bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> hingegen sind einfache Abbildungen, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
+Diese Sorte PDF wird in der Regel von Bildverarbeitungssoftwares oder älteren Scannern erzeugt. 
+
+Modernere Scanner und KI-Bildverarbeitungsprogramme erkennen jetzt  immer öfter und vor allem kostengünstiger Text auf Bildern und können diesen in  PDFs mit einfließen lassen, sie also zu Text-PDFs machen. Dabei sei jedoch Vorsicht geboten, weil diese Maschinen bei besonders schlechten Aufnahmen darauf angewiesen sind, zu raten. [^Beispiel](Siehe für ein besonders schockierendes Beispiel, den XEROX-Bug, und seine verheerenden Folgen: https://www.dkriesel.com/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)
+
+**********************
+
+
+        {{3}}
+PDFs haben einige Vorteile<!-- style='color: orange; font-weight: bold' --> gegenüber anderen Dateiformaten, wie z.B. **Unabhängigkeit** von Plattform und Gerät, **Schutz** gegen Überschreiben und Änderungen, hohe **Kompatibilität** und die Möglichkeit, Dokumente **konsistent** darzustellen. Allerdings haben PDFs auch einige Nachteile<!-- style='color: orange; font-weight: bold' -->, wie z.B. die Schwierigkeit bei der **Bearbeitung und Änderung** von Inhalten, die Notwendigkeit **zusätzlicher Software** zum Anzeigen oder Bearbeiten und die manchmal **größere Dateigröße** im Vergleich zu anderen Formaten.
+
+
+        {{4}}
+**********************
+Was die Langzeitspeicherung betrifft, so lohnen sich PDFs für alle abgeschlossenen Produkte. Für die Archivierung wurde durch die ISO speziell das **PDF/A-Format**<!-- style='color: orange; font-weight: bold' --> herausgegeben. Anders als Standard-PDFs erlauben PDF/As keine Formatierungen oder Hintergrundscripts, die in Zukunft nicht mehr existieren könnten. Es wird auch sichergestellt, dass alle verwendeten Schriftarten und Zeichen hinterlegt wurden.
+
+PDF/A kann direkt aus WORD oder Adobe Acrobat Reader exportiert werden. Eine Anleitung finden Sie [hier](https://www.research.gov/common/attachment/Desktop/How_do_I_create_a_PDF-A_file.pdf). Sie können den PDF/A-Status ihrer PDF in Acrobat Reader überprüfen. Alternativ gibt es den [PDF Checker](https://www.pdfa.org/product/pdf-checker/) für Windows- und Linux-Systeme. 
+
+******
+
+
+<!-- Ende Abschnitt -->
+
+
+
+
+
+
 
 
 ### CSV, XML, JSON, HTML — Informationen für Computer aufbereiten
@@ -592,7 +649,7 @@ In der Welt der digitalen Datenverarbeitung ist es von größter Bedeutung, Info
 
 #### CSV (Comma Separated Values)
 
-CSV<!-- style='color: orange; font-weight: bold' --> ist ein sehr einfaches Format, das nur durch **Kommas getrennte Werte**<!-- style='color: orange; font-weight: bold' --> enthält. Es sind auch auch Trennungen durch andere Zeichen wie Semikolon<!-- style='color: orange; font-weight: bold' --> und Tabulator<!-- style='color: orange; font-weight: bold' --> möglich. Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
+CSV<!-- style='color: orange; font-weight: bold' --> ist ein sehr einfaches Format, das nur durch **Kommas getrennte Werte**<!-- style='color: orange; font-weight: bold' --> enthält. Trennungen durch andere Zeichen wie Semikolon<!-- style='color: orange; font-weight: bold' --> und Tabulator<!-- style='color: orange; font-weight: bold' --> sind auch möglich. Es ist sehr flexibel und kann mit fast jedem Texteditor oder Tabellenkalkulationsprogramm bearbeitet werden. Da es keine Informationen über Datentypen oder Formatierungen enthält, kann es jedoch Schwierigkeiten bereiten, wenn die Daten komplexer werden.
 
                 {{1}}
 CSV ist **eines der ältesten und am weitesten verbreiteten Dateiformate**<!-- style='color: orange; font-weight: bold' --> für den Austausch von Daten. Es wurde in den 1960er Jahren entwickelt und hat sich bis heute als einfaches und effektives Format für den Datenaustausch etabliert. CSV ermöglicht es, Daten in einer **tabellarischen Form**<!-- style='color: orange; font-weight: bold' --> zu speichern, bei der jede Zeile einen Datensatz und jede Spalte eine bestimmte Eigenschaft oder ein Attribut darstellt. Die Daten werden durch Kommas getrennt, wodurch sie von einfachen Texteditoren und Tabellenkalkulationsprogrammen wie Microsoft Excel oder Google Sheets gelesen und bearbeitet werden können.
@@ -600,7 +657,7 @@ CSV ist **eines der ältesten und am weitesten verbreiteten Dateiformate**<!-- s
                 {{2}}
 Die Syntax von CSV ist sehr einfach und intuitiv. Jede Zeile stellt einen Datensatz dar, während die Spaltenüberschriften und die Daten in jeder Spalte durch Kommas voneinander getrennt sind:
 
-                {{3}}
+                {{2}}
 ````
 Name,Alter,Stadt
 Max,35,Berlin
@@ -618,11 +675,10 @@ Jane,31,Köln
 
 <i>XML<!-- style='color: orange; font-weight: bold' --> (**Extensible Markup Language**<!-- style='color: orange; font-weight: bold' -->) und JSON<!-- style='color: orange; font-weight: bold' --> (**JavaScript Object Notation**<!-- style='color: orange; font-weight: bold' -->) sind etwas komplexere Formate, die eine Hierarchie von Daten ermöglichen. Sie bieten eine bessere Strukturierung der Daten und ermöglichen es, Daten zu kategorisieren und zu beschreiben. Dies macht sie für Anwendungen, die Daten verarbeiten müssen, viel nützlicher als CSV.</i>
 
+<p> </p>
 
                 {{1-4}}
 ***********************
-
-<p> </p>
 
 <h4>XML</h4>
 
@@ -651,7 +707,7 @@ Hier ein Beispiel für den Inhalt eines typischen XML-Dokuments:
 ````
 
                 {{3}}
-XML verwendet eine syntaktische Struktur, die von HTML ähnlich ist. Es werden **Hierarchien von Elementen und Attributen**<!-- style='color: orange; font-weight: bold' --> verwendet, um Daten zu beschreiben. Jedes Element repräsentiert eine bestimmte Dateneinheit und kann andere untergeordnete Elemente enthalten. Jedes Attribut enthält zusätzliche Informationen zu einem Element. Ein XML-Dokument muss mit einer **Prolog-Zeile**<!-- style='color: orange; font-weight: bold' --> beginnen, die die verwendete XML-Version und Zeichenkodierung angibt. Zudem muss jedes geöffnete Element auch geschlossen werden, um eine valide Syntax zu erreichen.
+XML verwendet eine syntaktische Struktur, die der von HTML ähnlich ist. Es werden **Hierarchien von Elementen und Attributen**<!-- style='color: orange; font-weight: bold' --> verwendet, um Daten zu beschreiben. Jedes Element repräsentiert eine bestimmte Dateneinheit und kann andere untergeordnete Elemente enthalten. Jedes Attribut enthält zusätzliche Informationen zu einem Element. Ein XML-Dokument muss mit einer **Prolog-Zeile**<!-- style='color: orange; font-weight: bold' --> beginnen, die die verwendete XML-Version und Zeichenkodierung angibt. Zudem muss jedes geöffnete Element auch geschlossen werden, um eine valide Syntax zu erreichen.
 
 ***********************
 
@@ -693,7 +749,7 @@ JSON<!-- style='color: orange; font-weight: bold' -->, oder **JavaScript Object 
 ````
 
                 {{6}}
-JSON verwendet eine **hierarchische Struktur**<!-- style='color: orange; font-weight: bold' -->, die aus **Schlüssel-Wert-Paaren**<!-- style='color: orange; font-weight: bold' -->  besteht und durch geschweifte Klammern "**{}**<!-- style='color: orange; font-weight: bold' --> " begrenzt wird. Jedes Schlüssel-Wert-Paar besteht aus einem Schlüssel<!-- style='color: orange; font-weight: bold' -->[^1](einem String<!-- style='color: orange; font-style: italic; font-weight: bold' -->, einer Buchstabenfolge) und einem Wert<!-- style='color: orange; font-weight: bold' -->, der entweder ein String, eine Zahl, ein Boolean<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^2](WAHR oder FALSCH), null<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^3](Oder besser: NICHTS) oder ein Array<!-- style='color: orange; font-style: italic; font-weight: bold' --> [^4](Alles vorherige in eckigen Klammern durch Kommata getrennt, also eine Art Sammlung) oder ein Objekt<!-- style='color: orange; font-weight: bold' -->[^5](Wieder ein weiteres komplexes Schlüsselpaar) sein kann. Die einzelnen Schlüssel-Wert-Paare werden durch Kommata<!-- style='color: orange; font-weight: bold' --> getrennt.[^ChatGPT](Dieser Absatz wurden von ChatGPT am 28.02.2023 mit dem Prompt "Schreibe einen einführeden Absatz über die Syntax von JSON." erstellt und leicht modifiziert.)
+JSON verwendet eine **hierarchische Struktur**<!-- style='color: orange; font-weight: bold' -->, die aus **Schlüssel-Wert-Paaren**<!-- style='color: orange; font-weight: bold' -->  besteht und durch geschweifte Klammern "**{}**<!-- style='color: orange; font-weight: bold' --> " begrenzt wird. Jedes Schlüssel-Wert-Paar besteht aus einem Schlüssel<!-- style='color: orange; font-weight: bold' --> und einem Wert<!-- style='color: orange; font-weight: bold' -->, der entweder ein String<!-- style='color: orange; font-weight: bold' -->[^1](einer Buchstabenfolge), eine Zahl<!-- style='color: orange; font-weight: bold' -->, ein Boolean<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^2](WAHR oder FALSCH), null<!-- style='color: orange; font-style: italic; font-weight: bold' -->[^3](Oder besser: NICHTS) oder ein Array<!-- style='color: orange; font-style: italic; font-weight: bold' --> [^4](Alles vorherige in eckigen Klammern durch Kommata getrennt, also eine Art Sammlung) oder ein Objekt<!-- style='color: orange; font-weight: bold' -->[^5](Wieder ein weiteres komplexes Schlüsselpaar) sein kann. Die einzelnen Schlüssel-Wert-Paare werden durch Kommata<!-- style='color: orange; font-weight: bold' --> getrennt.[^ChatGPT](Dieser Absatz wurden von ChatGPT am 28.02.2023 mit dem Prompt "Schreibe einen einführeden Absatz über die Syntax von JSON." erstellt und leicht modifiziert.)
 
 
 
@@ -833,7 +889,7 @@ Wenn Sie den in HTML geschriebenen sogenannten Quelltext<!-- style='color: orang
 
 #### Übungen
 
-<h4>Es kann sinnvoll sein, Plain-Text-Dokumente identifizieren zu können, falls Dateiendungen verloren gegangen sein sollten. Also testen Sie sich selbst und erkennen Sie die folgenden Beispielformate: </h4>
+<p style='font-style: italic; font-size: 1.7vw'>Es kann sinnvoll sein, Plain-Text-Dokumente identifizieren zu können, falls Dateiendungen verloren gegangen sein sollten. Also testen Sie sich selbst und erkennen Sie die folgenden Beispielformate: </p>
 
                 {{0-1}}
 ***************************************
@@ -1185,51 +1241,9 @@ Diese Beispiele waren recht und künstlich und vor allem durch die Darstellung l
 
 
 
-
-
-### PDFs — Text und Bild überall!
-
-<i>Eins der im Studium am häufigsten verwendeten Formate ist die PDF<!-- style='color: orange; font-weight: bold' -->. Sie wird hier extra gelistet, weil sie anders als DOCX oder Markdown sich nicht mehr nachträglich bearbeiten lässt. PDF steht für **Portable Document Format**<!-- style='color: orange; font-weight: bold' --> und ist ein weit verbreitetes Dateiformat zur Übertragung und Archivierung von Dokumenten. Es wurde 1993 von Adobe Systems entwickelt und ist ein **offenes Format**<!-- style='color: orange; font-weight: bold' -->, das es ermöglicht, Dokumente unabhängig vom ursprünglichen Programm, mit dem sie erstellt wurden, **auf jedem Computer**<!-- style='color: orange; font-weight: bold' --> oder Mobilgerät zu öffnen.</i>
-
-<p> </p>
-
-        {{1}}
-Es gibt zwei Arten von PDFs: **text-basierte**<!-- style='color: orange; font-weight: bold' --> und **bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' -->. **Text-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> enthalten Text und Grafiken, die als separate Elemente gespeichert sind. Dadurch können sie von Suchmaschinen indexiert und **durchsucht werden**<!-- style='color: orange; font-weight: bold' -->. Der Text wird als plain text gespreichert und das erstellende Programm hinterlegt ein Beispiel-Alphabet in der Datei. Auf diese Weise kann das Dokument auch in der beabsichtigten Formatierung auf Endreräten ausgelesen werden, die diese Schriftart nicht unterstützen. 
-Diese Dateien werden meistens durch Textverarbeitungsprogramme wie Word, OpenOffice oder Pages direkt erstellt<!-- style='color: orange; font-weight: bold' -->, da diese sowohl über die Daten der Schriftarten als auch den reinen Text verfügen und diese in einer PDF vereinen können. 
-
-        {{2}}
-**********************
-**Bild-basierte PDFs**<!-- style='color: orange; font-weight: bold' --> hingegen sind einfache Abbildungen, die aus Bitmaps und Vektorgrafiken bestehen. Diese Art von PDFs eignet sich am besten für die Übertragung von Grafiken und Layouts, bei denen der Inhalt nicht ausgelesen werden soll.
-Diese Sorte PDF wird in der Regel von Bildverarbeitungssoftwares oder älteren Scannern erzeugt. 
-
-Modernere Scanner und KI-Bildverarbeitungsprogramme erkennen jetzt  immer öfter und vor allem kostengünstiger Text auf Bildern und können diesen in  PDFs mit einfließen lassen, sie also zu Text-PDFs machen. Dabei sei jedoch Vorsicht geboten, weil diese Maschinen bei besonders schlechten Aufnahmen darauf angewiesen sind, zu raten. [^Beispiel](Siehe für ein besonders schockierendes Beispiel, den XEROX-Bug, und seine verheerenden Folgen: https://www.dkriesel.com/blog/2013/0802_xerox-workcentres_are_switching_written_numbers_when_scanning)
-
-**********************
-
-
-        {{3}}
-PDFs haben einige Vorteile<!-- style='color: orange; font-weight: bold' --> gegenüber anderen Dateiformaten, wie z.B. **Unabhängigkeit** von Plattform und Gerät, **Schutz** gegen Überschreiben und Änderungen, hohe **Kompatibilität** und die Möglichkeit, Dokumente **konsistent** darzustellen. Allerdings haben PDFs auch einige Nachteile<!-- style='color: orange; font-weight: bold' -->, wie z.B. die Schwierigkeit bei der **Bearbeitung und Änderung** von Inhalten, die Notwendigkeit **zusätzlicher Software** zum Anzeigen oder Bearbeiten und die manchmal **größere Dateigröße** im Vergleich zu anderen Formaten.
-
-
-        {{4}}
-**********************
-Was die Langzeitspeicherung betrifft, so lohnen sich PDFs für alle abgeschlossenen Produkte. Für die Archivierung wurde durch die ISO speziell das **PDF/A-Format**<!-- style='color: orange; font-weight: bold' --> herausgegeben. Anders als Standard-PDFs erlauben PDF/As keine Formatierungen oder Hintergrundscripts, die in Zukunft nicht mehr existieren könnten. Es wird auch sichergestellt, dass alle verwendeten Schriftarten und Zeichen hinterlegt wurden.
-
-PDF/A kann direkt aus WORD oder Adobe Acrobat Reader exportiert werden. Eine Anleitung finden Sie [hier](https://www.research.gov/common/attachment/Desktop/How_do_I_create_a_PDF-A_file.pdf). Sie können den PDF/A-Status ihrer PDF in Acrobat Reader überprüfen. Alternativ gibt es den [PDF Checker](https://www.pdfa.org/product/pdf-checker/) für Windows- und Linux-Systeme. 
-
-******
-
-
-<!-- Ende Abschnitt -->
-
-
-
-
-
-
 ## Ton, Bild, Video
 
-<span style='font-size: 1.7vw; font-style: italic; font-weight: bold;'>Multimedia<!-- style='color: orange; font-weight: bold' -->-Formate spielen in der heutigen digitalen Welt eine zentrale Rolle, da sie es uns ermöglichen, eine Vielzahl von Informationen in verschiedenen Formen zu teilen und zu konsumieren. Insbesondere Ton<!-- style='color: orange; font-weight: bold' -->, Bild<!-- style='color: orange; font-weight: bold' --> und Video<!-- style='color: orange; font-weight: bold' --> sind drei wichtige Arten von Multimedia-Formaten, die täglich von Milliarden von Menschen weltweit genutzt werden. Tonformate, wie MP3<!-- style='color: orange; font-weight: bold' --> oder WAV<!-- style='color: orange; font-weight: bold' -->, ermöglichen es uns, Musik, Sprache und Soundeffekte zu hören, während Bildformate wie JPEG<!-- style='color: orange; font-weight: bold' --> oder PNG<!-- style='color: orange; font-weight: bold' --> es uns ermöglichen, statische Bilder anzuzeigen. Videodateien, wie z.B. MP4<!-- style='color: orange; font-weight: bold' --> oder AVI<!-- style='color: orange; font-weight: bold' -->, bieten uns die Möglichkeit, bewegte Bilder und Ton zu kombinieren und somit vollständige audiovisuelle Erfahrungen zu schaffen. 
+<span style='font-size: 1.7vw; font-weight: bold;'>Multimedia<!-- style='color: orange; font-weight: bold' -->-Formate spielen in der heutigen digitalen Welt eine zentrale Rolle, da sie es uns ermöglichen, eine Vielzahl von Informationen in verschiedenen Formen zu teilen und zu konsumieren. Insbesondere Ton<!-- style='color: orange; font-weight: bold' -->, Bild<!-- style='color: orange; font-weight: bold' --> und Video<!-- style='color: orange; font-weight: bold' --> sind drei wichtige Arten von Multimedia-Formaten, die täglich von Milliarden von Menschen weltweit genutzt werden. Tonformate, wie MP3<!-- style='color: orange; font-weight: bold' --> oder WAV<!-- style='color: orange; font-weight: bold' -->, ermöglichen es uns, Musik, Sprache und Soundeffekte zu hören, während Bildformate wie JPEG<!-- style='color: orange; font-weight: bold' --> oder PNG<!-- style='color: orange; font-weight: bold' --> es uns ermöglichen, statische Bilder anzuzeigen. Videodateien, wie z.B. MP4<!-- style='color: orange; font-weight: bold' --> oder AVI<!-- style='color: orange; font-weight: bold' -->, bieten uns die Möglichkeit, bewegte Bilder und Ton zu kombinieren und somit vollständige audiovisuelle Erfahrungen zu schaffen. 
 In diesem Lernbaustein werden wir uns eingehender mit diesen drei Arten von Multimedia-Formaten beschäftigen, ihre Eigenschaften<!-- style='color: orange; font-weight: bold' -->, **Vor- und Nachteile**<!-- style='color: orange; font-weight: bold' --> sowie ihre Anwendungen<!-- style='color: orange; font-weight: bold' --> in verschiedenen Bereichen untersuchen, sowie ihre Brauchbarkeit für die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> erörtern.</span>[^ChatGPT](Dieses Kapitel wurden von ChatGPT am 28.02.2023 mit dem Prompt "Schreibe eine Einleitung zu einem Lernbaustein über Multimediaformate, besonders jene über Ton, Bild und Video." erstellt und leicht modifiziert.)
 
 <!-- Ende Abschnitt -->
@@ -1240,32 +1254,32 @@ In diesem Lernbaustein werden wir uns eingehender mit diesen drei Arten von Mult
 
 
 
-### WAV, MP3 — Ton und Tonqualität
+### WAV, MP3 — Ton und Tonqualität ♻️
 
               {{0}}
 **********************************
 
-Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt, es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig fort, weshalb wir von Schall**wellen** sprechen. Je schneller die Luft schwingt, desto höher ist der Ton, den wir höhren.
+Geräusche, die wir mit unseren Ohren wahrnehmen, sind Schallwellen<!-- style='color: orange; font-weight: bold' -->. Das heißt, es handelt sich um einen direktionalen Überdruck in der Luft, der sich ausgleichen muss und deshalb in eine Richtug weiter ausbreitet. An dem Ort, an dem vorher ein Überdruck geherrscht hat, findet sich jetzt ein Unterdruck. Dieser Prozess setzt sich wellenförmig<!-- style='color: orange; font-weight: bold' --> fort, weshalb wir von Schall**wellen** sprechen. Je schneller die Luft schwingt, desto höher ist der Ton, den wir höhren.
 
 Wenn es darum geht Ton, also Schallwellen, digital zu replizieren und festzuhalten, müssen diese Schwingungen erst durch ein Mikrofon in Spannungen umgewandelt werden. Die Luftdruckunterschiede werden jetzt durch Spannungsunterschiede repliziert. 
 
               {{1}}
 **********************************
-Diese Spannungsunterschiede können jedoch nicht direkt gespeichert werden, wie wir eingangs besprochen hatten. Stattdessen müssen sie in **Bits** und **Bytes** unterteilt werden. Um das zu bewerkstelligen, werden die Spannungswellen in zeitliche Segmente unterteilt und in diesen die einzelnen Spannungswerte als *ein Wert* gemessen - oder  "abgetastet" -, der als einzelne Zahl abgespeichert werden kann. Damit sind wir wieder auf einer Ebene, die durch Bytes gespeichert werden kann. 
+Diese Spannungsunterschiede können jedoch nicht direkt gespeichert werden, wie wir eingangs besprochen hatten. Stattdessen müssen sie in **Bits** und **Bytes** unterteilt werden. Um das zu bewerkstelligen, werden die Spannungswellen in **zeitliche Segmente**<!-- style='color: orange; font-weight: bold' --> unterteilt und in diesen die einzelnen Spannungswerte als *ein Wert* gemessen - oder  "abgetastet<!-- style='color: orange; font-weight: bold' -->" -, der als einzelne Zahl abgespeichert werden kann. Damit sind wir wieder auf einer Ebene, die durch Bytes gespeichert werden kann. 
 
 
 <figure style="float:center; width:100%;">
   <a href='https://commons.wikimedia.org/w/index.php?curid=98587159'>
     <img src="bilder/Signal_Sampling.svg" alt="Sampling Rate">
   </a>
-  <div> Hier ist der Prozess des Samplings einmal graphisch dargestellt: Das kontinuierliche Signal S(t) wird durch eine grüne Linie dargestellt, während die einzelne Samples, der einzelne Messwert, S<sub>i</sub> durch eine blaue vertikale Linien angezeigt werden. Der Abstand, also die Zeit, zwischen den blauen Linien ist die Sample-Rate.</div>
+  <div style='font-style: italic'> Hier ist der Prozess des Samplings<!-- style='color: orange; font-weight: bold' --> einmal graphisch dargestellt: Das kontinuierliche Signal S(t) wird durch eine grüne Linie dargestellt, während die einzelne Samples, der einzelne Messwert, S<sub>i</sub> durch eine blaue vertikale Linien angezeigt werden. Der Abstand, also die Zeit, zwischen den blauen Linien ist die Sample-Rate.</div>
   <tooltip><small>Bildquelle: <i>By Д.Ильин: vectorization, CC0 (Link auf dem Bild)</i></small></tooltip>
 </figure>
 
 
 Wie oft dabei pro Sekunde gemessen wird, bestimmt die Qualität der Audio-Datei, wenn man sie später wieder abhört. Die Häufigkeit dieser Messungen nennt man "Abtastrate<!-- style='color: orange; font-weight: bold' -->" oder häufiger aus dem Englischen: "**sampling rate**<!-- style='color: orange; font-weight: bold' -->". 
 
->Je höher Abtastrate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!). 
+>**Je höher Abtastrate, desto höher die Qualität des Audio-Signals und der verbrauchte Speicherplatz (!).**<!-- style='color: orange; font-weight: bold' --> 
 
 **********************************
 
@@ -1275,12 +1289,12 @@ Weil die Sampling-Rate in Samples pro Sekunde gemessen wird, ähnelt sie der phy
 
                 {{3}}
 **********************************
-<figure style="float:right; width:50%; background:#2f8080">
+<figure style="float:right; width:50%; background:#2f8080; margin: 1vw">
   <a href='https://commons.wikimedia.org/w/index.php?curid=29599378 '>
     <img src="bilder/4-bit-linear-PCM.svg" alt="Bittiefe 4Bits" style='background:white'>
   </a>
   <div style='color:white'> Hier sehen wir eine anologes Signal, also  Spannungswellen, in rot, die durch die einzelnen Datenpunkte (blau) auf einer Skale von -8 bis 7 repräsentiert werden.</div>
-  <tooltip><small>Bildquelle: <i>By Aquegg - Own work, CC BY-SA 3.0 (Link auf dem Bild)</i></small></tooltip>
+  <tooltip style='color: white;'><small>Bildquelle: <i>By Aquegg - Own work, CC BY-SA 3.0 (Link auf dem Bild)</i></small></tooltip>
 </figure>
 Eine weitere Messeinheit ist entscheidend für die Qualität der Audio-Datei: die sogenannte Bittiefe<!-- style='color: orange; font-weight: bold' -->. Wie eingangs besprochen müssen alle zu speichernden Umstände als Bits auf Festplatten repräsentiert werden. Deshalb kommt hier noch einmal das Gimmick aus dem ersten Kapitel - dieses mal auf vier Bits begrenzt:
 <script input="number" value="14" min="0" max="15">
@@ -1343,7 +1357,7 @@ Wie Sie sehen, eskaliert diese Rechnung recht schnell. Doch audiotechnisch sind 
 
                 {{5}}
 **********************************
-Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch ein Unterschied zwischen verlustfreien und -behafteten sowie kompressierten und unkompressierten Formaten gemacht werden. Im folgenden werden wir zwischen verlustfreien und verlustbehafteten Formaten unterscheiden.
+Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch ein Unterschied zwischen verlustfreien<!-- style='color: orange; font-weight: bold' --> und -behafteten<!-- style='color: orange; font-weight: bold' --> sowie kompressierten<!-- style='color: orange; font-weight: bold' --> und unkompressierten<!-- style='color: orange; font-weight: bold' --> Formaten<!-- style='color: orange; font-weight: bold' --> gemacht werden. Im folgenden werden wir zwischen verlustfreien und verlustbehafteten Formaten unterscheiden.
 
 **********************************
 
@@ -1358,7 +1372,7 @@ Mit dieser Technik arbeiten so gut wie alle Musikdateiformate. Dabei muss jedoch
 
 
 
-#### Beispiel: Verlustfreie Formate (WAV, AIFF, FLAC)
+#### Beispiel: Verlustfreie Formate
 
 <i>Verlustfreie Audio-Dateiformate werden verwendet, um Audiodaten in **hoher Qualität** zu speichern, ohne dabei Informationen zu verlieren. Es gibt verschiedene Formate, die diese Funktion erfüllen können, wie zum Beispiel WAV<!-- style='color: orange; font-weight: bold' --> (Wafeform Audio File), AIFF<!-- style='color: orange; font-weight: bold' --> (Audio Interchange File Format) und FLAC<!-- style='color: orange; font-weight: bold' --> (Free Lossless Audio Codec).</i> [^ChatGPT](Dieses Kapitel wurden von ChatGPT am 25.02.2023 mit dem Prompt "Erstelle einen kurzen lehrreichen Artikel über verlustfreie Audio-Dateiformate. Nutze dabei WAV, AIFF und FLAC als Beispiele. Geh auf ihre Unterschiede, Stärken und Schwächen, sowie ihre Beliebtheit ein. Anschließend schreibe einen kurzen Absatz über die Brauchbarkeit der einzelnen Formate für Langzeitspeicherung." erstellt und leicht modifiziert.)
 
@@ -1371,7 +1385,7 @@ FLAC<!-- style='color: orange; font-weight: bold' --> ist ein komprimiertes<!-- 
 **************************************
 
                 {{2}}
-Obwohl alle diese Formate verlustfrei sind, haben sie unterschiedliche **Stärken und Schwächen**<!-- style='color: orange; font-weight: bold' -->. WAV und AIFF sind zwar unkomprimiert und bieten eine hohe Klangqualität, sind aber auch sehr groß und nehmen somit viel Speicherplatz ein. FLAC ist komprimiert und bietet trotzdem eine sehr hohe Klangqualität, ist aber möglicherweise nicht so weit verbreitet wie WAV und AIFF. Dafür handelt es sich bei FLAC um ein [Open-Source Projekt](Link-ME!) und ist deshalb im Gegensatz zu WAV und AIFF ein nicht-proprietäres Format (!). 
+Obwohl alle diese Formate verlustfrei sind, haben sie unterschiedliche **Stärken und Schwächen**<!-- style='color: orange; font-weight: bold' -->. WAV und AIFF sind zwar unkomprimiert und bieten eine hohe Klangqualität, sind aber auch sehr groß und nehmen somit viel Speicherplatz ein. FLAC ist komprimiert und bietet trotzdem eine sehr hohe Klangqualität, ist aber möglicherweise nicht so weit verbreitet wie WAV und AIFF. Dafür handelt es sich bei FLAC um ein [Open-Source Projekt](Link-ME!) und ist deshalb im Gegensatz zu WAV und AIFF ein **nicht-proprietäres Format**<!-- style='color: orange; font-weight: bold' --> (!). 
 
                 {{3}}
 In Bezug auf die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> können alle diese Formate verwendet werden, um Audiodaten sicher und in hoher Qualität zu speichern. WAV- und AIFF-Dateien sind seit vielen Jahren im Einsatz und haben sich als zuverlässige Formate bewährt. Wobei WAV eine größere Annahme genießt, AIFF hingegen Metadaten erlaubt. FLAC ist ein relativ neues Format, hat aber bereits eine starke Anhängerschaft und wird von vielen als bevorzugtes Format für die Langzeitspeicherung von Musik und Audio angesehen - auch im Hinblick auf die geringere Speichergröße.
@@ -1396,7 +1410,7 @@ AAC<!-- style='color: orange; font-weight: bold' --> (Advanced Audio Coding) bie
 WMA<!-- style='color: orange; font-weight: bold' --> (Windows Media Audio) wurde von Microsoft entwickelt und wird hauptsächlich auf Windows-basierten Systemen verwendet. Es bietet eine hohe Komprimierungsraten bei guter Audioqualität. WMA-Dateien können jedoch nicht auf allen Geräten wiedergegeben werden und sind daher möglicherweise nicht so vielseitig wie MP3 oder AAC.
 
                 {{4}}
-Wenn es um die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> von Audioinhalten geht, sind verlustbehaftete Audioformate nicht die beste Wahl. Da sie auf Komprimierung basieren, können sie bei jedem Konvertierungsvorgang oder jeder Bearbeitung zusätzliche Informationen verlieren und sich im Laufe der Zeit verschlechtern. Für die Langzeitspeicherung von Audioinhalten empfiehlt es sich, das Original unkomprimiert zu speichern oder auf verlustfreie Audioformate wie **WAV, AIFF oder FLAC**<!-- style='color: orange; font-weight: bold' -->  zurückzugreifen. Für kürzere Zeiträume unter 10 Jahren kann es sich alledings besonders bei großen Projekten mit viel Audiodaten lohnen, MP3 als ein nicht-proprietäres Format zu verwenden. 
+Wenn es um die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' --> von Audioinhalten geht, sind verlustbehaftete Audioformate nicht die beste Wahl. Da sie auf Komprimierung basieren, können sie bei jedem Konvertierungsvorgang oder jeder Bearbeitung zusätzliche Informationen verlieren und sich im Laufe der Zeit verschlechtern. Für die Langzeitspeicherung von Audioinhalten empfiehlt es sich, das Original unkomprimiert zu speichern oder auf verlustfreie Audioformate wie **WAV, AIFF oder FLAC**<!-- style='color: orange; font-weight: bold' -->  zurückzugreifen. Für kürzere Zeiträume **unter 10 Jahren**<!-- style='color: orange; font-weight: bold' --> kann es sich alledings besonders bei großen Projekten mit viel Audiodaten lohnen, MP3<!-- style='color: orange; font-weight: bold' --> als ein nicht-proprietäres Format zu verwenden. 
 
 
 <!-- Ende Abschnitt -->
@@ -1416,7 +1430,7 @@ Wenn es um die Langzeitspeicherung<!-- style='color: orange; font-weight: bold' 
 
 
 
-### JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität
+### JPEG, PNG, TIFF, SVG, PS — Bild und Bildqualität ♻️
 
 *Bei Bilddateien teilt sich des Feld in zwei Arten. Die einen basieren auf <span style='color:orange'><b>Rastern</b></span>, die anderen auf <span style='color:orange'><b>Vectoren</b></span>. *
 
@@ -1464,11 +1478,11 @@ Hier ist noch einmal das letzte Bild ohne LiaScripts Farbkorrektur:
 
                 {{3}}
 *******************************************
-Jedes der Quadrate ist ein Pixel. Im Header der Datei wird das Seitenverhältnis (50×75 Pixel) angegeben, also wie viele Quadrate in einer Reihe sind und wie viel Reihen es gibt. 
+Jedes der Quadrate ist ein Pixel<!-- style='color: orange; font-weight: bold' -->. Im Header der Datei wird das Seitenverhältnis (50×75 Pixel) angegeben, also wie viele Quadrate in einer Reihe sind und wie viel Reihen es gibt. 
 
-Zusätzlich ist noch angegeben, wie viele Bits in Reihe zu welcher Farbe zu interpretieren sind. Erinnern Sie sich, wie aus Einsen und Nullen oben Zahlen und Buchstaben wurden. Dieses Prinzip lässt sich natürlich auch auf Farben ummünzen. 
+Zusätzlich ist noch angegeben, **wie viele Bits**<!-- style='color: orange; font-weight: bold' --> in Reihe zu welcher Farbe zu interpretieren sind. Erinnern Sie sich, wie aus Einsen und Nullen oben Zahlen und Buchstaben wurden. Dieses Prinzip lässt sich natürlich auch auf Farben ummünzen. 
 
-Das lesende Programm nutzt diese beiden Informationen, um dann die binären Daten in entsprechende Chunks zu schneiden und darus die Farben für die einzelnen Quatrate, also Pixel, zu lesen. 
+Das lesende Programm nutzt diese beiden Informationen, um dann die binären Daten in entsprechende Chunks<!-- style='color: orange; font-weight: bold' --> zu schneiden und darus die Farben für die einzelnen Quatrate, also Pixel, zu lesen. 
 
 *******************************************
 
@@ -1479,7 +1493,7 @@ Das lesende Programm nutzt diese beiden Informationen, um dann die binären Date
 
                 {{4-7}}
 *******************************************
-<span style='color:orange'><b>Vectorbasierte Formate</b></span> nutzen mathematische Formeln, um Formen, bzw. ihre Kanten zu speichern. Diese können dann mit Farben gefüllt werden, denken Sie wieder an die Farbkodirung für die einzelnen Pixel bei Raster-Graphiken. 
+**Vectorbasierte Formate**<!-- style='color: orange; font-weight: bold' --> nutzen **mathematische Formeln**<!-- style='color: orange; font-weight: bold' -->, um Formen, bzw. ihre Kanten<!-- style='color: orange; font-weight: bold' --> zu speichern. Diese können dann **mit Farben gefüllt**<!-- style='color: orange; font-weight: bold' --> werden, denken Sie wieder an die Farbkodirung für die einzelnen Pixel bei Raster-Graphiken. 
 
 <figure style="float:right; width:40%;">
   <img src="bilder/snowpiercer.pdf" alt="Snowpiercer">
@@ -1500,13 +1514,13 @@ Bei den folgenden zwei Bildern handelt es sich um Screen-Shots mit eskalierender
 *******************************************
 
 
-                {{7}}
+                {{6}}
 Beispiele für solche Formate wären [**Scalable Vector Graphics**](https://www.w3.org/Graphics/SVG/) (**SVG**) und [**PostScript**](https://www.compart.com/de/postscript) (**PS**). PostScript war der Vorläufer der PDF und findet seit deren Erscheinen nur noch Verwendung als Nischen-Format für spezielle Druckformate. SVG hingegen darf als die vektorbasierte Variante des JPEG verstanden werden. Es findet seine Nutze vor allem in der Design-Welt. 
 
 *******************************************
 
 
-                {{8}}
+                {{7}}
 *******************************************
 <h4 style='color:orange'>Anwendungsbereiche: </h4>
 
@@ -1520,9 +1534,9 @@ Fotografien<!-- style='color: orange; font-weight: bold' --> werden generell als
 
 
 
-#### Beispiele: Rastergraphiken
+#### Beispiele: Rastergraphiken ♻️
 
-*Raster-Graphik-Dateiformate gibt es viele, aber einige der am häufigsten verwendeten sind JPEG, JPEG2000, PNG, RAW und TIFF. Jedes dieser Formate hat seine eigenen Vor- und Nachteile und ist für bestimmte Zwecke besser geeignet als andere.*[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 23.02.2023 mit dem Prompt "Schreibe ein kurzes lehrreiches Kapitel über die Dateiformate JPEG, JPEG2000 PNG, RAW, TIFF und wann sie zu verwenden sind. Gehe anschließend in einem Absatz ein die Brauchbarkeit dieser Formate für eine Langzeitspeicherung in möglichst hoher Qualität ein." erstellt und leicht modifiziert.)
+*Raster-Graphik-Dateiformate gibt es viele, aber einige der am häufigsten verwendeten sind JPEG<!-- style='color: orange; font-weight: bold' -->, JPEG2000<!-- style='color: orange; font-weight: bold' -->, PNG<!-- style='color: orange; font-weight: bold' -->, RAW<!-- style='color: orange; font-weight: bold' --> und TIFF<!-- style='color: orange; font-weight: bold' -->. Jedes dieser Formate hat seine eigenen Vor- und Nachteile und ist für bestimmte Zwecke besser geeignet als andere.*[^ChatGPT-1](Dieses Kapitel wurden von ChatGPT am 23.02.2023 mit dem Prompt "Schreibe ein kurzes lehrreiches Kapitel über die Dateiformate JPEG, JPEG2000 PNG, RAW, TIFF und wann sie zu verwenden sind. Gehe anschließend in einem Absatz ein die Brauchbarkeit dieser Formate für eine Langzeitspeicherung in möglichst hoher Qualität ein." erstellt und leicht modifiziert.)
 
 <figure style='float:right; width 30%;'>
   <img src='bilder/jpegQual.png' alt='Adjust JPEG quality'>
@@ -1585,10 +1599,10 @@ Wenn es um die Langzeitspeicherung geht, sollten Vektorgrafiken im Allgemeinen b
 
 <p></p>
 
-Stellen Sie sich für die Speicherung von Video einfach eine Verlängerung von einer [Rastergraphik](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität) vor: Die einzelnen Pixel werden der Reihe nach abgespeichert. Am Ende einer Reihe kommt die nächste. Schließlich, wenn der letzte Pixel des aktuellen Bildes erreicht ist, wird mit dem nächsten begonnen. 
-
                   {{1}}
 ******************************************
+Stellen Sie sich für die Speicherung von Video einfach eine Verlängerung von einer [Rastergraphik](JPEG,-PNG,-TIFF,-SVG,-PS-—-Bild-und-Bildqualität-♻️) vor: Die einzelnen Pixel werden der Reihe nach abgespeichert. Am Ende einer Reihe kommt die nächste. Schließlich, wenn der letzte Pixel des aktuellen Bildes erreicht ist, wird mit dem nächsten begonnen. 
+
 Die einzelnen Bilder werden als Frames<!-- style='color: orange; font-weight: bold;' --> bezeichnet. Wie viele Frames dabei in einer Sekunde gezeigt werden wird als Framerate<!-- style='color: orange; font-weight: bold;' --> bezeichnet und häufig als FPS<!-- style='color: orange; font-weight: bold;' --> (*frames per second*) angegeben.
 
 >Je höher die Framerate, desto flüssiger erscheint dabei das Bild. 12 fps bildet dabei ungefähr das unterste Niveau, dass das menschliche Auge als flüssig wahrnimmt.[^💡🕷](Traditionelle Zeichentrickfilme wurden in 12 fps gezeichnet. Stummfilme wurden in der Regel als 16 fps gedreht und mit dem Tonfilm stieg man auf 24 fps um. Ein interessantes Experiment mit Framerates findet sich in Sonys *Spider-Man: Into the Spider-Verse*, in dem der Haupcharakter Miles Morales zu Beginn des Films in 12 fps gezeichnet ist, während der Rest des Films in 24 fps gezeichnet wurde. Auf diese Weise wollten die Poduzenten die Unerfahrenheit des Protagonisten wortwörtlich untermalen.) Jenseits von 25/30 fpm sind nur noch leichte Verbesserungen und ab 120 fps nahezu keine mehr wahrzunehmen.
@@ -1648,7 +1662,7 @@ Das MKV<!-- style='color: orange; font-weight: bold;' -->-Format (Matroska-Multi
 Das WEBM<!-- style='color: orange; font-weight: bold;' -->-Format wurde 2010 von Google eingeführt und ist ein offenes, lizenzfreies Format für Webvideos. WEBM verwendet den VP8-Codec und bietet eine gute Komprimierung und Videoqualität. WEBM wird häufig für Streaming-Video und HTML5-Video verwendet. Ein Nachteil ist, dass es möglicherweise nicht auf allen Plattformen unterstützt wird.
 
                 {{7}}
-Für die Langzeitspeicherung von Videos sind einige der oben genannten Formate besser geeignet als andere. MP4<!-- style='color: orange; font-weight: bold;' -->, MOV<!-- style='color: orange; font-weight: bold;' --> und AVCHD<!-- style='color: orange; font-weight: bold;' --> sind gut geeignet für die Langzeitspeicherung, da sie eine hohe Komprimierung und Videoqualität bieten und von vielen Plattformen und Geräten unterstützt werden. MKV<!-- style='color: orange; font-weight: bold;' --> und WEBM<!-- style='color: orange; font-weight: bold;' --> sind auch geeignet, aber da sie nicht von allen Plattformen unterstützt werden, kann es in Zukunft schwieriger werden, auf die gespeicherten Dateien zuzugreifen. AVI<!-- style='color: orange; font-weight: bold;' --> und WMV<!-- style='color: orange; font-weight: bold;' --> sind ältere Formate und können in Zukunft möglicherweise nicht mehr unterstützt werden, daher sind sie möglicherweise nicht die beste Wahl für eine Langzeitspeicherung.
+Für die Langzeitspeicherung<!-- style='color: orange; font-weight: bold;' --> von Videos sind einige der oben genannten Formate besser geeignet als andere. MP4<!-- style='color: orange; font-weight: bold;' -->, MOV<!-- style='color: orange; font-weight: bold;' --> und AVCHD<!-- style='color: orange; font-weight: bold;' --> sind gut geeignet für die Langzeitspeicherung, da sie eine hohe Komprimierung und Videoqualität bieten und von vielen Plattformen und Geräten unterstützt werden. MKV<!-- style='color: orange; font-weight: bold;' --> und WEBM<!-- style='color: orange; font-weight: bold;' --> sind auch geeignet, aber da sie nicht von allen Plattformen unterstützt werden, kann es in Zukunft schwieriger werden, auf die gespeicherten Dateien zuzugreifen. AVI<!-- style='color: orange; font-weight: bold;' --> und WMV<!-- style='color: orange; font-weight: bold;' --> sind ältere Formate und können in Zukunft möglicherweise nicht mehr unterstützt werden, daher sind sie möglicherweise nicht die beste Wahl für eine Langzeitspeicherung.
 
 
 
@@ -1689,7 +1703,7 @@ Raster vs Vector. https://www.adobe.com/creativecloud/file-types/image/compariso
 
 
 
-**Comicbook.com:**
+**Comicbook.com:**<!-- style='color: orange; font-weight: bold;' -->
 
 <i>
 
